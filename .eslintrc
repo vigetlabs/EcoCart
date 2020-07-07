@@ -1,0 +1,4 @@
+{
+    "extends": ["react-app", "airbnb-base"],
+    "plugins": ["jsx-a11y", "prettier"]
+}
