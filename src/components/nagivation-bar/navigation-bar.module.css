@@ -1,0 +1,13 @@
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-self: left;
+}
+
+.container {
+    background-color: grey;
+}
+
+.cart {
+    justify-self: right;
+}
