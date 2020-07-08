@@ -1,6 +1,6 @@
 # Eco Cart
 > Eco Cart is a data visualaztion app that allows users to measure the 
-> environmental impact of their groceries. Drawing from [https://science.sciencemag.org/content/360/6392/987/tab-figures-data](this dataset),
+> environmental impact of their groceries. Drawing from [this dataset](https://science.sciencemag.org/content/360/6392/987/tab-figures-data),
 > Eco Cart determines the environmental cost of certain grocery items based on their
 > water usage, eutrophication, land usage, and carbon emissions.
 
