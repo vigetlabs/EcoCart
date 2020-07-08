@@ -1,12 +1,16 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import navigationStyles from './styles/navigation-bar.module.css';
+
+// Componenets
+import { Button } from '@material-ui/core';
+
+// Styles
+import styles from './styles/navigation-bar.module.css';
 
 const NavigationBar = () => (
-        <div className={navigationStyles.container}>
-            <Button className={navigationStyles.button}>Home</Button>
-            <Button className={navigationStyles.button}>Groceries</Button>
-            <Button className={navigationStyles.cart}>Cart</Button>
+        <div className={styles.container}>
+            <Button className={styles.button}>Home</Button>
+            <Button className={styles.button}>Groceries</Button>
+            <Button className={styles.cart}>Cart</Button>
         </div>
 );
 

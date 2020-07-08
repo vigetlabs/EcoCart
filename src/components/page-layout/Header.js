@@ -1,13 +1,17 @@
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import headerStyles from './styles/header.module.css';
+
+// Components
+import { Link } from 'gatsby';
+
+// Styles
+import styles from './styles/header.module.css';
 
 const Header = ({ siteTitle }) => (
-    <header className={headerStyles.header}>
-        <div className={headerStyles.container}>
+    <header className={styles.header}>
+        <div className={styles.container}>
             <h1 style={{ margin: 0 }}>
-                <Link to="/" className={headerStyles.link}>
+                <Link to="/" className={styles.link}>
                     {siteTitle}
                 </Link>
             </h1>

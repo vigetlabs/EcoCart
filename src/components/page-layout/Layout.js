@@ -9,9 +9,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
+// Components
 import Header from './Header';
-import layoutStyles from './styles/layout.module.css';
 import NavigationBar from './NavigationBar';
+
+// Styles
+import styles from './styles/layout.module.css';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,7 +31,7 @@ const Layout = ({ children }) => {
         <>
             <Header siteTitle={data.site.siteMetadata.title} />
             <NavigationBar />
-            <div className={layoutStyles.body}>
+            <div className={styles.body}>
                 <main>{children}</main>
                 <footer>
                     © {new Date().getFullYear()}, Built with
