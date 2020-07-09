@@ -1,22 +1,24 @@
 // import PropTypes from 'prop-types';
-// import React from 'react';
+import React from 'react';
 
-// // Components
-// import GroceryItem from './GroceryItem';
+// Components
+import { Grid } from '@material-ui/core';
+import GroceryItem from './GroceryItem';
 
-// // Styles
-// import styles from '../styles/category-row.module.css';
+// Styles
+import styles from '../styles/category-row.module.css';
 
-// const CategoryRow = () => (
-//     <div>
-//       CategoryRow
-//     </div>
-// );
+const CategoryRow = () => {
+  const groceryItems = [1, 2, 3, 4, 5, 6].map((index) => (
+    <Grid item>
+      <GroceryItem key={index} />
+    </Grid>
+  ));
+  return <div className={styles.row}>{groceryItems}</div>;
+};
 
-// CategoryRow.propTypes = {
-// };
+CategoryRow.propTypes = {};
 
-// CategoryRow.defaultProps = {
-// };
+CategoryRow.defaultProps = {};
 
-// export default CategoryRow;
+export default CategoryRow;
