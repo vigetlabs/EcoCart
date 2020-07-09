@@ -1,13 +1,12 @@
 .button {
-    margin-left: 10px;
-    margin-right: 10px;
-    justify-self: left;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .container {
-    background-color: lavender;
+  background-color: lavender;
 }
 
-.cart {
-    justify-self: right;
+.icon {
+  color: green;
 }
