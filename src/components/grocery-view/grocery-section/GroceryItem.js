@@ -7,6 +7,7 @@ import React from 'react';
 import styles from '../styles/grocery-item.module.css';
 
 const GroceryItem = () => (
+  // REFACTOR: Replace fake static data here
   <div className={styles.item}>
     <h4>Grocery Item!</h4>
     <p>Here are some details about this grocery item:</p>

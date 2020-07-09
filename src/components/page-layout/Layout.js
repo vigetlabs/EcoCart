@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 // Components
 import Header from './Header';
 import NavigationBar from './NavigationBar';
-import GrocerySection from '../grocery-view/grocery-section/GrocerySection';
 
 // Styles
 import styles from './styles/layout.module.css';

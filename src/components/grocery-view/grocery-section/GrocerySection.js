@@ -8,31 +8,31 @@ import CategoryRow from './CategoryRow';
 // Styles
 // import styles from '../styles/grocery-section.module.css';
 
-const GrocerySection = () => (
-  <div>
-    <h1>Groceries</h1>
-    <p>Here is some information about groceries</p>
-    <Grid
-      style={{ width: '100%' }}
-      container
-      direction="column"
-      alignContents="flex-end"
-      alignItems="stretch">
-      <Grid item>
-        <h2>Produce</h2>
-        <CategoryRow />
-      </Grid>
-      <Grid item>
-        <h2>Meat and Seafood</h2>
-        <CategoryRow />
-      </Grid>
-      <Grid item>
-        <h2>Bakery</h2>
-        <CategoryRow />
-      </Grid>
+// REFACTOR: Using fake setion titles
+const SECTIONS = ['Produce', 'Meat and Seafood', 'Bakery', 'Etc.'];
+const GROCERY_INFO = 'Here is some information about groceries';
+
+const GrocerySection = () => {
+  // REFACTOR: Update for actual data
+  const rows = SECTIONS.map((section) => (
+    <Grid item>
+      <CategoryRow category={section} />
     </Grid>
-  </div>
-);
+  ));
+  return (
+    <div>
+      <h1>Groceries</h1>
+      <p>{GROCERY_INFO}</p>
+      <Grid
+        container
+        direction="column"
+        alignContents="flex-end"
+        alignItems="stretch">
+        {rows}
+      </Grid>
+    </div>
+  );
+};
 
 GrocerySection.propTypes = {};
 
