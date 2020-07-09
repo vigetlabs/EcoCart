@@ -33,10 +33,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <NavigationBar />
       <div className={styles.body}>
-        <main>
-          {children}
-          <GrocerySection />
-        </main>
+        <main>{children}</main>
         <footer>
           <p>
             ©2020, A <a href="https://www.viget.com/">Viget</a> Project
