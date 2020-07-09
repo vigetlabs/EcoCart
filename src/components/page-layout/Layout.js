@@ -38,8 +38,13 @@ const Layout = ({ children }) => {
           <GrocerySection />
         </main>
         <footer>
-          © {new Date().getFullYear()}, Built with{' '}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <p>
+            ©2020, A <a href="https://www.viget.com/">Viget</a> Project
+          </p>
+          <p>
+            Liam Becker, Jennifer Montoya, William Dinneen, Jackson Doyle, Mika
+            Byar
+          </p>
         </footer>
       </div>
     </>
