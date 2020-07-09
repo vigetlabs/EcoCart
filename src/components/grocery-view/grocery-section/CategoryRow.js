@@ -8,11 +8,14 @@ import GroceryItem from './GroceryItem';
 // Styles
 import styles from '../styles/category-row.module.css';
 
+// REFACTOR: Use real data here
+const ITEMS = ['broccoli', 'corn', 'bread', 'milk', 'beef', 'cheese'];
+
 const CategoryRow = ({ category }) => {
   // REFACTOR: Using fake data right now
-  const groceryItems = [1, 2, 3, 4, 5, 6].map((index) => (
+  const groceryItems = ITEMS.map((item) => (
     <Grid item>
-      <GroceryItem key={index} />
+      <GroceryItem key={item} item={item} />
     </Grid>
   ));
   return (
