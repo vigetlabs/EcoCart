@@ -3,3 +3,12 @@
     max-width: 960;
     padding: 0 1.0875rem 1.45rem;
 }
+
+.modal{
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
