@@ -2,18 +2,18 @@
 import React from 'react';
 
 // Components
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CategoryRow from './CategoryRow';
 
 // Styles
 // import styles from '../styles/grocery-section.module.css';
 import { createMuiTheme } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
 
 // REFACTOR: Using fake setion titles
 const SECTIONS = ['Produce', 'Meat and Seafood', 'Bakery', 'Etc.'];
-const GROCERY_INFO = 'Here is some information about groceries';
+const GROCERY_INFO =
+  'Click through product categories, view item grades, and add items to your cart straight from this page, or click an item to view more detailed information including details on its environmental impact.';
 
 const GrocerySection = () => {
   // REFACTOR: Update for actual data
@@ -35,8 +35,12 @@ const GrocerySection = () => {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <h1>Groceries</h1>
-        <p>{GROCERY_INFO}</p>
+        <Typography variant="h3" component="h1">
+          Groceries
+        </Typography>
+        <Typography variant="body1" component="p">
+          {GROCERY_INFO}
+        </Typography>
         <Grid
           container
           direction="column"

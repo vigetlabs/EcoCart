@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Components
-import { Grid } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import GroceryItem from './GroceryItem';
 
 // Styles
@@ -20,7 +20,7 @@ const CategoryRow = ({ category }) => {
   ));
   return (
     <div>
-      <h2>{category}</h2>
+      <Typography variant="h4">{category}</Typography>
       <div className={styles.row}>{groceryItems}</div>
     </div>
   );
