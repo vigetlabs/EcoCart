@@ -2,19 +2,21 @@
 import React from 'react';
 
 // Components
-import { Grid, Typography } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/core/styles';
+import { Grid, Typography, ThemeProvider, IconButton } from '@material-ui/core';
 import CategoryRow from './CategoryRow';
 import InfoSection from '../info-section/InfoSection';
+import { ChevronRightIcon, ChevronLeftIcon } from '@material-ui/icons';
 
 // Styles
-// import styles from '../styles/grocery-section.module.css';
+import styles from '../styles/grocery-section.module.css';
 import { createMuiTheme } from '@material-ui/core/styles';
 
 // REFACTOR: Using fake setion titles
 const SECTIONS = ['Produce', 'Meat and Seafood', 'Bakery', 'Etc.'];
 const GROCERY_INFO =
   'Click through product categories, view item grades, and add items to your cart straight from this page, or click an item to view more detailed information including details on its environmental impact.';
+
+const scroll = (setStartIndex) => {};
 
 const GrocerySection = () => {
   // REFACTOR: Update for actual data
@@ -37,19 +39,23 @@ const GrocerySection = () => {
     <ThemeProvider theme={theme}>
       <InfoSection />
       <div>
-        <Typography variant="h3" component="h1">
-          Groceries
-        </Typography>
-        <Typography variant="body1" component="p">
-          {GROCERY_INFO}
-        </Typography>
-        <Grid
-          container
-          direction="column"
-          alignContents="flex-end"
-          alignItems="stretch">
-          {rows}
-        </Grid>
+        <div className={styles.container}>
+          <Typography variant="h3" component="h1">
+            Groceries
+          </Typography>
+          <Typography variant="body1" component="p">
+            {GROCERY_INFO}
+          </Typography>
+        </div>
+        <div>
+          <Grid
+            container
+            direction="column"
+            alignContents="flex-end"
+            alignItems="stretch">
+            {rows}
+          </Grid>
+        </div>
       </div>
     </ThemeProvider>
   );
