@@ -1,4 +1,10 @@
 .item {
   width: 300px;
-  /* display: inline-block; */
+  padding: 10px;
+  height: 100%;
+}
+
+.itemCard {
+  min-width: 275;
+  height: 382px;
 }

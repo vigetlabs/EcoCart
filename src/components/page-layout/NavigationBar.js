@@ -23,10 +23,7 @@ const NavigationBar = ({ openModal }) => (
         </div>
       </Grid>
       <Grid item>
-        <Button
-          className={styles.button}
-          onClick={openModal}
-        >
+        <Button className={styles.button} onClick={openModal}>
           <ShoppingBasketIcon className={styles.icon} />
         </Button>{' '}
       </Grid>
