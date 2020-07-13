@@ -9,7 +9,7 @@ import HomeIcon from '@material-ui/icons/Home';
 // Styles
 import styles from './styles/navigation-bar.module.css';
 
-const NavigationBar = () => (
+const NavigationBar = ({ openModal }) => (
   <div className={styles.container}>
     <Grid container justify="space-between">
       <Grid item>
@@ -23,7 +23,7 @@ const NavigationBar = () => (
         </div>
       </Grid>
       <Grid item>
-        <Button className={styles.button}>
+        <Button className={styles.button} onClick={openModal}>
           <ShoppingBasketIcon className={styles.icon} />
         </Button>{' '}
       </Grid>

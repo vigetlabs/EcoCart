@@ -9,7 +9,10 @@
 
 // const CartModal = () => (
 //     <div>
-//       Cart Modal
+//       <CartItem />
+//       <CartItem />
+//       <CartItem />
+//       <CartItem />
 //     </div>
 // );
 
