@@ -3,7 +3,6 @@ import React from 'react';
 
 // Components
 import {
-  Grid,
   Card,
   CardContent,
   CardMedia,
@@ -11,7 +10,8 @@ import {
   Button,
   Typography,
 } from '@material-ui/core';
-import AddCircleIcon from '@material-ui/icons/AddCircle';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 // REFACTOR: Need a grade icon
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
@@ -29,27 +29,31 @@ const capitalize = (word) => word.charAt(0).toUpperCase() + word.slice(1);
 const GroceryItem = ({ item }) => (
   // REFACTOR: Replace fake static data here
   <div className={styles.item}>
-    <Card className={styles.itemCard}>
-      <Grid container justify="space-between">
-        <Grid item>
-          <FiberManualRecordIcon className={styles.average} />
-        </Grid>
-        <Grid item>
-          <AddCircleIcon className={styles.plus} />
-        </Grid>
-      </Grid>
+    <Card className={styles.itemCard} container elevated enabled>
       <CardMedia
         component="img"
         alt={item}
-        height="100"
+        height="240"
         image={getImage(item)}
         title={item}
       />
-      <CardActions>
-        <Typography variant="body2" component="p">
+      <CardContent>
+        <Typography variant="h5" component="h2">
           {capitalize(item)}
         </Typography>
-        <Button size="small">Details</Button>
+        <Button variant="text" size="small" endIcon={<ChevronRightIcon />}>
+          View Details
+        </Button>
+      </CardContent>
+      <CardActions disableSpacing={true}>
+        <Button
+          startIcon={<AddShoppingCartIcon />}
+          variant="contained"
+          color="primary"
+          size="small"
+          className={styles.cartButton}>
+          Add To Cart
+        </Button>
       </CardActions>
     </Card>
   </div>

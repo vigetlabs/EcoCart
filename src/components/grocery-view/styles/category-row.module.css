@@ -2,5 +2,6 @@
   width: 95vw;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
   overflow-x: scroll;
+  overflow-y: hidden;
   display: inline-flex;
 }
