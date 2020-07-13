@@ -1,21 +1,21 @@
-// import PropTypes from 'prop-types';
-// import React from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 
-// // Components
+// Components
 
-// // Styles
-// import styles from '../styles/impact-result.module.css';
+// Styles
+import styles from '../styles/impact-result.module.css';
 
-// const ImpactResult = () => (
-//     <div>
-//       ImpactResult
-//     </div>
-// );
+const ImpactResult = () => (
+    <div>
+      ImpactResult
+    </div>
+);
 
-// ImpactResult.propTypes = {
-// };
+ImpactResult.propTypes = {
+};
 
-// ImpactResult.defaultProps = {
-// };
+ImpactResult.defaultProps = {
+};
 
-// export default ImpactResult;
+export default ImpactResult;

@@ -3,13 +3,10 @@ import React from 'react';
 
 // Components
 import { Grid } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/core/styles';
-import CategoryRow from './CategoryRow';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 // Styles
-// import styles from '../styles/grocery-section.module.css';
-import { createMuiTheme } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
+import CategoryRow from './CategoryRow';
 
 // REFACTOR: Using fake setion titles
 const SECTIONS = ['Produce', 'Meat and Seafood', 'Bakery', 'Etc.'];

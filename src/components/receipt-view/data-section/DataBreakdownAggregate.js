@@ -1,21 +1,21 @@
-// import PropTypes from 'prop-types';
-// import React from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 
-// // Components
+// Components
 
-// // Styles
-// import styles from '../styles/data-breakdown-aggregate.module.css';
+// Styles
+import styles from '../styles/data-breakdown-aggregate.module.css';
 
-// const DataBreakdownAggregate = () => (
-//     <div>
-//       DataBreakdownAggregate
-//     </div>
-// );
+const DataBreakdownAggregate = () => (
+    <div>
+      DataBreakdownAggregate
+    </div>
+);
 
-// DataBreakdownAggregate.propTypes = {
-// };
+DataBreakdownAggregate.propTypes = {
+};
 
-// DataBreakdownAggregate.defaultProps = {
-// };
+DataBreakdownAggregate.defaultProps = {
+};
 
-// export default DataBreakdownAggregate;
+export default DataBreakdownAggregate;

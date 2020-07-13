@@ -1,21 +1,21 @@
-// import PropTypes from 'prop-types';
-// import React from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 
-// // Components
+// Components
 
-// // Styles
-// import styles from '../styles/impact-donut-aggregate.module.css';
+// Styles
+import styles from '../styles/impact-donut-aggregate.module.css';
 
-// const ImpactDonutAggregate = () => (
-//     <div>
-//       ImpactDonutAggregate
-//     </div>
-// );
+const ImpactDonutAggregate = () => (
+    <div>
+      ImpactDonutAggregate
+    </div>
+);
 
-// ImpactDonutAggregate.propTypes = {
-// };
+ImpactDonutAggregate.propTypes = {
+};
 
-// ImpactDonutAggregate.defaultProps = {
-// };
+ImpactDonutAggregate.defaultProps = {
+};
 
-// export default ImpactDonutAggregate;
+export default ImpactDonutAggregate;

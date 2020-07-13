@@ -1,23 +1,28 @@
-// import PropTypes from 'prop-types';
-// import React from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 
-// // Components
-// import DataBreakdownAggregate from './DataBreakdownAggregate';
-// import ImpactDonutAggregate from './ImpactDonutAggregate';
+// Components
+import { Grid } from '@material-ui/core';
+import DataBreakdownAggregate from './DataBreakdownAggregate';
+import ImpactDonutAggregate from './ImpactDonutAggregate';
 
-// // Styles
-// import styles from '../styles/data-section.module.css';
+// Styles
+import styles from '../styles/data-section.module.css';
 
-// const DataSection = () => (
-//     <div>
-//       DataSection
-//     </div>
-// );
+const DataSection = () => (
+    <Grid
+      item
+      sm={12}
+      className={styles.dataSectionGrid}
+    >
+      DataSection
+    </Grid>
+);
 
-// DataSection.propTypes = {
-// };
+DataSection.propTypes = {
+};
 
-// DataSection.defaultProps = {
-// };
+DataSection.defaultProps = {
+};
 
-// export default DataSection;
+export default DataSection;

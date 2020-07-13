@@ -1,21 +1,31 @@
-// import PropTypes from 'prop-types';
-// import React from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 
-// // Components
+// Components
+import { Grid, Typography } from '@material-ui/core';
 
-// // Styles
-// import styles from '../styles/impact-alternatives.module.css';
+// Styles
+import styles from '../styles/impact-alternatives.module.css';
 
-// const ImpactAlternatives = () => (
-//     <div>
-//       ImpactAlternatives
-//     </div>
-// );
+const ImpactAlternatives = () => (
+  <Grid
+    item
+    container
+    sm={12}
+    className={styles.alternativesGrid}
+  >
+    <Typography
+      variant="h6"
+      gutterBottom>
+        Impact Alternatives
+    </Typography>
+  </Grid>
+);
 
-// ImpactAlternatives.propTypes = {
-// };
+ImpactAlternatives.propTypes = {
+};
 
-// ImpactAlternatives.defaultProps = {
-// };
+ImpactAlternatives.defaultProps = {
+};
 
-// export default ImpactAlternatives;
+export default ImpactAlternatives;
