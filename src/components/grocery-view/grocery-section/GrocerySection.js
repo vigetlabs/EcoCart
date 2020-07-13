@@ -5,7 +5,6 @@ import React from 'react';
 import { Grid, Typography, ThemeProvider, IconButton } from '@material-ui/core';
 import CategoryRow from './CategoryRow';
 import InfoSection from '../info-section/InfoSection';
-import { ChevronRightIcon, ChevronLeftIcon } from '@material-ui/icons';
 
 // Styles
 import styles from '../styles/grocery-section.module.css';

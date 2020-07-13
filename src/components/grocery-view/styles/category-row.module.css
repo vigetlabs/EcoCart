@@ -1,6 +1,8 @@
 .row {
   width: 95vw;
-  overflow-x: scroll;
-  overflow-y: hidden;
   display: inline-flex;
+}
+
+.container {
+  padding: 1.0875rem;
 }
