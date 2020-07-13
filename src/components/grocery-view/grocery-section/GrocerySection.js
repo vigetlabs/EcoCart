@@ -5,6 +5,7 @@ import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CategoryRow from './CategoryRow';
+import InfoSection from '../info-section/InfoSection';
 
 // Styles
 // import styles from '../styles/grocery-section.module.css';
@@ -34,6 +35,7 @@ const GrocerySection = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <InfoSection />
       <div>
         <Typography variant="h3" component="h1">
           Groceries
