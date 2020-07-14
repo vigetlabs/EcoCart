@@ -1,0 +1,9 @@
+.receiptSectionBox {
+  outline: 1px solid grey;
+  background-color: #F5F5F5;
+  padding: 3em;
+}
+
+.impactResultBox {
+  padding-top: 3em;
+}

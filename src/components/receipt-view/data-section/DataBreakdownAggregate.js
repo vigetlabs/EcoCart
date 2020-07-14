@@ -1,21 +1,72 @@
 // import PropTypes from 'prop-types';
-// import React from 'react';
+import React from 'react';
 
-// // Components
+// Components
+import { Grid, Typography } from '@material-ui/core';
 
-// // Styles
-// import styles from '../styles/data-breakdown-aggregate.module.css';
+// Styles
+import styles from '../styles/data-breakdown-aggregate.module.css';
 
-// const DataBreakdownAggregate = () => (
-//     <div>
-//       DataBreakdownAggregate
-//     </div>
-// );
+const DataBreakdownAggregate = () => (
+    <Grid
+      container
+      spacing={4}
+      className={styles.breakdownBox}
+    >
+        <Grid
+          item
+          sm={12}
+          className={styles.breakdownItem}
+        >
+          <Typography
+            variant='subtitle1'
+          >
+            Carbon Emissions
+          </Typography>
+        </Grid>
 
-// DataBreakdownAggregate.propTypes = {
-// };
+        <Grid
+          item
+          sm={12}
+          className={styles.breakdownItem}
+        >
+          <Typography
+            variant='subtitle1'
+          >
+            Land Use
+          </Typography>
+        </Grid>
 
-// DataBreakdownAggregate.defaultProps = {
-// };
+        <Grid
+          item
+          sm={12}
+          className={styles.breakdownItem}
+        >
+          <Typography
+            variant='subtitle1'
+          >
+            Water Use
+          </Typography>
+        </Grid>
 
-// export default DataBreakdownAggregate;
+        <Grid
+          item
+          sm={12}
+          className={styles.breakdownItem}
+        >
+          <Typography
+            variant='subtitle1'
+          >
+            Eutrophication
+          </Typography>
+        </Grid>
+    </Grid>
+);
+
+DataBreakdownAggregate.propTypes = {
+};
+
+DataBreakdownAggregate.defaultProps = {
+};
+
+export default DataBreakdownAggregate;

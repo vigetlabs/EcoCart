@@ -1,23 +1,59 @@
 // import PropTypes from 'prop-types';
-// import React from 'react';
+import React from 'react';
 
-// // Components
-// import DataBreakdownAggregate from './DataBreakdownAggregate';
-// import ImpactDonutAggregate from './ImpactDonutAggregate';
+// Components
+import { Grid, Typography } from '@material-ui/core';
+import DataBreakdownAggregate from './DataBreakdownAggregate';
+import ImpactDonutAggregate from './ImpactDonutAggregate';
 
-// // Styles
-// import styles from '../styles/data-section.module.css';
+// Styles
+import styles from '../styles/data-section.module.css';
 
-// const DataSection = () => (
-//     <div>
-//       DataSection
-//     </div>
-// );
+const DataSection = () => (
+    <Grid
+      item
+      container
+      sm={12}
+      spacing={4}
+      className={styles.dataSectionBox}
+    >
 
-// DataSection.propTypes = {
-// };
+      <Grid
+        item
+        sm={12}
+        className={styles.dataHeaderBox}
+      >
+        <Typography
+          variant="h4"
+          gutterBottom
+        >
+          Environmental Impact Breakdown
+        </Typography>
+      </Grid>
 
-// DataSection.defaultProps = {
-// };
+      <Grid
+        item
+        sm={6}
+        className={styles.donutBox}
+      >
+        <ImpactDonutAggregate />
+      </Grid>
 
-// export default DataSection;
+      <Grid
+        item
+        sm={6}
+        className={styles.dataBreakdownBox}
+      >
+        <DataBreakdownAggregate />
+      </Grid>
+
+    </Grid>
+);
+
+DataSection.propTypes = {
+};
+
+DataSection.defaultProps = {
+};
+
+export default DataSection;

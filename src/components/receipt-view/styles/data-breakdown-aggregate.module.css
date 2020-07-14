@@ -1,0 +1,8 @@
+.breakdownItem {
+  min-height: 10vh;
+  text-align: center;
+}
+
+.breakdownBox {
+  padding: 3em 1em;
+}
