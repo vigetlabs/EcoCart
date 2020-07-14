@@ -8,27 +8,6 @@ import GroceryItem from './GroceryItem';
 // Styles
 import styles from '../styles/category-row.module.css';
 
-<<<<<<< HEAD
-const CategoryRow = ({ category }) => {
-  // REFACTOR: Using fake data right now
-  const groceryItems = [1, 2, 3, 4, 5, 6].map((index) => (
-    <Grid item>
-      <GroceryItem key={index} />
-    </Grid>
-  ));
-  return (
-    <div>
-      <h2>{category}</h2>
-      <div className={styles.row}>{groceryItems}</div>
-    </div>
-  );
-};
-
-CategoryRow.propTypes = {};
-
-CategoryRow.defaultProps = {};
-
-=======
 // REFACTOR: Use real data here
 const ITEMS = ['broccoli', 'corn', 'bread', 'milk', 'beef', 'cheese'];
 
@@ -51,5 +30,4 @@ CategoryRow.propTypes = {};
 
 CategoryRow.defaultProps = {};
 
->>>>>>> grocery-item
 export default CategoryRow;
