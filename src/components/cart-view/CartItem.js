@@ -1,21 +1,37 @@
 // import PropTypes from 'prop-types';
-// import React from 'react';
+import React from 'react';
 
-// // Components
+// Components
+import {
+  Card, CardContent, Typography,
+} from '@material-ui/core';
 
-// // Styles
-// import styles from './styles/cart-item.module.css';
+// Styles
+import styles from './styles/cart-item.module.css';
 
-// const CartItem = () => (
-//     <div>
-//       Cart Item
-//     </div>
-// );
+const CartItem = ({ name, amount }) => (
+    <Card
+      className={styles.listItemCard}
+    >
+      <CardContent>
+        <Typography
+          variant='h5'
+        >
+          {name}
+        </Typography>
+        <Typography
+          variant='body1'
+        >
+          {amount}
+        </Typography>
+      </CardContent>
+  </Card>
+);
 
-// CartItem.propTypes = {
-// };
+CartItem.propTypes = {
+};
 
-// CartItem.defaultProps = {
-// };
+CartItem.defaultProps = {
+};
 
-// export default CartItem;
+export default CartItem;

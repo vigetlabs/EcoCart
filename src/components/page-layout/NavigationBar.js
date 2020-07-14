@@ -9,21 +9,27 @@ import HomeIcon from '@material-ui/icons/Home';
 // Styles
 import styles from './styles/navigation-bar.module.css';
 
-const NavigationBar = ({ openModal }) => (
+const NavigationBar = ({ toggleModal }) => (
   <div className={styles.container}>
     <Grid container justify="space-between">
       <Grid item>
         <div>
-          <Button className={styles.button}>
+          <Button
+            href='/'
+            className={styles.button}
+          >
             <HomeIcon className={styles.icon} />
           </Button>
-          <Button className={styles.button}>
+          <Button
+            className={styles.button}
+            href='/#groceries'
+          >
             <StorefrontIcon className={styles.icon} />
           </Button>
         </div>
       </Grid>
       <Grid item>
-        <Button className={styles.button} onClick={openModal}>
+        <Button className={styles.button} onClick={toggleModal}>
           <ShoppingBasketIcon className={styles.icon} />
         </Button>{' '}
       </Grid>
