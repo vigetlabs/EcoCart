@@ -6,3 +6,9 @@
 .container {
   padding: 1.0875rem;
 }
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

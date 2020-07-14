@@ -34,24 +34,28 @@ const CategoryRow = ({ category }) => {
     <div className={styles.container}>
       <Typography variant="h4">{category}</Typography>
       <div className={styles.row}>
-        <IconButton
-          onClick={handleLeft}
-          size="medium"
-          edge="start"
-          aria-label="left">
-          <ChevronLeftIcon />
-        </IconButton>
+        <div className={styles.iconContainer}>
+          <IconButton
+            onClick={handleLeft}
+            size="medium"
+            edge="start"
+            aria-label="left">
+            <ChevronLeftIcon />
+          </IconButton>
+        </div>
         {groceryItems[startIndex]}
         {groceryItems[startIndex + 1]}
         {groceryItems[startIndex + 2]}
         {groceryItems[startIndex + 3]}
-        <IconButton
-          onClick={handleRight}
-          size="medium"
-          edge="end"
-          aria-label="right">
-          <ChevronRightIcon />
-        </IconButton>
+        <div className={styles.iconContainer}>
+          <IconButton
+            onClick={handleRight}
+            size="medium"
+            edge="end"
+            aria-label="right">
+            <ChevronRightIcon />
+          </IconButton>
+        </div>
       </div>
     </div>
   );
