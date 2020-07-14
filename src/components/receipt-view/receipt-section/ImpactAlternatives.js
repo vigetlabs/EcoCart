@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
@@ -10,7 +10,6 @@ import styles from '../styles/impact-alternatives.module.css';
 const ImpactAlternatives = () => (
   <Grid
     item
-    container
     sm={12}
     className={styles.alternativesGrid}
   >

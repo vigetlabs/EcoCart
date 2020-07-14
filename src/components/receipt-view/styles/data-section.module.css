@@ -1,8 +1,4 @@
-.dataSection {
-  flex-grow: 1;
-}
-
 .dataSectionGrid {
   flex-grow: 1;
-  border: 2px solid gold;
+  outline: 2px solid gold;
 }

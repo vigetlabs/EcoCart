@@ -1,7 +1,9 @@
-.receiptSectionGrid {
-  flex-grow: 1;
-  border: 1px solid grey;
+.receiptSectionBox {
+  outline: 1px solid grey;
   background-color: #F5F5F5;
-  padding-top: 1em;
-  min-height: 1000px;
+  padding: 3em;
+}
+
+.impactResultBox {
+  padding-top: 3em;
 }

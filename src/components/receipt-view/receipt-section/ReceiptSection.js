@@ -5,6 +5,7 @@ import React from 'react';
 import { Grid, Typography, Divider } from '@material-ui/core';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import ReceiptList from './ReceiptList';
+import ImpactResult from './ImpactResult';
 
 // Styles
 import styles from '../styles/receipt-section.module.css';
@@ -22,25 +23,30 @@ const ReceiptSection = () => {
       <Grid
         item
         container
-        sm={12}
-        spacing={4}
-        className={styles.receiptSectionGrid}
+        justify='space-around'
+        className={styles.receiptSectionBox}
       >
+
         <Grid
           item
           container
           sm={12}
+          className={styles.receiptDownloadBox}
         >
+
           <Grid item sm={11}/>
+
           <Grid item sm={1}>
             <GetAppIcon/>
           </Grid>
+
         </Grid>
+
         <Grid
           item
           sm={12}
           spacing={2}
-          className={styles.receiptSectionHeader}
+          className={styles.receiptHeaderBox}
         >
           <Typography
             align='center'
@@ -55,15 +61,31 @@ const ReceiptSection = () => {
             EcoCart - {getDate()}
           </Typography>
         </Grid>
+
         <Grid sm={12} item>
           <Divider variant='middle' />
         </Grid>
+
         <Grid
           item
           sm={12}
+          className={styles.receiptListBox}
         >
           <ReceiptList/>
         </Grid>
+
+        <Grid sm={12} item>
+          <Divider variant='middle' />
+        </Grid>
+
+        <Grid
+          item
+          sm={12}
+          className={styles.impactResultBox}
+        >
+          <ImpactResult />
+        </Grid>
+
       </Grid>
   );
 };

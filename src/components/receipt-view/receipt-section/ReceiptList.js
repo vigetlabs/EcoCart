@@ -4,7 +4,6 @@ import React from 'react';
 // Components
 import { List, Grid, Divider } from '@material-ui/core';
 import ReceiptListItem from './ReceiptListItem';
-import ImpactResult from './ImpactResult';
 
 // Styles
 import styles from '../styles/receipt-list.module.css';
@@ -49,9 +48,7 @@ const dummyData = [
 ];
 
 const ReceiptList = () => {
-  const generateList = dummyData.map((item, index) => {
-    console.log('lint');
-    return (
+  const generateList = dummyData.map((item, index) => (
     <>
       <ReceiptListItem name={item.name} cost={item.cost} key={item.name} />
       {index !== dummyData.length - 1
@@ -59,30 +56,16 @@ const ReceiptList = () => {
         : null
       }
     </>
-    );
-  });
+  ));
 
   return (
   <Grid
     className={styles.listBox}
-    justify="center"
-    alignItems="center"
-    container
+    item
   >
-    <Grid
-      item
-      sm={11}
-    >
       <List>
         {generateList}
       </List>
-    </Grid>
-    <Grid
-      item
-      sm={11}
-    >
-      <ImpactResult />
-    </Grid>
   </Grid>
   );
 };

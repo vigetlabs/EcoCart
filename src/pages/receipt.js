@@ -7,31 +7,19 @@ import ImpactAlternatives from '../components/receipt-view/receipt-section/Impac
 import DataSection from '../components/receipt-view/data-section/DataSection';
 import SEO from '../components/seo';
 
-// styles
-import styles from './styles/receipt.module.css';
-
 const ReceiptPage = () => (
-  <Grid
-    container
-    direction="row"
-    justify="center"
-    alignItems="center"
-    sm={12}
-    className={styles.receiptPage}
-  >
+  <>
+  <SEO title="Receipt" />
     <Grid
-      containter
+      container
       item
       sm={9}
-      className={styles.receiptBody}
-      spacing={4}
     >
-      <SEO title="Receipt" />
       <ReceiptSection />
       <ImpactAlternatives/>
       <DataSection />
     </Grid>
-  </Grid>
+  </>
 );
 
 export default ReceiptPage;
