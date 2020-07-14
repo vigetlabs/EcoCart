@@ -24,7 +24,8 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-modal": "^3.11.2",
-    "react-router": "^5.2.0"
+    "react-router": "^5.2.0",
+    "victory": "^35.0.3"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^5.0.0",
