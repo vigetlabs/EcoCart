@@ -11,12 +11,12 @@ const ImpactAlternatives = () => (
   <Grid
     item
     sm={12}
-    className={styles.alternativesGrid}
+    className={styles.alternativesBox}
   >
     <Typography
-      variant="h6"
+      variant="h4"
       gutterBottom>
-        Impact Alternatives
+        High Impact Alternatives
     </Typography>
   </Grid>
 );

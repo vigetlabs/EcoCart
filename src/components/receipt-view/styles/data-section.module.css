@@ -1,4 +1,4 @@
-.dataSectionGrid {
-  flex-grow: 1;
-  outline: 2px solid gold;
+.dataSectionBox {
+    padding: 3em 1em;
+    min-height: 30vh;
 }
