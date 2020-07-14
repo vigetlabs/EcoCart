@@ -5,12 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // Components
 import { Grid } from '@material-ui/core';
+import CartModal from '../cart-view/CartModal';
 import Header from './Header';
 import NavigationBar from './NavigationBar';
 
@@ -28,10 +29,17 @@ const Layout = ({ children }) => {
     }
   `);
 
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+  };
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <NavigationBar />
+      <NavigationBar toggleModal={toggleModal} />
+      <CartModal open={modalOpen} toggleModal={toggleModal} />
       <div className={styles.body}>
       <Grid
         container
