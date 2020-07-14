@@ -2,18 +2,8 @@
 import React from 'react';
 
 // Components
-import {
-<<<<<<< HEAD
-  Grid,
-  Typography,
-  ThemeProvider,
-  createMuiTheme,
-} from '@material-ui/core';
-=======
-  Grid, Typography, ThemeProvider,
-} from '@material-ui/core';
+import { Grid, Typography, ThemeProvider } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
->>>>>>> main
 import CategoryRow from './CategoryRow';
 import InfoSection from '../info-section/InfoSection';
 
@@ -22,16 +12,10 @@ import styles from '../styles/grocery-section.module.css';
 
 // REFACTOR: Using fake setion titles
 const SECTIONS = ['Produce', 'Meat and Seafood', 'Bakery', 'Etc.'];
-<<<<<<< HEAD
 const GROCERY_INFO = `Click through product categories, view item grades,
                       and add items to your cart straight from this page,
                       or click an item to view more detailed information
                       including details on its environmental impact.`;
-=======
-const GROCERY_INFO = 'Click through product categories, view item grades, and add items to your cart straight from this page, or click an item to view more detailed information including details on its environmental impact.';
-
-// const scroll = (setStartIndex) => {};
->>>>>>> main
 
 const GrocerySection = () => {
   // REFACTOR: Update for actual data
@@ -55,11 +39,7 @@ const GrocerySection = () => {
       <InfoSection />
       <div>
         <div className={styles.container}>
-          <Typography
-            variant="h3"
-            component="h1"
-            id='groceries'
-          >
+          <Typography variant="h3" component="h1" id="groceries">
             Groceries
           </Typography>
           <Typography variant="body1" component="p">
