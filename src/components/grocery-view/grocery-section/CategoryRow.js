@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 // Components
-import { Grid, Typography, IconButton } from '@material-ui/core';
+import { Typography, IconButton } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import GroceryItem from './GroceryItem';
@@ -22,12 +22,12 @@ const CategoryRow = ({ category }) => {
 
   const handleRight = () => {
     const delta = Math.min(4, groceryItems.length - startIndex - 4);
-    if (delta > 0) setStartIndex((startIndex) => startIndex + delta);
+    if (delta > 0) setStartIndex((index) => index + delta);
   };
 
   const handleLeft = () => {
     const delta = Math.min(4, startIndex);
-    setStartIndex((startIndex) => startIndex - delta);
+    setStartIndex((index) => index - delta);
   };
 
   return (
