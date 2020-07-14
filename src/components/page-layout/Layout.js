@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // Components
+import { Grid } from '@material-ui/core';
 import Header from './Header';
 import NavigationBar from './NavigationBar';
 
@@ -32,8 +33,18 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <NavigationBar />
       <div className={styles.body}>
-        <main>{children}</main>
-        <footer>
+      <Grid
+        container
+        justify="center"
+        alignItems="center"
+        sm={12}
+        className={styles.layoutBody}
+      >
+          {children}
+      </Grid>
+        <footer
+          className={styles.layoutFooter}
+        >
           <p>
             ©2020, A <a href="https://www.viget.com/">Viget</a> Project
           </p>

@@ -1,22 +1,79 @@
 // import PropTypes from 'prop-types';
-// import React from 'react';
+import React from 'react';
 
-// // Components
-// import ReceiptListItem from './ReceiptListItem';
+// Components
+import { List, Grid, Divider } from '@material-ui/core';
+import ReceiptListItem from './ReceiptListItem';
 
-// // Styles
-// import styles from '../styles/receipt-list.module.css';
+// Styles
+import styles from '../styles/receipt-list.module.css';
 
-// const ReceiptList = () => (
-//     <div>
-//       ReceiptList
-//     </div>
-// );
+const dummyData = [
+  {
+    name: 'burger',
+    cost: '100',
+  },
+  {
+    name: 'ham',
+    cost: '1000',
+  },
+  {
+    name: 'apple',
+    cost: '10',
+  },
+  {
+    name: 'snails',
+    cost: '100000',
+  },
+  {
+    name: 'cheese',
+    cost: '1',
+  },
+  {
+    name: 'carrot',
+    cost: '67',
+  },
+  {
+    name: 'orange',
+    cost: '672',
+  },
+  {
+    name: 'cheeze-its',
+    cost: '55',
+  },
+  {
+    name: 'Kool-Aid',
+    cost: '33',
+  },
+];
 
-// ReceiptList.propTypes = {
-// };
+const ReceiptList = () => {
+  const generateList = dummyData.map((item, index) => (
+    <>
+      <ReceiptListItem name={item.name} cost={item.cost} key={item.name} />
+      {index !== dummyData.length - 1
+        ? <Divider variant='inset'/>
+        : null
+      }
+    </>
+  ));
 
-// ReceiptList.defaultProps = {
-// };
+  return (
+  <Grid
+    className={styles.listBox}
+    item
+  >
+      <List>
+        {generateList}
+      </List>
+  </Grid>
+  );
+};
 
-// export default ReceiptList;
+ReceiptList.propTypes = {
+};
+
+ReceiptList.defaultProps = {
+};
+
+export default ReceiptList;

@@ -1,0 +1,15 @@
+.itemTitle {
+  width: 50%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.itemCost {
+  width: 50%;
+  text-align: right;
+}
+
+.listItem {
+  margin-top: 20px;
+  height: 80px;
+}
