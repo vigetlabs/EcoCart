@@ -1,0 +1,9 @@
+.dropdown {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.ingredients {
+  padding-top: 1rem;
+  padding-right: 1rem;
+}

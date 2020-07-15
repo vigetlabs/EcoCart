@@ -1,0 +1,23 @@
+.modal {
+  outline: 0;
+  position: absolute;
+  width: 60vw;
+  height: 90vh;
+  top: 5%;
+  left: 20%;
+  margin: auto;
+}
+
+.grid {
+  height: 100%;
+}
+
+.square {
+  height: 40vh;
+  width: 30vw;
+}
+
+.picture {
+  width: 25vw;
+  height: 35vh;
+}
