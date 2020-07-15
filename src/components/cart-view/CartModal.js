@@ -8,6 +8,7 @@ import {
   Typography,
   Button,
 } from '@material-ui/core';
+import { Link } from 'gatsby';
 import CartItem from './CartItem';
 
 // Styles
@@ -59,19 +60,24 @@ const CartModal = ({ open, toggleModal, cartState }) => {
             sm={12}
             className={styles.cartButtonBox}
           >
-            <Button
-              href='/receipt'
-              variant="contained"
-              color="secondary"
-              className={styles.cartButton}
+            <Link
+              to={'/receipt'}
+              style={{ textDecoration: 'none' }}
             >
-              <Typography
-                variant='h5'
-                align='center'
+              <Button
+                onClick={toggleModal}
+                variant="contained"
+                color="secondary"
+                className={styles.cartButton}
               >
-                Checkout
-              </Typography>
-            </Button>
+                <Typography
+                  variant='h5'
+                  align='center'
+                >
+                  Checkout
+                </Typography>
+              </Button>
+            </Link>
           </Grid>
 
         </Grid>
