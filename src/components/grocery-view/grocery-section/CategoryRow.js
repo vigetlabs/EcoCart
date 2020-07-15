@@ -19,7 +19,11 @@ const CategoryRow = ({ category, cartState, setCartState }) => {
   const groceryItems = Object.keys(cartState).map((itemKey) => {
     if (foodData[itemKey].other.category.includes(category)) {
       return (
-        <GroceryItem key={itemKey} item={itemKey} />
+        <GroceryItem
+          cartState={cartState}
+          setCartState={setCartState}
+          key={itemKey}
+          item={itemKey} />
       );
     }
     return null;

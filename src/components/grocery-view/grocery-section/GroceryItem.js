@@ -19,27 +19,31 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 // Styles
 import styles from '../styles/grocery-item.module.css';
 
-// Utils
-import { getUrl } from './placeholder-data';
+// Data
+import foodData from '../../../../content/food-data.json';
 
-const getImage = (item) => getUrl(item);
+const GroceryItem = ({ item, cartState, setCartState }) => {
+  const itemData = foodData[item];
 
-const capitalize = (word) => word.charAt(0).toUpperCase() + word.slice(1);
+  const handleAdd = () => {
+    const newData = { ...cartState };
+    newData[item] += 1;
+    setCartState(newData);
+  };
 
-const GroceryItem = ({ item }) => (
-  // REFACTOR: Replace fake static data here
+  return (
   <div className={styles.item}>
     <Card className={styles.itemCard} container elevated enabled>
       <CardMedia
         component="img"
         alt={item}
         height="240"
-        image={getImage(item)}
+        image={itemData.other.imageUrl}
         title={item}
       />
       <CardContent>
         <Typography variant="h5" component="h2">
-          {capitalize(item)}
+          {item}
         </Typography>
         <Button variant="text" size="small" endIcon={<ChevronRightIcon />}>
           View Details
@@ -51,13 +55,15 @@ const GroceryItem = ({ item }) => (
           variant="contained"
           color="primary"
           size="small"
-          className={styles.cartButton}>
-          Add To Cart
+          className={styles.cartButton}
+          onClick={handleAdd}>
+          {cartState[item]}
         </Button>
       </CardActions>
     </Card>
   </div>
-);
+  );
+};
 
 // GroceryItem.propTypes = {
 // };
