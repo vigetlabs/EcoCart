@@ -22,7 +22,7 @@ const GrocerySection = ({ cartState, setCartState }) => {
   // REFACTOR: Update for actual data
   const rows = categories.map((section) => (
     <Grid item>
-      <CategoryRow category={section} />
+      <CategoryRow cartState={cartState} setCartState={setCartState} category={section} />
     </Grid>
   ));
 

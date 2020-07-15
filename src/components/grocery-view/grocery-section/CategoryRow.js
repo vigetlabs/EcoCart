@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 // Components
-import { Grid, Typography, IconButton } from '@material-ui/core';
+import { Typography, IconButton } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import GroceryItem from './GroceryItem';
@@ -10,24 +10,34 @@ import GroceryItem from './GroceryItem';
 // Styles
 import styles from '../styles/category-row.module.css';
 
-// REFACTOR: Use real data here
-const ITEMS = ['broccoli', 'corn', 'bread', 'milk', 'beef', 'cheese'];
+// Data
+import foodData from '../../../../content/food-data.json';
 
-const CategoryRow = ({ category }) => {
+const CategoryRow = ({ category, cartState, setCartState }) => {
   const [startIndex, setStartIndex] = useState(0);
-  // REFACTOR: Using fake data right now
-  const groceryItems = ITEMS.map((item) => (
-    <GroceryItem key={item} item={item} />
-  ));
+
+  const groceryItems = Object.keys(cartState).map((itemKey) => {
+    if (foodData[itemKey].other.category.includes(category)) {
+      return (
+        <GroceryItem key={itemKey} item={itemKey} />
+      );
+    }
+    return null;
+  }).filter((isNotNull) => {
+    if (isNotNull) {
+      return true;
+    }
+    return false;
+  });
 
   const handleRight = () => {
     const delta = Math.min(4, groceryItems.length - startIndex - 4);
-    if (delta > 0) setStartIndex((startIndex) => startIndex + delta);
+    if (delta > 0) setStartIndex(startIndex + delta);
   };
 
   const handleLeft = () => {
     const delta = Math.min(4, startIndex);
-    setStartIndex((startIndex) => startIndex - delta);
+    setStartIndex(startIndex - delta);
   };
 
   return (

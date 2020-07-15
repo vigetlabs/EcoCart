@@ -26,7 +26,7 @@
       "servingNum":0,
       "servingUnit":"",
       "servingKilo":0,
-      "category":[""],
+      "category":["All", "Fruits"],
       "imageUrl":""
     }
   },
@@ -57,7 +57,7 @@
       "servingNum":0,
       "servingUnit":"",
       "servingKilo":0,
-      "category":[""],
+      "category":["All", "Fruits"],
       "imageUrl":""
     }
   },
@@ -88,7 +88,7 @@
       "servingNum":0,
       "servingUnit":"",
       "servingKilo":0,
-      "category":[""],
+      "category":["All", "Fruits"],
       "imageUrl":""
     }
   },
@@ -119,7 +119,7 @@
       "servingNum":0,
       "servingUnit":"",
       "servingKilo":0,
-      "category":[""],
+      "category":["All", "Meat"],
       "imageUrl":""
     }
   },
@@ -150,7 +150,7 @@
       "servingNum":0,
       "servingUnit":"",
       "servingKilo":0,
-      "category":[""],
+      "category":["All", "Meat"],
       "imageUrl":""
     }
   },
@@ -181,7 +181,7 @@
       "servingNum":0,
       "servingUnit":"",
       "servingKilo":0,
-      "category":[""],
+      "category":["All", "Meat"],
       "imageUrl":""
     }
   },
@@ -212,7 +212,7 @@
       "servingNum":0,
       "servingUnit":"",
       "servingKilo":0,
-      "category":[""],
+      "category":["All", "Veggies"],
       "imageUrl":""
     }
   },
@@ -243,7 +243,7 @@
       "servingNum":0,
       "servingUnit":"",
       "servingKilo":0,
-      "category":[""],
+      "category":["All", "Veggies"],
       "imageUrl":""
     }
   },
@@ -274,7 +274,7 @@
       "servingNum":0,
       "servingUnit":"",
       "servingKilo":0,
-      "category":[""],
+      "category":["All", "Veggies"],
       "imageUrl":""
     }
   }
