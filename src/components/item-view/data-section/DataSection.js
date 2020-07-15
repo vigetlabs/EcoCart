@@ -8,6 +8,7 @@ import ImpactDonut from './ImpactDonut';
 
 // Styles
 import styles from '../styles/data-section.module.css';
+import DataBreakdown from './DataBreakdown';
 
 const DataSection = ({ item }) => (
   <Grid container justify="center">
@@ -18,7 +19,7 @@ const DataSection = ({ item }) => (
       <ImpactDonut item={item} />
     </Grid>
     <Grid item className={styles.square}>
-      <h1>Details!</h1>
+      <DataBreakdown item={item} />
     </Grid>
   </Grid>
 );
