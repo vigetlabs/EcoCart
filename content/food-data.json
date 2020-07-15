@@ -1,0 +1,281 @@
+{
+  "Apple": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":[""],
+      "imageUrl":""
+    }
+  },
+  "Pear": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":[""],
+      "imageUrl":""
+    }
+  },
+  "Banana": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":[""],
+      "imageUrl":""
+    }
+  },
+  "Beef": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":[""],
+      "imageUrl":""
+    }
+  },
+  "Lamb": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":[""],
+      "imageUrl":""
+    }
+  },
+  "Chicken": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":[""],
+      "imageUrl":""
+    }
+  },
+  "Corn": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":[""],
+      "imageUrl":""
+    }
+  },
+  "Potato": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":[""],
+      "imageUrl":""
+    }
+  },
+  "Beans": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":[""],
+      "imageUrl":""
+    }
+  }
+}
