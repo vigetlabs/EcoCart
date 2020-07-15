@@ -9,6 +9,7 @@ import styles from './styles/item-modal.module.css';
 
 // Utils
 import { getUrl } from '../grocery-view/grocery-section/placeholder-data';
+import DataSection from './data-section/DataSection';
 
 const closeModal = (setModalOpen) => {
   setModalOpen(false);
@@ -38,14 +39,7 @@ const ItemModal = ({ isModalOpen, setModalOpen, item }) => (
           </Grid>
         </Grid>
         <Grid item>
-          <Grid container justify="center">
-            <Grid item className={styles.square}>
-              <h1>Donut!</h1>
-            </Grid>
-            <Grid item className={styles.square}>
-              <h1>Details!</h1>
-            </Grid>
-          </Grid>
+          <DataSection item={item} />
         </Grid>
       </Grid>
     </Paper>

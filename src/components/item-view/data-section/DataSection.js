@@ -1,23 +1,30 @@
 // import PropTypes from 'prop-types';
-// import React from 'react';
+import React from 'react';
 
-// // Components
+// Components
+import { Grid, Typography } from '@material-ui/core';
 // import DataBreakdown from './DataBreakdown';
-// import ImpactDonut from './ImpactDonut';
+import ImpactDonut from './ImpactDonut';
 
-// // Styles
-// import styles from '../styles/data-section.module.css';
+// Styles
+import styles from '../styles/data-section.module.css';
 
-// const DataSection = () => (
-//     <div>
-//       DataSection
-//     </div>
-// );
+const DataSection = ({ item }) => (
+  <Grid container justify="center">
+    <Grid item className={styles.square}>
+      <Typography variant="h5" className={styles.envImpact}>
+        Environmental Impact
+      </Typography>
+      <ImpactDonut item={item} />
+    </Grid>
+    <Grid item className={styles.square}>
+      <h1>Details!</h1>
+    </Grid>
+  </Grid>
+);
 
-// DataSection.propTypes = {
-// };
+DataSection.propTypes = {};
 
-// DataSection.defaultProps = {
-// };
+DataSection.defaultProps = {};
 
-// export default DataSection;
+export default DataSection;
