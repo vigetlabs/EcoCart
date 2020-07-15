@@ -4,10 +4,10 @@ import React from 'react';
 import GrocerySection from '../components/grocery-view/grocery-section/GrocerySection';
 import SEO from '../components/seo';
 
-const IndexPage = () => (
+const IndexPage = ({ cartState, setCartState }) => (
   <>
     <SEO title="Home" />
-    <GrocerySection />
+    <GrocerySection cartState={cartState} setCartState={setCartState} />
   </>
 );
 

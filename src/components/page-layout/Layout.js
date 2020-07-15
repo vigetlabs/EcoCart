@@ -10,13 +10,26 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // Components
-import { Grid } from '@material-ui/core';
+import { Grid, ThemeProvider } from '@material-ui/core';
+import theme from '../../../theme';
 import CartModal from '../cart-view/CartModal';
 import Header from './Header';
 import NavigationBar from './NavigationBar';
 
 // Styles
 import styles from './styles/layout.module.css';
+
+// Data
+import foodList from '../../../content/food-list.json';
+
+// Functions
+const createInitFoodList = () => {
+  const initCart = [];
+  foodList.foods.forEach((item) => {
+    initCart[item] = 0;
+  });
+  return initCart;
+};
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,6 +42,7 @@ const Layout = ({ children }) => {
     }
   `);
 
+  const [cartState, setCartState] = useState(createInitFoodList());
   const [modalOpen, setModalOpen] = useState(false);
 
   const toggleModal = () => {
@@ -36,10 +50,10 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <NavigationBar toggleModal={toggleModal} />
-      <CartModal open={modalOpen} toggleModal={toggleModal} />
+      <CartModal cartState={cartState} open={modalOpen} toggleModal={toggleModal} />
       <div className={styles.body}>
       <Grid
         container
@@ -48,7 +62,7 @@ const Layout = ({ children }) => {
         sm={12}
         className={styles.layoutBody}
       >
-          {children}
+          {React.cloneElement(children, { cartState, setCartState })}
       </Grid>
         <footer
           className={styles.layoutFooter}
@@ -62,7 +76,7 @@ const Layout = ({ children }) => {
           </p>
         </footer>
       </div>
-    </>
+    </ThemeProvider>
   );
 };
 

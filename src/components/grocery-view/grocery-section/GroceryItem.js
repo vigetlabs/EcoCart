@@ -14,7 +14,7 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 // REFACTOR: Need a grade icon
-import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+// import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 // Styles
 import styles from '../styles/grocery-item.module.css';
