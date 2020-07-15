@@ -15,13 +15,14 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 // Styles
 import styles from '../styles/info-section.module.css';
 
+// Utils
+import capitalize from '../../utils';
+
 const getMenuItems = (exclusiveLimit) => {
   // Get all nonzero numbers in range
   const nums = [...Array(exclusiveLimit).keys()].filter((num) => num !== 0);
   return nums.map((num) => <MenuItem value={num}>{num}</MenuItem>);
 };
-
-const capitalize = (word) => word.charAt(0).toUpperCase() + word.slice(1);
 
 const handleChange = (event, setQuantity) => {
   setQuantity(event.target.value);

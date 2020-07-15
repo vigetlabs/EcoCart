@@ -19,10 +19,9 @@ import styles from '../styles/grocery-item.module.css';
 
 // Utils
 import { getUrl } from './placeholder-data';
+import capitalize from '../../utils';
 
 const getImage = (item) => getUrl(item);
-
-const capitalize = (word) => word.charAt(0).toUpperCase() + word.slice(1);
 
 const openModal = (setModalOpen) => {
   setModalOpen(true);
