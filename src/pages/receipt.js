@@ -7,7 +7,7 @@ import ImpactAlternatives from '../components/receipt-view/receipt-section/Impac
 import DataSection from '../components/receipt-view/data-section/DataSection';
 import SEO from '../components/seo';
 
-const ReceiptPage = () => (
+const ReceiptPage = ({ cartState }) => (
   <>
   <SEO title="Receipt" />
     <Grid
@@ -15,9 +15,9 @@ const ReceiptPage = () => (
       item
       sm={9}
     >
-      <ReceiptSection />
-      <ImpactAlternatives/>
-      <DataSection />
+      <ReceiptSection cartState={cartState} />
+      <ImpactAlternatives cartState={cartState} />
+      <DataSection cartState={cartState} />
     </Grid>
   </>
 );

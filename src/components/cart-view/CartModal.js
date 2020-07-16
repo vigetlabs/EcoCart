@@ -8,6 +8,7 @@ import {
   Typography,
   Button,
 } from '@material-ui/core';
+import { Link } from 'gatsby';
 import CartItem from './CartItem';
 
 // Styles
@@ -15,69 +16,15 @@ import styles from './styles/cart-modal.module.css';
 
 // Vars
 
-const dummyData = [
-  {
-    name: 'orange',
-    amount: 5,
-  },
-  {
-    name: 'peach',
-    amount: 3,
-  },
-  {
-    name: 'grape',
-    amount: 5,
-  },
-  {
-    name: 'beer',
-    amount: 1,
-  },
-  {
-    name: 'beef',
-    amount: 15,
-  },
-  {
-    name: 'Doritos',
-    amount: 2,
-  },
-  {
-    name: 'apples',
-    amount: 7,
-  },
-  {
-    name: 'orange',
-    amount: 5,
-  },
-  {
-    name: 'peach',
-    amount: 3,
-  },
-  {
-    name: 'grape',
-    amount: 5,
-  },
-  {
-    name: 'beer',
-    amount: 1,
-  },
-  {
-    name: 'beef',
-    amount: 15,
-  },
-  {
-    name: 'Doritos',
-    amount: 2,
-  },
-  {
-    name: 'apples',
-    amount: 7,
-  },
-];
-
-const CartModal = ({ open, toggleModal }) => {
-  const generateItems = dummyData.map((item) => (
-    <CartItem name={item.name} amount={item.amount} />
-  ));
+const CartModal = ({ open, toggleModal, cartState }) => {
+  const generateItems = Object.keys(cartState).map((itemKey) => {
+    if (cartState[itemKey] > 0) {
+      return (
+        <CartItem name={itemKey} amount={cartState[itemKey]} />
+      );
+    }
+    return null;
+  });
 
   return (
     <div>
@@ -113,19 +60,24 @@ const CartModal = ({ open, toggleModal }) => {
             sm={12}
             className={styles.cartButtonBox}
           >
-            <Button
-              href='/receipt'
-              variant="contained"
-              color="secondary"
-              className={styles.cartButton}
+            <Link
+              to={'/receipt'}
+              style={{ textDecoration: 'none' }}
             >
-              <Typography
-                variant='h5'
-                align='center'
+              <Button
+                onClick={toggleModal}
+                variant="contained"
+                color="secondary"
+                className={styles.cartButton}
               >
-                Checkout
-              </Typography>
-            </Button>
+                <Typography
+                  variant='h5'
+                  align='center'
+                >
+                  Checkout
+                </Typography>
+              </Button>
+            </Link>
           </Grid>
 
         </Grid>

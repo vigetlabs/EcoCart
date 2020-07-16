@@ -2,6 +2,7 @@ import React from 'react';
 
 // Componenets
 import { Button, Grid } from '@material-ui/core';
+import { Link } from 'gatsby';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import HomeIcon from '@material-ui/icons/Home';
@@ -14,18 +15,24 @@ const NavigationBar = ({ toggleModal }) => (
     <Grid container justify="space-between">
       <Grid item>
         <div>
+        <Link
+          to='/'
+        >
           <Button
-            href='/'
             className={styles.button}
           >
             <HomeIcon className={styles.icon} />
           </Button>
+        </Link>
+        <Link
+          to='/#groceries'
+        >
           <Button
             className={styles.button}
-            href='/#groceries'
           >
             <StorefrontIcon className={styles.icon} />
           </Button>
+        </Link>
         </div>
       </Grid>
       <Grid item>

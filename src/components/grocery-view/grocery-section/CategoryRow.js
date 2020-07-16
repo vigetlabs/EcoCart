@@ -10,15 +10,24 @@ import GroceryItem from './GroceryItem';
 // Styles
 import styles from '../styles/category-row.module.css';
 
-// REFACTOR: Use real data here
-const ITEMS = ['broccoli', 'corn', 'bread', 'milk', 'beef', 'cheese'];
+// Data
+import foodData from '../../../../content/food-data.json';
 
-const CategoryRow = ({ category }) => {
+const CategoryRow = ({ category, cartState, setCartState }) => {
   const [startIndex, setStartIndex] = useState(0);
-  // REFACTOR: Using fake data right now
-  const groceryItems = ITEMS.map((item) => (
-    <GroceryItem key={item} item={item} />
-  ));
+
+  const groceryItems = Object.keys(cartState).map((itemKey) => {
+    if (foodData[itemKey].other.category.includes(category)) {
+      return (
+        <GroceryItem
+          cartState={cartState}
+          setCartState={setCartState}
+          key={itemKey}
+          item={itemKey} />
+      );
+    }
+    return null;
+  }).filter((isNotNull) => isNotNull);
 
   const handleRight = () => {
     const delta = Math.min(4, groceryItems.length - startIndex - 4);

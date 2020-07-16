@@ -13,7 +13,7 @@ import styles from '../styles/receipt-section.module.css';
 // Variables
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-const ReceiptSection = () => {
+const ReceiptSection = ({ cartState }) => {
   const getDate = () => {
     const d = new Date();
     return `${MONTHS[d.getMonth()]} ${d.getDay()}, ${d.getFullYear()}`;
@@ -71,7 +71,7 @@ const ReceiptSection = () => {
           sm={12}
           className={styles.receiptListBox}
         >
-          <ReceiptList/>
+          <ReceiptList cartState={cartState} />
         </Grid>
 
         <Grid sm={12} item>
@@ -83,7 +83,7 @@ const ReceiptSection = () => {
           sm={12}
           className={styles.impactResultBox}
         >
-          <ImpactResult />
+          <ImpactResult cartState={cartState} />
         </Grid>
 
       </Grid>

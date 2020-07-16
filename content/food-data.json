@@ -1,0 +1,281 @@
+{
+  "Apple": {
+    "rescaled": {
+      "land":56,
+      "water":46,
+      "ghg":3,
+      "eutro":45
+    },
+    "weighted": {
+      "land":23,
+      "water":75,
+      "ghg":4,
+      "eutro":23
+    },
+    "ecoScore": {
+      "score":77,
+      "grade":"B-"
+    },
+    "raw": {
+      "land":21,
+      "water":56,
+      "ghg":43,
+      "eutro":86
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":["All", "Fruits"],
+      "imageUrl":"https://images.heb.com/is/image/HEBGrocery/000320625"
+    }
+  },
+  "Pear": {
+    "rescaled": {
+      "land":56,
+      "water":34,
+      "ghg":64,
+      "eutro":44
+    },
+    "weighted": {
+      "land":75,
+      "water":23,
+      "ghg":54,
+      "eutro":23
+    },
+    "ecoScore": {
+      "score":44,
+      "grade":"C"
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":["All", "Fruits"],
+      "imageUrl":"https://images.heb.com/is/image/HEBGrocery/prd-small/fresh-green-bartlett-pears-000513694.jpg"
+    }
+  },
+  "Banana": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":["All", "Fruits"],
+      "imageUrl":"https://images.heb.com/is/image/HEBGrocery/prd-small/fresh-plantain-bananas-001944480.jpg"
+    }
+  },
+  "Beef": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":["All", "Meat"],
+      "imageUrl":"https://images.heb.com/is/image/HEBGrocery/prd-small/fresh-beef-neckbones-000371495.jpg"
+    }
+  },
+  "Lamb": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":["All", "Meat"],
+      "imageUrl":"https://images.heb.com/is/image/HEBGrocery/prd-small/superior-farms-lamb-shoulder-chops-003787629.jpg"
+    }
+  },
+  "Chicken": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":["All", "Meat"],
+      "imageUrl":"https://images.heb.com/is/image/HEBGrocery/prd-small/hill-country-fare-bone-in-split-chicken-breasts-value-pack-000442683.jpg"
+    }
+  },
+  "Corn": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":["All", "Veggies"],
+      "imageUrl":"https://images.heb.com/is/image/HEBGrocery/prd-small/h-e-b-fresh-bi-color-intensely-sweet-corn-000929898.jpg"
+    }
+  },
+  "Potato": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":0,
+      "servingUnit":"",
+      "servingKilo":0,
+      "category":["All", "Veggies"],
+      "imageUrl":"https://images.heb.com/is/image/HEBGrocery/prd-small/fresh-baking-potatoes-bulk-000325312.jpg"
+    }
+  },
+  "Beans": {
+    "rescaled": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "weighted": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "ecoScore": {
+      "score":0,
+      "grade":""
+    },
+    "raw": {
+      "land":0,
+      "water":0,
+      "ghg":0,
+      "eutro":0
+    },
+    "other": {
+      "servingNum":324,
+      "servingUnit":"",
+      "servingKilo":32,
+      "category":["All", "Veggies"],
+      "imageUrl":"https://images.heb.com/is/image/HEBGrocery/prd-small/h-e-b-no-salt-added-black-beans-001573120.jpg"
+    }
+  }
+}

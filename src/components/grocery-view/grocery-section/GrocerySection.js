@@ -2,44 +2,44 @@
 import React from 'react';
 
 // Components
-import { Grid, Typography, ThemeProvider } from '@material-ui/core';
-import { createMuiTheme } from '@material-ui/core/styles';
+import {
+  Grid, Typography,
+} from '@material-ui/core';
 import CategoryRow from './CategoryRow';
 import InfoSection from '../info-section/InfoSection';
 
 // Styles
 import styles from '../styles/grocery-section.module.css';
 
-// REFACTOR: Using fake setion titles
-const SECTIONS = ['Produce', 'Meat and Seafood', 'Bakery', 'Etc.'];
 const GROCERY_INFO = `Click through product categories, view item grades,
                       and add items to your cart straight from this page,
                       or click an item to view more detailed information
                       including details on its environmental impact.`;
 
-const GrocerySection = () => {
-  // REFACTOR: Update for actual data
-  const rows = SECTIONS.map((section) => (
+// Data
+import { categories } from '../../../../content/food-categories.json';
+
+
+const GrocerySection = ({ cartState, setCartState }) => 
+
+  const rows = categories.map((section) => (
     <Grid item>
-      <CategoryRow category={section} />
+      <CategoryRow cartState={cartState} setCartState={setCartState} category={section} />
     </Grid>
   ));
 
-  const theme = createMuiTheme({
-    palette: {
-      primary: {
-        main: '#43a047',
-        contrastText: '#FFFFFF',
-      },
-    },
-  });
-
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <InfoSection />
       <div>
-        <div className={styles.container}>
-          <Typography variant="h3" component="h1" id="groceries">
+        <div
+          className={styles.container}
+        >
+          <Typography
+            variant="h3"
+            component="h1"
+            id='groceries'
+          >
             Groceries
           </Typography>
           <Typography variant="body1" component="p">
@@ -56,7 +56,7 @@ const GrocerySection = () => {
           </Grid>
         </div>
       </div>
-    </ThemeProvider>
+    </>
   );
 };
 
