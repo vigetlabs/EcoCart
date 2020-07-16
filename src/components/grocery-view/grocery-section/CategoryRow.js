@@ -27,12 +27,7 @@ const CategoryRow = ({ category, cartState, setCartState }) => {
       );
     }
     return null;
-  }).filter((isNotNull) => {
-    if (isNotNull) {
-      return true;
-    }
-    return false;
-  });
+  }).filter((isNotNull) => isNotNull);
 
   const handleRight = () => {
     const delta = Math.min(4, groceryItems.length - startIndex - 4);
