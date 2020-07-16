@@ -26,6 +26,8 @@ const openModal = (setModalOpen) => {
 };
 
 const GroceryItem = ({ item, cartState, setCartState }) => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
   const itemData = foodData[item];
 
   const handleAdd = () => {
@@ -35,7 +37,7 @@ const GroceryItem = ({ item, cartState, setCartState }) => {
   };
 
   return (
-  <> 
+  <>
     <div className={styles.item}>
       <Card className={styles.itemCard} container elevated enabled>
         <CardMedia
@@ -56,8 +58,6 @@ const GroceryItem = ({ item, cartState, setCartState }) => {
             onClick={() => openModal(setModalOpen)}>
             View Details
           </Button>
-            View Details
-          </Button>
         </CardContent>
         <CardActions disableSpacing={true}>
           <Button
@@ -76,6 +76,8 @@ const GroceryItem = ({ item, cartState, setCartState }) => {
       isModalOpen={isModalOpen}
       setModalOpen={setModalOpen}
       item={item}
+      cartState={cartState}
+      setCartState={setCartState}
     />
   </>
   );

@@ -3,19 +3,24 @@ import React from 'react';
 // Components
 import { Modal, Paper, Grid } from '@material-ui/core';
 import InfoSection from './info-section/InfoSection';
+import DataSection from './data-section/DataSection';
 
 // Style
 import styles from './styles/item-modal.module.css';
 
-// Utils
-import { getUrl } from '../grocery-view/grocery-section/placeholder-data';
-import DataSection from './data-section/DataSection';
+// Data
+import foodData from '../../../content/food-data.json';
 
 const closeModal = (setModalOpen) => {
   setModalOpen(false);
 };
 
-const ItemModal = ({ isModalOpen, setModalOpen, item }) => (
+const ItemModal = ({
+  isModalOpen, setModalOpen, item, cartState, setCartState,
+}) => {
+  const foodItem = foodData[item];
+
+  return (
   <Modal
     open={isModalOpen}
     onClose={() => closeModal(setModalOpen)}
@@ -31,10 +36,14 @@ const ItemModal = ({ isModalOpen, setModalOpen, item }) => (
         <Grid item>
           <Grid container alignContent="space-around" justify="center">
             <Grid item className={styles.square}>
-              <img className={styles.picture} src={getUrl(item)} alt={item} />
+              <img className={styles.picture} src={foodItem.other.imageUrl} alt={item} />
             </Grid>
             <Grid item className={styles.square}>
-              <InfoSection item={item} />
+              <InfoSection
+                item={item}
+                cartState={cartState}
+                setCartState={setCartState}
+              />
             </Grid>
           </Grid>
         </Grid>
@@ -44,6 +53,6 @@ const ItemModal = ({ isModalOpen, setModalOpen, item }) => (
       </Grid>
     </Paper>
   </Modal>
-);
-
+  );
+};
 export default ItemModal;
