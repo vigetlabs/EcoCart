@@ -11,15 +11,17 @@ import InfoSection from '../info-section/InfoSection';
 // Styles
 import styles from '../styles/grocery-section.module.css';
 
-// const scroll = (setStartIndex) => {};
+const GROCERY_INFO = `Click through product categories, view item grades,
+                      and add items to your cart straight from this page,
+                      or click an item to view more detailed information
+                      including details on its environmental impact.`;
 
 // Data
 import { categories } from '../../../../content/food-categories.json';
 
-const GROCERY_INFO = 'Click through product categories, view item grades, and add items to your cart straight from this page, or click an item to view more detailed information including details on its environmental impact.';
 
-const GrocerySection = ({ cartState, setCartState }) => {
-  // REFACTOR: Update for actual data
+const GrocerySection = ({ cartState, setCartState }) => 
+
   const rows = categories.map((section) => (
     <Grid item>
       <CategoryRow cartState={cartState} setCartState={setCartState} category={section} />

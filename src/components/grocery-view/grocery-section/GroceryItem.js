@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 
 // Components
 import {
@@ -13,14 +13,17 @@ import {
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
-// REFACTOR: Need a grade icon
-// import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+import ItemModal from '../../item-view/ItemModal';
 
 // Styles
 import styles from '../styles/grocery-item.module.css';
 
 // Data
 import foodData from '../../../../content/food-data.json';
+
+const openModal = (setModalOpen) => {
+  setModalOpen(true);
+};
 
 const GroceryItem = ({ item, cartState, setCartState }) => {
   const itemData = foodData[item];
@@ -32,36 +35,49 @@ const GroceryItem = ({ item, cartState, setCartState }) => {
   };
 
   return (
-  <div className={styles.item}>
-    <Card className={styles.itemCard} container elevated enabled>
-      <CardMedia
-        component="img"
-        alt={item}
-        height="240"
-        image={itemData.other.imageUrl}
-        title={item}
-      />
-      <CardContent>
-        <Typography variant="h5" component="h2">
-          {item}
-        </Typography>
-        <Button variant="text" size="small" endIcon={<ChevronRightIcon />}>
-          View Details
-        </Button>
-      </CardContent>
-      <CardActions disableSpacing={true}>
-        <Button
-          startIcon={<AddShoppingCartIcon />}
-          variant="contained"
-          color="primary"
-          size="small"
-          className={styles.cartButton}
-          onClick={handleAdd}>
-          {cartState[item]}
-        </Button>
-      </CardActions>
-    </Card>
-  </div>
+  <> 
+    <div className={styles.item}>
+      <Card className={styles.itemCard} container elevated enabled>
+        <CardMedia
+          component="img"
+          alt={item}
+          height="240"
+          image={itemData.other.imageUrl}
+          title={item}
+        />
+        <CardContent>
+          <Typography variant="h5" component="h2">
+            {item}
+          </Typography>
+          <Button
+            variant="text"
+            size="small"
+            endIcon={<ChevronRightIcon />}
+            onClick={() => openModal(setModalOpen)}>
+            View Details
+          </Button>
+            View Details
+          </Button>
+        </CardContent>
+        <CardActions disableSpacing={true}>
+          <Button
+            startIcon={<AddShoppingCartIcon />}
+            variant="contained"
+            color="primary"
+            size="small"
+            className={styles.cartButton}
+            onClick={handleAdd}>
+            {cartState[item]}
+          </Button>
+        </CardActions>
+      </Card>
+    </div>
+    <ItemModal
+      isModalOpen={isModalOpen}
+      setModalOpen={setModalOpen}
+      item={item}
+    />
+  </>
   );
 };
 

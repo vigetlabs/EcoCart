@@ -31,12 +31,12 @@ const CategoryRow = ({ category, cartState, setCartState }) => {
 
   const handleRight = () => {
     const delta = Math.min(4, groceryItems.length - startIndex - 4);
-    if (delta > 0) setStartIndex(startIndex + delta);
+    if (delta > 0) setStartIndex((index) => index + delta);
   };
 
   const handleLeft = () => {
     const delta = Math.min(4, startIndex);
-    setStartIndex(startIndex - delta);
+    setStartIndex((index) => index - delta);
   };
 
   return (
