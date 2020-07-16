@@ -1,1346 +1,1262 @@
 {
-    "Beef (beef herd)": {
-        "rescaled": {
-            "land": "88.1996",
-            "water": "25.8902",
-            "eutro": "82.4794",
-            "ghg": "100.0000"
-        },
-        "weighted": {
-            "land": "18.3749",
-            "water": "7.5513",
-            "eutro": "32.3044",
-            "ghg": "10.8333"
-        },
-        "ecoScore": {
-            "points": "0",
-            "grade": "F"
-        },
-        "raw": {
-            "land": "67.9604",
-            "water": "423.2667",
-            "eutro": "118.0523",
-            "ghg": "6.4567"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
+  "Beef (beef herd)": {
+    "rescaled": {
+      "land": "88.1996",
+      "water": "25.8902",
+      "eutro": "82.4794",
+      "ghg": "100.0000"
     },
-    "Beef (dairy herd)": {
-        "rescaled": {
-            "land": "11.6136",
-            "water": "48.4247",
-            "eutro": "100.0000",
-            "ghg": "35.1852"
-        },
-        "weighted": {
-            "land": "2.4195",
-            "water": "14.1239",
-            "eutro": "39.1667",
-            "ghg": "3.8117"
-        },
-        "ecoScore": {
-            "points": "14",
-            "grade": "F"
-        },
-        "raw": {
-            "land": "9.0083",
-            "water": "791.6708",
-            "eutro": "143.0719",
-            "ghg": "2.2858"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
+    "weighted": {
+      "land": "18.3749",
+      "water": "7.5513",
+      "eutro": "32.3044",
+      "ghg": "10.8333"
     },
-    "Cheese": {
-        "rescaled": {
-            "land": "23.6711",
-            "water": "100.0000",
-            "eutro": "26.7910",
-            "ghg": "35.3535"
-        },
-        "weighted": {
-            "land": "4.9315",
-            "water": "29.1667",
-            "eutro": "10.4931",
-            "ghg": "3.8300"
-        },
-        "ecoScore": {
-            "points": "30",
-            "grade": "F"
-        },
-        "raw": {
-            "land": "18.2896",
-            "water": "1634.8500",
-            "eutro": "38.5283",
-            "ghg": "2.2967"
-        },
-        "other": {
-            "servingNum": "24",
-            "servingUnit": "slices",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
+    "ecoScore": {
+      "points": "0",
+      "grade": "F"
     },
-    "Fish (farmed)": {
-        "rescaled": {
-            "land": "2.1869",
-            "water": "65.8549",
-            "eutro": "64.2979",
-            "ghg": "8.2492"
-        },
-        "weighted": {
-            "land": "0.4556",
-            "water": "19.2077",
-            "eutro": "25.1833",
-            "ghg": "0.8937"
-        },
-        "ecoScore": {
-            "points": "34",
-            "grade": "F"
-        },
-        "raw": {
-            "land": "1.7521",
-            "water": "1076.6292",
-            "eutro": "92.0887",
-            "ghg": "0.5525"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
+    "raw": {
+      "land": "67.9604",
+      "water": "423.2667",
+      "eutro": "118.0523",
+      "ghg": "6.4567"
     },
-    "Lamb & Mutton": {
-        "rescaled": {
-            "land": "100.0000",
-            "water": "32.1630",
-            "eutro": "26.4509",
-            "ghg": "40.9091"
-        },
-        "weighted": {
-            "land": "20.8333",
-            "water": "9.3809",
-            "eutro": "10.3599",
-            "ghg": "4.4318"
-        },
-        "ecoScore": {
-            "points": "35",
-            "grade": "F"
-        },
-        "raw": {
-            "land": "77.0438",
-            "water": "525.8167",
-            "eutro": "38.0426",
-            "ghg": "2.6542"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Prawns (farmed)": {
-        "rescaled": {
-            "land": "0.7145",
-            "water": "62.7168",
-            "eutro": "62.1311",
-            "ghg": "19.5286"
-        },
-        "weighted": {
-            "land": "0.1489",
-            "water": "18.2924",
-            "eutro": "24.3347",
-            "ghg": "2.1156"
-        },
-        "ecoScore": {
-            "points": "35",
-            "grade": "F"
-        },
-        "raw": {
-            "land": "0.6188",
-            "water": "1025.3250",
-            "eutro": "88.9945",
-            "ghg": "1.2783"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Nuts": {
-        "rescaled": {
-            "land": "3.4183",
-            "water": "73.7494",
-            "eutro": "5.0631",
-            "ghg": "0.0000"
-        },
-        "weighted": {
-            "land": "0.7121",
-            "water": "21.5102",
-            "eutro": "1.9830",
-            "ghg": "0.0000"
-        },
-        "ecoScore": {
-            "points": "65",
-            "grade": "D"
-        },
-        "raw": {
-            "land": "2.7000",
-            "water": "1205.6917",
-            "eutro": "7.5004",
-            "ghg": "0.0217"
-        },
-        "other": {
-            "servingNum": "10.3",
-            "servingUnit": "oz",
-            "servingKilo": "0.2903",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Pork": {
-        "rescaled": {
-            "land": "4.6092",
-            "water": "32.0381",
-            "eutro": "20.7597",
-            "ghg": "11.7845"
-        },
-        "weighted": {
-            "land": "0.9602",
-            "water": "9.3444",
-            "eutro": "8.1309",
-            "ghg": "1.2767"
-        },
-        "ecoScore": {
-            "points": "72",
-            "grade": "D"
-        },
-        "raw": {
-            "land": "3.6167",
-            "water": "523.7750",
-            "eutro": "29.9155",
-            "ghg": "0.7800"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Dark Chocolate": {
-        "rescaled": {
-            "land": "18.5748",
-            "water": "9.6446",
-            "eutro": "23.6945",
-            "ghg": "31.1448"
-        },
-        "weighted": {
-            "land": "3.8697",
-            "water": "2.8130",
-            "eutro": "9.2803",
-            "ghg": "3.3740"
-        },
-        "ecoScore": {
-            "points": "72",
-            "grade": "D"
-        },
-        "raw": {
-            "land": "14.3667",
-            "water": "157.6750",
-            "eutro": "34.1063",
-            "ghg": "2.0258"
-        },
-        "other": {
-            "servingNum": "3.5",
-            "servingUnit": "oz",
-            "servingKilo": "0.0998",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Olive Oil": {
-        "rescaled": {
-            "land": "7.0315",
-            "water": "38.2109",
-            "eutro": "10.0302",
-            "ghg": "9.7643"
-        },
-        "weighted": {
-            "land": "1.4649",
-            "water": "11.1449",
-            "eutro": "3.9285",
-            "ghg": "1.0578"
-        },
-        "ecoScore": {
-            "points": "75",
-            "grade": "D"
-        },
-        "raw": {
-            "land": "5.4813",
-            "water": "624.6917",
-            "eutro": "14.5935",
-            "ghg": "0.6500"
-        },
-        "other": {
-            "servingNum": "32",
-            "servingUnit": "fl oz",
-            "servingKilo": "0.9072",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Rice": {
-        "rescaled": {
-            "land": "0.6685",
-            "water": "40.1128",
-            "eutro": "9.4295",
-            "ghg": "6.3973"
-        },
-        "weighted": {
-            "land": "0.1393",
-            "water": "11.6996",
-            "eutro": "3.6932",
-            "ghg": "0.6930"
-        },
-        "ecoScore": {
-            "points": "77",
-            "grade": "D"
-        },
-        "raw": {
-            "land": "0.5833",
-            "water": "655.7833",
-            "eutro": "13.7358",
-            "ghg": "0.4333"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Coffee": {
-        "rescaled": {
-            "land": "5.7622",
-            "water": "0.4621",
-            "eutro": "30.1234",
-            "ghg": "27.4411"
-        },
-        "weighted": {
-            "land": "1.2004",
-            "water": "0.1348",
-            "eutro": "11.7983",
-            "ghg": "2.9728"
-        },
-        "ecoScore": {
-            "points": "77",
-            "grade": "D"
-        },
-        "raw": {
-            "land": "4.5042",
-            "water": "7.5542",
-            "eutro": "43.2870",
-            "ghg": "1.7875"
-        },
-        "other": {
-            "servingNum": "12",
-            "servingUnit": "oz",
-            "servingKilo": "0.3402",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Sunflower Oil": {
-        "rescaled": {
-            "land": "4.6904",
-            "water": "17.9815",
-            "eutro": "13.7054",
-            "ghg": "5.5556"
-        },
-        "weighted": {
-            "land": "0.9772",
-            "water": "5.2446",
-            "eutro": "5.3680",
-            "ghg": "0.6019"
-        },
-        "ecoScore": {
-            "points": "83",
-            "grade": "C"
-        },
-        "raw": {
-            "land": "3.6792",
-            "water": "293.9708",
-            "eutro": "19.8418",
-            "ghg": "0.3792"
-        },
-        "other": {
-            "servingNum": "24",
-            "servingUnit": "fl oz",
-            "servingKilo": "0.6804",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Peanuts": {
-        "rescaled": {
-            "land": "2.3763",
-            "water": "33.0461",
-            "eutro": "3.6890",
-            "ghg": "3.7037"
-        },
-        "weighted": {
-            "land": "0.4951",
-            "water": "9.6384",
-            "eutro": "1.4448",
-            "ghg": "0.4012"
-        },
-        "ecoScore": {
-            "points": "83",
-            "grade": "C"
-        },
-        "raw": {
-            "land": "1.8979",
-            "water": "540.2542",
-            "eutro": "5.5382",
-            "ghg": "0.2600"
-        },
-        "other": {
-            "servingNum": "16",
-            "servingUnit": "oz",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Poultry Meat": {
-        "rescaled": {
-            "land": "3.2180",
-            "water": "11.7748",
-            "eutro": "13.1679",
-            "ghg": "9.9327"
-        },
-        "weighted": {
-            "land": "0.6704",
-            "water": "3.4343",
-            "eutro": "5.1574",
-            "ghg": "1.0760"
-        },
-        "ecoScore": {
-            "points": "85",
-            "grade": "C"
-        },
-        "raw": {
-            "land": "2.5458",
-            "water": "192.5000",
-            "eutro": "19.0742",
-            "ghg": "0.6608"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Eggs": {
-        "rescaled": {
-            "land": "1.6077",
-            "water": "10.3065",
-            "eutro": "5.7789",
-            "ghg": "7.2391"
-        },
-        "weighted": {
-            "land": "0.3349",
-            "water": "3.0061",
-            "eutro": "2.2634",
-            "ghg": "0.7842"
-        },
-        "ecoScore": {
-            "points": "91",
-            "grade": "C"
-        },
-        "raw": {
-            "land": "1.3063",
-            "water": "168.4958",
-            "eutro": "8.5227",
-            "ghg": "0.4875"
-        },
-        "other": {
-            "servingNum": "12",
-            "servingUnit": "count",
-            "servingKilo": "0.6804",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Sugar": {
-        "rescaled": {
-            "land": "0.4628",
-            "water": "11.0629",
-            "eutro": "4.4515",
-            "ghg": "4.0404"
-        },
-        "weighted": {
-            "land": "0.0964",
-            "water": "3.2267",
-            "eutro": "1.7435",
-            "ghg": "0.4377"
-        },
-        "ecoScore": {
-            "points": "92",
-            "grade": "C"
-        },
-        "raw": {
-            "land": "0.4250",
-            "water": "180.8625",
-            "eutro": "6.6270",
-            "ghg": "0.2817"
-        },
-        "other": {
-            "servingNum": "4",
-            "servingUnit": "lbs",
-            "servingKilo": "1.8144",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Milk": {
-        "rescaled": {
-            "land": "2.3330",
-            "water": "11.2075",
-            "eutro": "2.7318",
-            "ghg": "4.3771"
-        },
-        "weighted": {
-            "land": "0.4860",
-            "water": "3.2688",
-            "eutro": "1.0699",
-            "ghg": "0.4742"
-        },
-        "ecoScore": {
-            "points": "93",
-            "grade": "C"
-        },
-        "raw": {
-            "land": "1.8646",
-            "water": "183.2250",
-            "eutro": "4.1713",
-            "ghg": "0.3033"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "gallon",
-            "servingKilo": "3.7875",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Beans": {
-        "rescaled": {
-            "land": "4.1247",
-            "water": "7.7731",
-            "eutro": "4.4953",
-            "ghg": "2.3569"
-        },
-        "weighted": {
-            "land": "0.8593",
-            "water": "2.2672",
-            "eutro": "1.7607",
-            "ghg": "0.2553"
-        },
-        "ecoScore": {
-            "points": "93",
-            "grade": "C"
-        },
-        "raw": {
-            "land": "3.2438",
-            "water": "127.0792",
-            "eutro": "6.6897",
-            "ghg": "0.1733"
-        },
-        "other": {
-            "servingNum": "15.5",
-            "servingUnit": "oz",
-            "servingKilo": "0.4400",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Vegetable Oil": {
-        "rescaled": {
-            "land": "2.7579",
-            "water": "7.3967",
-            "eutro": "3.0170",
-            "ghg": "9.7643"
-        },
-        "weighted": {
-            "land": "0.5746",
-            "water": "2.1574",
-            "eutro": "1.1817",
-            "ghg": "1.0578"
-        },
-        "ecoScore": {
-            "points": "93",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "2.1917",
-            "water": "120.9250",
-            "eutro": "4.5786",
-            "ghg": "0.6500"
-        },
-        "other": {
-            "servingNum": "24",
-            "servingUnit": "fl oz",
-            "servingKilo": "0.6804",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Bread": {
-        "rescaled": {
-            "land": "0.9527",
-            "water": "11.5518",
-            "eutro": "1.7745",
-            "ghg": "2.0202"
-        },
-        "weighted": {
-            "land": "0.1985",
-            "water": "3.3693",
-            "eutro": "0.6950",
-            "ghg": "0.2189"
-        },
-        "ecoScore": {
-            "points": "94",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "0.8021",
-            "water": "188.8542",
-            "eutro": "2.8043",
-            "ghg": "0.1517"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "Loaf",
-            "servingKilo": "0.5670",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Canola Oil": {
-        "rescaled": {
-            "land": "2.7877",
-            "water": "4.2407",
-            "eutro": "5.0741",
-            "ghg": "5.8923"
-        },
-        "weighted": {
-            "land": "0.5808",
-            "water": "1.2369",
-            "eutro": "1.9873",
-            "ghg": "0.6383"
-        },
-        "ecoScore": {
-            "points": "94",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "2.2146",
-            "water": "69.3292",
-            "eutro": "7.5161",
-            "ghg": "0.4008"
-        },
-        "other": {
-            "servingNum": "24",
-            "servingUnit": "fl oz",
-            "servingKilo": "0.6804",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Oatmeal": {
-        "rescaled": {
-            "land": "1.9676",
-            "water": "8.6063",
-            "eutro": "2.8908",
-            "ghg": "2.3569"
-        },
-        "weighted": {
-            "land": "0.4099",
-            "water": "2.5102",
-            "eutro": "1.1322",
-            "ghg": "0.2553"
-        },
-        "ecoScore": {
-            "points": "94",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "1.5833",
-            "water": "140.7000",
-            "eutro": "4.3984",
-            "ghg": "0.1733"
-        },
-        "other": {
-            "servingNum": "16",
-            "servingUnit": "oz",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Peas": {
-        "rescaled": {
-            "land": "1.9297",
-            "water": "7.0756",
-            "eutro": "1.8733",
-            "ghg": "1.0101"
-        },
-        "weighted": {
-            "land": "0.4020",
-            "water": "2.0637",
-            "eutro": "0.7337",
-            "ghg": "0.1094"
-        },
-        "ecoScore": {
-            "points": "96",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "1.5542",
-            "water": "115.6750",
-            "eutro": "2.9453",
-            "ghg": "0.0867"
-        },
-        "other": {
-            "servingNum": "16",
-            "servingUnit": "oz",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Berries": {
-        "rescaled": {
-            "land": "0.5630",
-            "water": "7.4859",
-            "eutro": "1.4893",
-            "ghg": "1.5152"
-        },
-        "weighted": {
-            "land": "0.1173",
-            "water": "2.1834",
-            "eutro": "0.5833",
-            "ghg": "0.1641"
-        },
-        "ecoScore": {
-            "points": "96",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "0.5021",
-            "water": "122.3833",
-            "eutro": "2.3970",
-            "ghg": "0.1192"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Tomatoes": {
-        "rescaled": {
-            "land": "0.1272",
-            "water": "6.5974",
-            "eutro": "1.8705",
-            "ghg": "2.0202"
-        },
-        "weighted": {
-            "land": "0.0265",
-            "water": "1.9243",
-            "eutro": "0.7326",
-            "ghg": "0.2189"
-        },
-        "ecoScore": {
-            "points": "96",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "0.1667",
-            "water": "107.8583",
-            "eutro": "2.9414",
-            "ghg": "0.1517"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "lb bag",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Palm Oil": {
-        "rescaled": {
-            "land": "0.5657",
-            "water": "0.1142",
-            "eutro": "2.7372",
-            "ghg": "12.4579"
-        },
-        "weighted": {
-            "land": "0.1178",
-            "water": "0.0333",
-            "eutro": "1.0721",
-            "ghg": "1.3496"
-        },
-        "ecoScore": {
-            "points": "97",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "0.5042",
-            "water": "1.8667",
-            "eutro": "4.1791",
-            "ghg": "0.8233"
-        },
-        "other": {
-            "servingNum": "24",
-            "servingUnit": "fl oz",
-            "servingKilo": "0.6804",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Tofu (soybeans)": {
-        "rescaled": {
-            "land": "0.8634",
-            "water": "2.6511",
-            "eutro": "1.5003",
-            "ghg": "4.7138"
-        },
-        "weighted": {
-            "land": "0.1799",
-            "water": "0.7732",
-            "eutro": "0.5876",
-            "ghg": "0.5107"
-        },
-        "ecoScore": {
-            "points": "97",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "0.7333",
-            "water": "43.3417",
-            "eutro": "2.4127",
-            "ghg": "0.3250"
-        },
-        "other": {
-            "servingNum": "14",
-            "servingUnit": "oz",
-            "servingKilo": "0.3992",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Beet Sugar": {
-        "rescaled": {
-            "land": "0.4060",
-            "water": "3.8839",
-            "eutro": "1.2946",
-            "ghg": "2.0202"
-        },
-        "weighted": {
-            "land": "0.0846",
-            "water": "1.1328",
-            "eutro": "0.5070",
-            "ghg": "0.2189"
-        },
-        "ecoScore": {
-            "points": "97",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "0.3813",
-            "water": "63.4958",
-            "eutro": "2.1189",
-            "ghg": "0.1517"
-        },
-        "other": {
-            "servingNum": "4",
-            "servingUnit": "lbs",
-            "servingKilo": "1.8144",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Corn": {
-        "rescaled": {
-            "land": "0.7064",
-            "water": "3.8482",
-            "eutro": "0.9161",
-            "ghg": "1.5152"
-        },
-        "weighted": {
-            "land": "0.1472",
-            "water": "1.1224",
-            "eutro": "0.3588",
-            "ghg": "0.1641"
-        },
-        "ecoScore": {
-            "points": "98",
-            "grade": "B"
-        },
-        "raw": {
-            "land": "0.6125",
-            "water": "62.9125",
-            "eutro": "1.5784",
-            "ghg": "0.1192"
-        },
-        "other": {
-            "servingNum": "16",
-            "servingUnit": "oz",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Cabbage": {
-        "rescaled": {
-            "land": "0.0595",
-            "water": "2.1302",
-            "eutro": "1.1849",
-            "ghg": "0.3367"
-        },
-        "weighted": {
-            "land": "0.0124",
-            "water": "0.6213",
-            "eutro": "0.4641",
-            "ghg": "0.0365"
-        },
-        "ecoScore": {
-            "points": "99",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.1146",
-            "water": "34.8250",
-            "eutro": "1.9623",
-            "ghg": "0.0433"
-        },
-        "other": {
-            "servingNum": "8",
-            "servingUnit": "oz",
-            "servingKilo": "0.2268",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Wine": {
-        "rescaled": {
-            "land": "0.3924",
-            "water": "1.4076",
-            "eutro": "1.0642",
-            "ghg": "2.0202"
-        },
-        "weighted": {
-            "land": "0.0818",
-            "water": "0.4106",
-            "eutro": "0.4168",
-            "ghg": "0.2189"
-        },
-        "ecoScore": {
-            "points": "99",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.3708",
-            "water": "23.0125",
-            "eutro": "1.7899",
-            "ghg": "0.1517"
-        },
-        "other": {
-            "servingNum": "750",
-            "servingUnit": "mL",
-            "servingKilo": "0.0010",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Bananas": {
-        "rescaled": {
-            "land": "0.4330",
-            "water": "2.0427",
-            "eutro": "0.7131",
-            "ghg": "1.0101"
-        },
-        "weighted": {
-            "land": "0.0902",
-            "water": "0.5958",
-            "eutro": "0.2793",
-            "ghg": "0.1094"
-        },
-        "ecoScore": {
-            "points": "99",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.4021",
-            "water": "33.3958",
-            "eutro": "1.2886",
-            "ghg": "0.0867"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "Hand",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Apples": {
-        "rescaled": {
-            "land": "0.0812",
-            "water": "3.2131",
-            "eutro": "0.2084",
-            "ghg": "0.1684"
-        },
-        "weighted": {
-            "land": "0.0169",
-            "water": "0.9372",
-            "eutro": "0.0816",
-            "ghg": "0.0182"
-        },
-        "ecoScore": {
-            "points": "99",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.1313",
-            "water": "52.5292",
-            "eutro": "0.5679",
-            "ghg": "0.0325"
-        },
-        "other": {
-            "servingNum": "3",
-            "servingUnit": "lb bag",
-            "servingKilo": "1.3608",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Potatoes": {
-        "rescaled": {
-            "land": "0.1489",
-            "water": "1.0544",
-            "eutro": "0.7652",
-            "ghg": "0.1684"
-        },
-        "weighted": {
-            "land": "0.0310",
-            "water": "0.3075",
-            "eutro": "0.2997",
-            "ghg": "0.0182"
-        },
-        "ecoScore": {
-            "points": "99",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.1833",
-            "water": "17.2375",
-            "eutro": "1.3630",
-            "ghg": "0.0325"
-        },
-        "other": {
-            "servingNum": "5",
-            "servingUnit": "lb bag",
-            "servingKilo": "2.2680",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Oranges": {
-        "rescaled": {
-            "land": "0.1434",
-            "water": "1.4754",
-            "eutro": "0.4251",
-            "ghg": "0.1684"
-        },
-        "weighted": {
-            "land": "0.0299",
-            "water": "0.4303",
-            "eutro": "0.1665",
-            "ghg": "0.0182"
-        },
-        "ecoScore": {
-            "points": "99",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.1792",
-            "water": "24.1208",
-            "eutro": "0.8773",
-            "ghg": "0.0325"
-        },
-        "other": {
-            "servingNum": "3",
-            "servingUnit": "lb bag",
-            "servingKilo": "1.3608",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Lemons": {
-        "rescaled": {
-            "land": "0.1434",
-            "water": "1.4754",
-            "eutro": "0.4251",
-            "ghg": "0.1684"
-        },
-        "weighted": {
-            "land": "0.0299",
-            "water": "0.4303",
-            "eutro": "0.1665",
-            "ghg": "0.0182"
-        },
-        "ecoScore": {
-            "points": "99",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.1792",
-            "water": "24.1208",
-            "eutro": "0.8773",
-            "ghg": "0.0325"
-        },
-        "other": {
-            "servingNum": "3",
-            "servingUnit": "lb bag",
-            "servingKilo": "1.3608",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Barley": {
-        "rescaled": {
-            "land": "0.2111",
-            "water": "0.3051",
-            "eutro": "0.4498",
-            "ghg": "1.5152"
-        },
-        "weighted": {
-            "land": "0.0440",
-            "water": "0.0890",
-            "eutro": "0.1762",
-            "ghg": "0.1641"
-        },
-        "ecoScore": {
-            "points": "100",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.2313",
-            "water": "4.9875",
-            "eutro": "0.9126",
-            "ghg": "0.1192"
-        },
-        "other": {
-            "servingNum": "16",
-            "servingUnit": "oz",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Onions": {
-        "rescaled": {
-            "land": "0.0162",
-            "water": "0.2551",
-            "eutro": "0.6994",
-            "ghg": "0.1684"
-        },
-        "weighted": {
-            "land": "0.0034",
-            "water": "0.0744",
-            "eutro": "0.2739",
-            "ghg": "0.0182"
-        },
-        "ecoScore": {
-            "points": "100",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.0813",
-            "water": "4.1708",
-            "eutro": "1.2690",
-            "ghg": "0.0325"
-        },
-        "other": {
-            "servingNum": "5",
-            "servingUnit": "lb bag",
-            "servingKilo": "2.2680",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Soymilk": {
-        "rescaled": {
-            "land": "0.0893",
-            "water": "0.4960",
-            "eutro": "0.1015",
-            "ghg": "1.3468"
-        },
-        "weighted": {
-            "land": "0.0186",
-            "water": "0.1447",
-            "eutro": "0.0397",
-            "ghg": "0.1459"
-        },
-        "ecoScore": {
-            "points": "100",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.1375",
-            "water": "8.1083",
-            "eutro": "0.4152",
-            "ghg": "0.1083"
-        },
-        "other": {
-            "servingNum": "1",
-            "servingUnit": "gallon",
-            "servingKilo": "3.7875",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Carrots": {
-        "rescaled": {
-            "land": "0.0000",
-            "water": "0.5067",
-            "eutro": "0.2523",
-            "ghg": "0.1684"
-        },
-        "weighted": {
-            "land": "0.0000",
-            "water": "0.1478",
-            "eutro": "0.0988",
-            "ghg": "0.0182"
-        },
-        "ecoScore": {
-            "points": "100",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.0688",
-            "water": "8.2833",
-            "eutro": "0.6306",
-            "ghg": "0.0325"
-        },
-        "other": {
-            "servingNum": "16",
-            "servingUnit": "oz bag",
-            "servingKilo": "0.4536",
-            "category": [
-                "All"
-            ]
-        }
-    },
-    "Cassava Flour": {
-        "rescaled": {
-            "land": "0.4006",
-            "water": "0.0000",
-            "eutro": "0.0000",
-            "ghg": "1.1785"
-        },
-        "weighted": {
-            "land": "0.0835",
-            "water": "0.0000",
-            "eutro": "0.0000",
-            "ghg": "0.1277"
-        },
-        "ecoScore": {
-            "points": "100",
-            "grade": "A"
-        },
-        "raw": {
-            "land": "0.3771",
-            "water": "0.0000",
-            "eutro": "0.2703",
-            "ghg": "0.0975"
-        },
-        "other": {
-            "servingNum": "14",
-            "servingUnit": "oz",
-            "servingKilo": "0.3992",
-            "category": [
-                "All"
-            ]
-        }
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb",
+      "servingKilo": "0.4536",
+      "category": ["All"]
     }
+  },
+  "Beef (dairy herd)": {
+    "rescaled": {
+      "land": "11.6136",
+      "water": "48.4247",
+      "eutro": "100.0000",
+      "ghg": "35.1852"
+    },
+    "weighted": {
+      "land": "2.4195",
+      "water": "14.1239",
+      "eutro": "39.1667",
+      "ghg": "3.8117"
+    },
+    "ecoScore": {
+      "points": "14",
+      "grade": "F"
+    },
+    "raw": {
+      "land": "9.0083",
+      "water": "791.6708",
+      "eutro": "143.0719",
+      "ghg": "2.2858"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Cheese": {
+    "rescaled": {
+      "land": "23.6711",
+      "water": "100.0000",
+      "eutro": "26.7910",
+      "ghg": "35.3535"
+    },
+    "weighted": {
+      "land": "4.9315",
+      "water": "29.1667",
+      "eutro": "10.4931",
+      "ghg": "3.8300"
+    },
+    "ecoScore": {
+      "points": "30",
+      "grade": "F"
+    },
+    "raw": {
+      "land": "18.2896",
+      "water": "1634.8500",
+      "eutro": "38.5283",
+      "ghg": "2.2967"
+    },
+    "other": {
+      "servingNum": "24",
+      "servingUnit": "slices",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Fish (farmed)": {
+    "rescaled": {
+      "land": "2.1869",
+      "water": "65.8549",
+      "eutro": "64.2979",
+      "ghg": "8.2492"
+    },
+    "weighted": {
+      "land": "0.4556",
+      "water": "19.2077",
+      "eutro": "25.1833",
+      "ghg": "0.8937"
+    },
+    "ecoScore": {
+      "points": "34",
+      "grade": "F"
+    },
+    "raw": {
+      "land": "1.7521",
+      "water": "1076.6292",
+      "eutro": "92.0887",
+      "ghg": "0.5525"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Lamb & Mutton": {
+    "rescaled": {
+      "land": "100.0000",
+      "water": "32.1630",
+      "eutro": "26.4509",
+      "ghg": "40.9091"
+    },
+    "weighted": {
+      "land": "20.8333",
+      "water": "9.3809",
+      "eutro": "10.3599",
+      "ghg": "4.4318"
+    },
+    "ecoScore": {
+      "points": "35",
+      "grade": "F"
+    },
+    "raw": {
+      "land": "77.0438",
+      "water": "525.8167",
+      "eutro": "38.0426",
+      "ghg": "2.6542"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Prawns (farmed)": {
+    "rescaled": {
+      "land": "0.7145",
+      "water": "62.7168",
+      "eutro": "62.1311",
+      "ghg": "19.5286"
+    },
+    "weighted": {
+      "land": "0.1489",
+      "water": "18.2924",
+      "eutro": "24.3347",
+      "ghg": "2.1156"
+    },
+    "ecoScore": {
+      "points": "35",
+      "grade": "F"
+    },
+    "raw": {
+      "land": "0.6188",
+      "water": "1025.3250",
+      "eutro": "88.9945",
+      "ghg": "1.2783"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Nuts": {
+    "rescaled": {
+      "land": "3.4183",
+      "water": "73.7494",
+      "eutro": "5.0631",
+      "ghg": "0.0000"
+    },
+    "weighted": {
+      "land": "0.7121",
+      "water": "21.5102",
+      "eutro": "1.9830",
+      "ghg": "0.0000"
+    },
+    "ecoScore": {
+      "points": "65",
+      "grade": "D"
+    },
+    "raw": {
+      "land": "2.7000",
+      "water": "1205.6917",
+      "eutro": "7.5004",
+      "ghg": "0.0217"
+    },
+    "other": {
+      "servingNum": "10.3",
+      "servingUnit": "oz",
+      "servingKilo": "0.2903",
+      "category": ["All"]
+    }
+  },
+  "Pork": {
+    "rescaled": {
+      "land": "4.6092",
+      "water": "32.0381",
+      "eutro": "20.7597",
+      "ghg": "11.7845"
+    },
+    "weighted": {
+      "land": "0.9602",
+      "water": "9.3444",
+      "eutro": "8.1309",
+      "ghg": "1.2767"
+    },
+    "ecoScore": {
+      "points": "72",
+      "grade": "D"
+    },
+    "raw": {
+      "land": "3.6167",
+      "water": "523.7750",
+      "eutro": "29.9155",
+      "ghg": "0.7800"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Dark Chocolate": {
+    "rescaled": {
+      "land": "18.5748",
+      "water": "9.6446",
+      "eutro": "23.6945",
+      "ghg": "31.1448"
+    },
+    "weighted": {
+      "land": "3.8697",
+      "water": "2.8130",
+      "eutro": "9.2803",
+      "ghg": "3.3740"
+    },
+    "ecoScore": {
+      "points": "72",
+      "grade": "D"
+    },
+    "raw": {
+      "land": "14.3667",
+      "water": "157.6750",
+      "eutro": "34.1063",
+      "ghg": "2.0258"
+    },
+    "other": {
+      "servingNum": "3.5",
+      "servingUnit": "oz",
+      "servingKilo": "0.0998",
+      "category": ["All"]
+    }
+  },
+  "Olive Oil": {
+    "rescaled": {
+      "land": "7.0315",
+      "water": "38.2109",
+      "eutro": "10.0302",
+      "ghg": "9.7643"
+    },
+    "weighted": {
+      "land": "1.4649",
+      "water": "11.1449",
+      "eutro": "3.9285",
+      "ghg": "1.0578"
+    },
+    "ecoScore": {
+      "points": "75",
+      "grade": "D"
+    },
+    "raw": {
+      "land": "5.4813",
+      "water": "624.6917",
+      "eutro": "14.5935",
+      "ghg": "0.6500"
+    },
+    "other": {
+      "servingNum": "32",
+      "servingUnit": "fl oz",
+      "servingKilo": "0.9072",
+      "category": ["All"]
+    }
+  },
+  "Rice": {
+    "rescaled": {
+      "land": "0.6685",
+      "water": "40.1128",
+      "eutro": "9.4295",
+      "ghg": "6.3973"
+    },
+    "weighted": {
+      "land": "0.1393",
+      "water": "11.6996",
+      "eutro": "3.6932",
+      "ghg": "0.6930"
+    },
+    "ecoScore": {
+      "points": "77",
+      "grade": "D"
+    },
+    "raw": {
+      "land": "0.5833",
+      "water": "655.7833",
+      "eutro": "13.7358",
+      "ghg": "0.4333"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Coffee": {
+    "rescaled": {
+      "land": "5.7622",
+      "water": "0.4621",
+      "eutro": "30.1234",
+      "ghg": "27.4411"
+    },
+    "weighted": {
+      "land": "1.2004",
+      "water": "0.1348",
+      "eutro": "11.7983",
+      "ghg": "2.9728"
+    },
+    "ecoScore": {
+      "points": "77",
+      "grade": "D"
+    },
+    "raw": {
+      "land": "4.5042",
+      "water": "7.5542",
+      "eutro": "43.2870",
+      "ghg": "1.7875"
+    },
+    "other": {
+      "servingNum": "12",
+      "servingUnit": "oz",
+      "servingKilo": "0.3402",
+      "category": ["All"]
+    }
+  },
+  "Sunflower Oil": {
+    "rescaled": {
+      "land": "4.6904",
+      "water": "17.9815",
+      "eutro": "13.7054",
+      "ghg": "5.5556"
+    },
+    "weighted": {
+      "land": "0.9772",
+      "water": "5.2446",
+      "eutro": "5.3680",
+      "ghg": "0.6019"
+    },
+    "ecoScore": {
+      "points": "83",
+      "grade": "C"
+    },
+    "raw": {
+      "land": "3.6792",
+      "water": "293.9708",
+      "eutro": "19.8418",
+      "ghg": "0.3792"
+    },
+    "other": {
+      "servingNum": "24",
+      "servingUnit": "fl oz",
+      "servingKilo": "0.6804",
+      "category": ["All"]
+    }
+  },
+  "Peanuts": {
+    "rescaled": {
+      "land": "2.3763",
+      "water": "33.0461",
+      "eutro": "3.6890",
+      "ghg": "3.7037"
+    },
+    "weighted": {
+      "land": "0.4951",
+      "water": "9.6384",
+      "eutro": "1.4448",
+      "ghg": "0.4012"
+    },
+    "ecoScore": {
+      "points": "83",
+      "grade": "C"
+    },
+    "raw": {
+      "land": "1.8979",
+      "water": "540.2542",
+      "eutro": "5.5382",
+      "ghg": "0.2600"
+    },
+    "other": {
+      "servingNum": "16",
+      "servingUnit": "oz",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Poultry Meat": {
+    "rescaled": {
+      "land": "3.2180",
+      "water": "11.7748",
+      "eutro": "13.1679",
+      "ghg": "9.9327"
+    },
+    "weighted": {
+      "land": "0.6704",
+      "water": "3.4343",
+      "eutro": "5.1574",
+      "ghg": "1.0760"
+    },
+    "ecoScore": {
+      "points": "85",
+      "grade": "C"
+    },
+    "raw": {
+      "land": "2.5458",
+      "water": "192.5000",
+      "eutro": "19.0742",
+      "ghg": "0.6608"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Eggs": {
+    "rescaled": {
+      "land": "1.6077",
+      "water": "10.3065",
+      "eutro": "5.7789",
+      "ghg": "7.2391"
+    },
+    "weighted": {
+      "land": "0.3349",
+      "water": "3.0061",
+      "eutro": "2.2634",
+      "ghg": "0.7842"
+    },
+    "ecoScore": {
+      "points": "91",
+      "grade": "C"
+    },
+    "raw": {
+      "land": "1.3063",
+      "water": "168.4958",
+      "eutro": "8.5227",
+      "ghg": "0.4875"
+    },
+    "other": {
+      "servingNum": "12",
+      "servingUnit": "count",
+      "servingKilo": "0.6804",
+      "category": ["All"]
+    }
+  },
+  "Sugar": {
+    "rescaled": {
+      "land": "0.4628",
+      "water": "11.0629",
+      "eutro": "4.4515",
+      "ghg": "4.0404"
+    },
+    "weighted": {
+      "land": "0.0964",
+      "water": "3.2267",
+      "eutro": "1.7435",
+      "ghg": "0.4377"
+    },
+    "ecoScore": {
+      "points": "92",
+      "grade": "C"
+    },
+    "raw": {
+      "land": "0.4250",
+      "water": "180.8625",
+      "eutro": "6.6270",
+      "ghg": "0.2817"
+    },
+    "other": {
+      "servingNum": "4",
+      "servingUnit": "lbs",
+      "servingKilo": "1.8144",
+      "category": ["All"]
+    }
+  },
+  "Milk": {
+    "rescaled": {
+      "land": "2.3330",
+      "water": "11.2075",
+      "eutro": "2.7318",
+      "ghg": "4.3771"
+    },
+    "weighted": {
+      "land": "0.4860",
+      "water": "3.2688",
+      "eutro": "1.0699",
+      "ghg": "0.4742"
+    },
+    "ecoScore": {
+      "points": "93",
+      "grade": "C"
+    },
+    "raw": {
+      "land": "1.8646",
+      "water": "183.2250",
+      "eutro": "4.1713",
+      "ghg": "0.3033"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "gallon",
+      "servingKilo": "3.7875",
+      "category": ["All"]
+    }
+  },
+  "Beans": {
+    "rescaled": {
+      "land": "4.1247",
+      "water": "7.7731",
+      "eutro": "4.4953",
+      "ghg": "2.3569"
+    },
+    "weighted": {
+      "land": "0.8593",
+      "water": "2.2672",
+      "eutro": "1.7607",
+      "ghg": "0.2553"
+    },
+    "ecoScore": {
+      "points": "93",
+      "grade": "C"
+    },
+    "raw": {
+      "land": "3.2438",
+      "water": "127.0792",
+      "eutro": "6.6897",
+      "ghg": "0.1733"
+    },
+    "other": {
+      "servingNum": "15.5",
+      "servingUnit": "oz",
+      "servingKilo": "0.4400",
+      "category": ["All"]
+    }
+  },
+  "Vegetable Oil": {
+    "rescaled": {
+      "land": "2.7579",
+      "water": "7.3967",
+      "eutro": "3.0170",
+      "ghg": "9.7643"
+    },
+    "weighted": {
+      "land": "0.5746",
+      "water": "2.1574",
+      "eutro": "1.1817",
+      "ghg": "1.0578"
+    },
+    "ecoScore": {
+      "points": "93",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "2.1917",
+      "water": "120.9250",
+      "eutro": "4.5786",
+      "ghg": "0.6500"
+    },
+    "other": {
+      "servingNum": "24",
+      "servingUnit": "fl oz",
+      "servingKilo": "0.6804",
+      "category": ["All"]
+    }
+  },
+  "Bread": {
+    "rescaled": {
+      "land": "0.9527",
+      "water": "11.5518",
+      "eutro": "1.7745",
+      "ghg": "2.0202"
+    },
+    "weighted": {
+      "land": "0.1985",
+      "water": "3.3693",
+      "eutro": "0.6950",
+      "ghg": "0.2189"
+    },
+    "ecoScore": {
+      "points": "94",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "0.8021",
+      "water": "188.8542",
+      "eutro": "2.8043",
+      "ghg": "0.1517"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "Loaf",
+      "servingKilo": "0.5670",
+      "category": ["All"]
+    }
+  },
+  "Canola Oil": {
+    "rescaled": {
+      "land": "2.7877",
+      "water": "4.2407",
+      "eutro": "5.0741",
+      "ghg": "5.8923"
+    },
+    "weighted": {
+      "land": "0.5808",
+      "water": "1.2369",
+      "eutro": "1.9873",
+      "ghg": "0.6383"
+    },
+    "ecoScore": {
+      "points": "94",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "2.2146",
+      "water": "69.3292",
+      "eutro": "7.5161",
+      "ghg": "0.4008"
+    },
+    "other": {
+      "servingNum": "24",
+      "servingUnit": "fl oz",
+      "servingKilo": "0.6804",
+      "category": ["All"]
+    }
+  },
+  "Oatmeal": {
+    "rescaled": {
+      "land": "1.9676",
+      "water": "8.6063",
+      "eutro": "2.8908",
+      "ghg": "2.3569"
+    },
+    "weighted": {
+      "land": "0.4099",
+      "water": "2.5102",
+      "eutro": "1.1322",
+      "ghg": "0.2553"
+    },
+    "ecoScore": {
+      "points": "94",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "1.5833",
+      "water": "140.7000",
+      "eutro": "4.3984",
+      "ghg": "0.1733"
+    },
+    "other": {
+      "servingNum": "16",
+      "servingUnit": "oz",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Peas": {
+    "rescaled": {
+      "land": "1.9297",
+      "water": "7.0756",
+      "eutro": "1.8733",
+      "ghg": "1.0101"
+    },
+    "weighted": {
+      "land": "0.4020",
+      "water": "2.0637",
+      "eutro": "0.7337",
+      "ghg": "0.1094"
+    },
+    "ecoScore": {
+      "points": "96",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "1.5542",
+      "water": "115.6750",
+      "eutro": "2.9453",
+      "ghg": "0.0867"
+    },
+    "other": {
+      "servingNum": "16",
+      "servingUnit": "oz",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Berries": {
+    "rescaled": {
+      "land": "0.5630",
+      "water": "7.4859",
+      "eutro": "1.4893",
+      "ghg": "1.5152"
+    },
+    "weighted": {
+      "land": "0.1173",
+      "water": "2.1834",
+      "eutro": "0.5833",
+      "ghg": "0.1641"
+    },
+    "ecoScore": {
+      "points": "96",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "0.5021",
+      "water": "122.3833",
+      "eutro": "2.3970",
+      "ghg": "0.1192"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Tomatoes": {
+    "rescaled": {
+      "land": "0.1272",
+      "water": "6.5974",
+      "eutro": "1.8705",
+      "ghg": "2.0202"
+    },
+    "weighted": {
+      "land": "0.0265",
+      "water": "1.9243",
+      "eutro": "0.7326",
+      "ghg": "0.2189"
+    },
+    "ecoScore": {
+      "points": "96",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "0.1667",
+      "water": "107.8583",
+      "eutro": "2.9414",
+      "ghg": "0.1517"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "lb bag",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Palm Oil": {
+    "rescaled": {
+      "land": "0.5657",
+      "water": "0.1142",
+      "eutro": "2.7372",
+      "ghg": "12.4579"
+    },
+    "weighted": {
+      "land": "0.1178",
+      "water": "0.0333",
+      "eutro": "1.0721",
+      "ghg": "1.3496"
+    },
+    "ecoScore": {
+      "points": "97",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "0.5042",
+      "water": "1.8667",
+      "eutro": "4.1791",
+      "ghg": "0.8233"
+    },
+    "other": {
+      "servingNum": "24",
+      "servingUnit": "fl oz",
+      "servingKilo": "0.6804",
+      "category": ["All"]
+    }
+  },
+  "Tofu (soybeans)": {
+    "rescaled": {
+      "land": "0.8634",
+      "water": "2.6511",
+      "eutro": "1.5003",
+      "ghg": "4.7138"
+    },
+    "weighted": {
+      "land": "0.1799",
+      "water": "0.7732",
+      "eutro": "0.5876",
+      "ghg": "0.5107"
+    },
+    "ecoScore": {
+      "points": "97",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "0.7333",
+      "water": "43.3417",
+      "eutro": "2.4127",
+      "ghg": "0.3250"
+    },
+    "other": {
+      "servingNum": "14",
+      "servingUnit": "oz",
+      "servingKilo": "0.3992",
+      "category": ["All"]
+    }
+  },
+  "Beet Sugar": {
+    "rescaled": {
+      "land": "0.4060",
+      "water": "3.8839",
+      "eutro": "1.2946",
+      "ghg": "2.0202"
+    },
+    "weighted": {
+      "land": "0.0846",
+      "water": "1.1328",
+      "eutro": "0.5070",
+      "ghg": "0.2189"
+    },
+    "ecoScore": {
+      "points": "97",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "0.3813",
+      "water": "63.4958",
+      "eutro": "2.1189",
+      "ghg": "0.1517"
+    },
+    "other": {
+      "servingNum": "4",
+      "servingUnit": "lbs",
+      "servingKilo": "1.8144",
+      "category": ["All"]
+    }
+  },
+  "Corn": {
+    "rescaled": {
+      "land": "0.7064",
+      "water": "3.8482",
+      "eutro": "0.9161",
+      "ghg": "1.5152"
+    },
+    "weighted": {
+      "land": "0.1472",
+      "water": "1.1224",
+      "eutro": "0.3588",
+      "ghg": "0.1641"
+    },
+    "ecoScore": {
+      "points": "98",
+      "grade": "B"
+    },
+    "raw": {
+      "land": "0.6125",
+      "water": "62.9125",
+      "eutro": "1.5784",
+      "ghg": "0.1192"
+    },
+    "other": {
+      "servingNum": "16",
+      "servingUnit": "oz",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Cabbage": {
+    "rescaled": {
+      "land": "0.0595",
+      "water": "2.1302",
+      "eutro": "1.1849",
+      "ghg": "0.3367"
+    },
+    "weighted": {
+      "land": "0.0124",
+      "water": "0.6213",
+      "eutro": "0.4641",
+      "ghg": "0.0365"
+    },
+    "ecoScore": {
+      "points": "99",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.1146",
+      "water": "34.8250",
+      "eutro": "1.9623",
+      "ghg": "0.0433"
+    },
+    "other": {
+      "servingNum": "8",
+      "servingUnit": "oz",
+      "servingKilo": "0.2268",
+      "category": ["All"]
+    }
+  },
+  "Wine": {
+    "rescaled": {
+      "land": "0.3924",
+      "water": "1.4076",
+      "eutro": "1.0642",
+      "ghg": "2.0202"
+    },
+    "weighted": {
+      "land": "0.0818",
+      "water": "0.4106",
+      "eutro": "0.4168",
+      "ghg": "0.2189"
+    },
+    "ecoScore": {
+      "points": "99",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.3708",
+      "water": "23.0125",
+      "eutro": "1.7899",
+      "ghg": "0.1517"
+    },
+    "other": {
+      "servingNum": "750",
+      "servingUnit": "mL",
+      "servingKilo": "0.0010",
+      "category": ["All"]
+    }
+  },
+  "Bananas": {
+    "rescaled": {
+      "land": "0.4330",
+      "water": "2.0427",
+      "eutro": "0.7131",
+      "ghg": "1.0101"
+    },
+    "weighted": {
+      "land": "0.0902",
+      "water": "0.5958",
+      "eutro": "0.2793",
+      "ghg": "0.1094"
+    },
+    "ecoScore": {
+      "points": "99",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.4021",
+      "water": "33.3958",
+      "eutro": "1.2886",
+      "ghg": "0.0867"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "Hand",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Apples": {
+    "rescaled": {
+      "land": "0.0812",
+      "water": "3.2131",
+      "eutro": "0.2084",
+      "ghg": "0.1684"
+    },
+    "weighted": {
+      "land": "0.0169",
+      "water": "0.9372",
+      "eutro": "0.0816",
+      "ghg": "0.0182"
+    },
+    "ecoScore": {
+      "points": "99",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.1313",
+      "water": "52.5292",
+      "eutro": "0.5679",
+      "ghg": "0.0325"
+    },
+    "other": {
+      "servingNum": "3",
+      "servingUnit": "lb bag",
+      "servingKilo": "1.3608",
+      "category": ["All"]
+    }
+  },
+  "Potatoes": {
+    "rescaled": {
+      "land": "0.1489",
+      "water": "1.0544",
+      "eutro": "0.7652",
+      "ghg": "0.1684"
+    },
+    "weighted": {
+      "land": "0.0310",
+      "water": "0.3075",
+      "eutro": "0.2997",
+      "ghg": "0.0182"
+    },
+    "ecoScore": {
+      "points": "99",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.1833",
+      "water": "17.2375",
+      "eutro": "1.3630",
+      "ghg": "0.0325"
+    },
+    "other": {
+      "servingNum": "5",
+      "servingUnit": "lb bag",
+      "servingKilo": "2.2680",
+      "category": ["All"]
+    }
+  },
+  "Oranges": {
+    "rescaled": {
+      "land": "0.1434",
+      "water": "1.4754",
+      "eutro": "0.4251",
+      "ghg": "0.1684"
+    },
+    "weighted": {
+      "land": "0.0299",
+      "water": "0.4303",
+      "eutro": "0.1665",
+      "ghg": "0.0182"
+    },
+    "ecoScore": {
+      "points": "99",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.1792",
+      "water": "24.1208",
+      "eutro": "0.8773",
+      "ghg": "0.0325"
+    },
+    "other": {
+      "servingNum": "3",
+      "servingUnit": "lb bag",
+      "servingKilo": "1.3608",
+      "category": ["All"]
+    }
+  },
+  "Lemons": {
+    "rescaled": {
+      "land": "0.1434",
+      "water": "1.4754",
+      "eutro": "0.4251",
+      "ghg": "0.1684"
+    },
+    "weighted": {
+      "land": "0.0299",
+      "water": "0.4303",
+      "eutro": "0.1665",
+      "ghg": "0.0182"
+    },
+    "ecoScore": {
+      "points": "99",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.1792",
+      "water": "24.1208",
+      "eutro": "0.8773",
+      "ghg": "0.0325"
+    },
+    "other": {
+      "servingNum": "3",
+      "servingUnit": "lb bag",
+      "servingKilo": "1.3608",
+      "category": ["All"]
+    }
+  },
+  "Barley": {
+    "rescaled": {
+      "land": "0.2111",
+      "water": "0.3051",
+      "eutro": "0.4498",
+      "ghg": "1.5152"
+    },
+    "weighted": {
+      "land": "0.0440",
+      "water": "0.0890",
+      "eutro": "0.1762",
+      "ghg": "0.1641"
+    },
+    "ecoScore": {
+      "points": "100",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.2313",
+      "water": "4.9875",
+      "eutro": "0.9126",
+      "ghg": "0.1192"
+    },
+    "other": {
+      "servingNum": "16",
+      "servingUnit": "oz",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Onions": {
+    "rescaled": {
+      "land": "0.0162",
+      "water": "0.2551",
+      "eutro": "0.6994",
+      "ghg": "0.1684"
+    },
+    "weighted": {
+      "land": "0.0034",
+      "water": "0.0744",
+      "eutro": "0.2739",
+      "ghg": "0.0182"
+    },
+    "ecoScore": {
+      "points": "100",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.0813",
+      "water": "4.1708",
+      "eutro": "1.2690",
+      "ghg": "0.0325"
+    },
+    "other": {
+      "servingNum": "5",
+      "servingUnit": "lb bag",
+      "servingKilo": "2.2680",
+      "category": ["All"]
+    }
+  },
+  "Soymilk": {
+    "rescaled": {
+      "land": "0.0893",
+      "water": "0.4960",
+      "eutro": "0.1015",
+      "ghg": "1.3468"
+    },
+    "weighted": {
+      "land": "0.0186",
+      "water": "0.1447",
+      "eutro": "0.0397",
+      "ghg": "0.1459"
+    },
+    "ecoScore": {
+      "points": "100",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.1375",
+      "water": "8.1083",
+      "eutro": "0.4152",
+      "ghg": "0.1083"
+    },
+    "other": {
+      "servingNum": "1",
+      "servingUnit": "gallon",
+      "servingKilo": "3.7875",
+      "category": ["All"]
+    }
+  },
+  "Carrots": {
+    "rescaled": {
+      "land": "0.0000",
+      "water": "0.5067",
+      "eutro": "0.2523",
+      "ghg": "0.1684"
+    },
+    "weighted": {
+      "land": "0.0000",
+      "water": "0.1478",
+      "eutro": "0.0988",
+      "ghg": "0.0182"
+    },
+    "ecoScore": {
+      "points": "100",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.0688",
+      "water": "8.2833",
+      "eutro": "0.6306",
+      "ghg": "0.0325"
+    },
+    "other": {
+      "servingNum": "16",
+      "servingUnit": "oz bag",
+      "servingKilo": "0.4536",
+      "category": ["All"]
+    }
+  },
+  "Cassava Flour": {
+    "rescaled": {
+      "land": "0.4006",
+      "water": "0.0000",
+      "eutro": "0.0000",
+      "ghg": "1.1785"
+    },
+    "weighted": {
+      "land": "0.0835",
+      "water": "0.0000",
+      "eutro": "0.0000",
+      "ghg": "0.1277"
+    },
+    "ecoScore": {
+      "points": "100",
+      "grade": "A"
+    },
+    "raw": {
+      "land": "0.3771",
+      "water": "0.0000",
+      "eutro": "0.2703",
+      "ghg": "0.0975"
+    },
+    "other": {
+      "servingNum": "14",
+      "servingUnit": "oz",
+      "servingKilo": "0.3992",
+      "category": ["All"]
+    }
+  }
 }
