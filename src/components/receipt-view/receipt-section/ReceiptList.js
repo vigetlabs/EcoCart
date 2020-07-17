@@ -16,7 +16,7 @@ const ReceiptList = ({ cartState }) => {
     if (cartState[item] > 0) {
       return (
         <>
-          <ReceiptListItem name={item} cost={foodData[item].ecoScore.score} key={item} />
+          <ReceiptListItem name={item} cost={foodData[item].ecoScore.points} key={item} />
           {index !== cartState.length - 1
             ? <Divider variant='inset'/>
             : null
