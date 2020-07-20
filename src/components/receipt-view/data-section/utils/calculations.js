@@ -1,9 +1,17 @@
 // Data
 import foodData from '../../../../../content/food-data.json';
 
-const impactTypes = ['land', 'water', 'eutro', 'ghg'];
+const IMPACT_TYPES = ['land', 'water', 'eutro', 'ghg'];
 
 const round = (number) => Math.round(1000 * number) / 1000;
+
+const GRADING_SCALE_MAXIMA = {
+  F: 0,
+  D: 41,
+  C: 78,
+  B: 94,
+  A: 99,
+};
 
 export const getCartItems = (cart) => {
   const keys = Object.keys(cart);
@@ -19,7 +27,7 @@ export const getStandardizedImpactValue = (cart) => {
   const cartItems = getCartItems(cart);
   const impactValues = cartItems.map(
     // TODO: decouple?
-    (item) => foodData[item].ecoScore.points * cart[item],
+    (item) => foodData[item].ecoScore.points * getItemKilos(item, cart[item]),
   );
   return impactValues.reduce((acc, curr) => acc + curr);
 };
@@ -52,7 +60,39 @@ export const getUsageImpact = (cart, type) => {
 };
 
 export const getSpecializedImpactValue = (cart) => {
-  const weightedScores = impactTypes.map((type) => getUsageImpact(cart, type));
+  const weightedScores = IMPACT_TYPES.map((type) => getUsageImpact(cart, type));
   const unroundedValue = weightedScores.reduce((acc, curr) => acc + curr);
   return round(unroundedValue);
+};
+
+export const getMaximum = (cart) => {
+  const max = IMPACT_TYPES.reduce((acc, curr) => {
+    const impact = getUsageImpact(cart, curr);
+    return impact > acc ? impact : acc;
+  }, 0);
+
+  return max;
+};
+
+export const getGrade = (cart) => {
+  // const { f, d, c, b } = GRADING_SCALE_MAXIMA;
+  // if (totalImpact <= f) {
+  //   return 'F';
+  // } else if (totalImpact <= d) {
+  //   return 'D';
+  // } else if (totalImpact <= c) {
+  //   return 'C';
+  // } else if (totalImpact <= b) {
+  //   return 'B';
+  // }
+  // return 'A';
+
+  const totalImpact = getTotalImpactGrade(cart);
+
+  const reducer = (acc, curr) => {
+    const gradeStart = GRADING_SCALE_MAXIMA[curr];
+    return totalImpact >= gradeStart ? curr : acc;
+  };
+
+  return Object.keys(GRADING_SCALE_MAXIMA).reduce(reducer);
 };
