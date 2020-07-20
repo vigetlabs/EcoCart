@@ -11,6 +11,7 @@ import styles from '../styles/impact-result.module.css';
 import {
   getGrade,
   getTotalImpactGrade,
+  getCartItems,
 } from '../data-section/utils/calculations';
 
 const ImpactResult = ({ cartState }) => (
@@ -23,7 +24,7 @@ const ImpactResult = ({ cartState }) => (
 
     <Grid item sm={6}>
       <Typography variant="h5" align="right">
-        {getTotalImpactGrade(cartState)}
+        {getCartItems(cartState).length ? getTotalImpactGrade(cartState) : null}
       </Typography>
     </Grid>
 
@@ -35,7 +36,7 @@ const ImpactResult = ({ cartState }) => (
 
     <Grid item sm={6}>
       <Typography variant="h5" align="right">
-        {getGrade(cartState)}
+        {getCartItems(cartState).length ? getGrade(cartState) : null}
       </Typography>
     </Grid>
 

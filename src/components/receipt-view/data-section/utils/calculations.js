@@ -3,7 +3,10 @@ import foodData from '../../../../../content/food-data.json';
 
 const IMPACT_TYPES = ['land', 'water', 'eutro', 'ghg'];
 
-const round = (number) => Math.round(1000 * number) / 1000;
+const round = (number) => {
+  const place = 100;
+  return Math.round(place * number) / place;
+};
 
 const GRADING_SCALE_MAXIMA = {
   F: 0,
@@ -29,7 +32,7 @@ export const getStandardizedImpactValue = (cart) => {
     // TODO: decouple?
     (item) => foodData[item].ecoScore.points * getItemKilos(item, cart[item]),
   );
-  return impactValues.reduce((acc, curr) => acc + curr);
+  return round(impactValues.reduce((acc, curr) => acc + curr));
 };
 
 export const getTotalImpactGrade = (cart) => {
@@ -50,10 +53,11 @@ export const getTotalImpactGrade = (cart) => {
   return Math.floor(value);
 };
 
-export const getUsageImpact = (cart, type) => {
+export const getUsageImpact = (cart, type, rescaled) => {
+  const weightedOrRescaled = rescaled ? 'rescaled' : 'weighted';
   const cartItems = getCartItems(cart);
   const cartItemWeights = cartItems.map(
-    (item) => foodData[item].weighted[type] * 1,
+    (item) => foodData[item][weightedOrRescaled][type] * 1,
   );
   const totalWeight = cartItemWeights.reduce((acc, curr) => acc + curr);
   return round(totalWeight);
@@ -67,7 +71,7 @@ export const getSpecializedImpactValue = (cart) => {
 
 export const getMaximum = (cart) => {
   const max = IMPACT_TYPES.reduce((acc, curr) => {
-    const impact = getUsageImpact(cart, curr);
+    const impact = getUsageImpact(cart, curr, true);
     return impact > acc ? impact : acc;
   }, 0);
 
@@ -75,18 +79,6 @@ export const getMaximum = (cart) => {
 };
 
 export const getGrade = (cart) => {
-  // const { f, d, c, b } = GRADING_SCALE_MAXIMA;
-  // if (totalImpact <= f) {
-  //   return 'F';
-  // } else if (totalImpact <= d) {
-  //   return 'D';
-  // } else if (totalImpact <= c) {
-  //   return 'C';
-  // } else if (totalImpact <= b) {
-  //   return 'B';
-  // }
-  // return 'A';
-
   const totalImpact = getTotalImpactGrade(cart);
 
   const reducer = (acc, curr) => {
