@@ -27,7 +27,7 @@
             "servingUnit": "lb",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Meat & Seafood"
             ]
         }
@@ -60,7 +60,7 @@
             "servingUnit": "lb",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Meat & Seafood"
             ]
         }
@@ -93,7 +93,7 @@
             "servingUnit": "slices",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Dairy & Eggs"
             ]
         }
@@ -126,7 +126,7 @@
             "servingUnit": "lb",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Meat & Seafood"
             ]
         }
@@ -159,7 +159,7 @@
             "servingUnit": "lb",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Meat & Seafood"
             ]
         }
@@ -192,7 +192,7 @@
             "servingUnit": "lb",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Meat & Seafood"
             ]
         }
@@ -225,7 +225,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.2903",
             "category": [
-                "All",
+                "All Items",
                 "Snacks"
             ]
         }
@@ -258,7 +258,7 @@
             "servingUnit": "lb",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Meat & Seafood"
             ]
         }
@@ -291,7 +291,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.0998",
             "category": [
-                "All",
+                "All Items",
                 "Snacks"
             ]
         }
@@ -324,7 +324,7 @@
             "servingUnit": "fl oz",
             "servingKilo": "0.9072",
             "category": [
-                "All",
+                "All Items",
                 "Pantry"
             ]
         }
@@ -357,7 +357,7 @@
             "servingUnit": "lb",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Dry Goods"
             ]
         }
@@ -390,7 +390,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.3402",
             "category": [
-                "All",
+                "All Items",
                 "Beverages"
             ]
         }
@@ -423,7 +423,7 @@
             "servingUnit": "fl oz",
             "servingKilo": "0.6804",
             "category": [
-                "All",
+                "All Items",
                 "Pantry"
             ]
         }
@@ -456,7 +456,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Snacks"
             ]
         }
@@ -489,7 +489,7 @@
             "servingUnit": "lb",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Meat & Seafood"
             ]
         }
@@ -522,7 +522,7 @@
             "servingUnit": "count",
             "servingKilo": "0.6804",
             "category": [
-                "All",
+                "All Items",
                 "Dairy & Eggs"
             ]
         }
@@ -555,7 +555,7 @@
             "servingUnit": "lbs",
             "servingKilo": "1.8144",
             "category": [
-                "All",
+                "All Items",
                 "Pantry"
             ]
         }
@@ -585,10 +585,10 @@
         },
         "other": {
             "servingNum": "1",
-            "servingUnit": "gallon",
+            "servingUnit": "gAll Itemson",
             "servingKilo": "3.7875",
             "category": [
-                "All",
+                "All Items",
                 "Dairy & Eggs"
             ]
         }
@@ -621,7 +621,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.44",
             "category": [
-                "All",
+                "All Items",
                 "Canned Goods"
             ]
         }
@@ -654,7 +654,7 @@
             "servingUnit": "fl oz",
             "servingKilo": "0.6804",
             "category": [
-                "All",
+                "All Items",
                 "Pantry"
             ]
         }
@@ -687,7 +687,7 @@
             "servingUnit": "Loaf",
             "servingKilo": "0.567",
             "category": [
-                "All",
+                "All Items",
                 "Bakery"
             ]
         }
@@ -720,7 +720,7 @@
             "servingUnit": "fl oz",
             "servingKilo": "0.6804",
             "category": [
-                "All",
+                "All Items",
                 "Pantry"
             ]
         }
@@ -753,7 +753,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Breakfast"
             ]
         }
@@ -786,7 +786,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Canned Goods"
             ]
         }
@@ -819,7 +819,7 @@
             "servingUnit": "lb",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -852,7 +852,7 @@
             "servingUnit": "lb bag",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -885,7 +885,7 @@
             "servingUnit": "fl oz",
             "servingKilo": "0.6804",
             "category": [
-                "All",
+                "All Items",
                 "Pantry"
             ]
         }
@@ -918,7 +918,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.3992",
             "category": [
-                "All",
+                "All Items",
                 "Deli"
             ]
         }
@@ -951,7 +951,7 @@
             "servingUnit": "lbs",
             "servingKilo": "1.8144",
             "category": [
-                "All",
+                "All Items",
                 "Pantry"
             ]
         }
@@ -984,7 +984,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -1017,7 +1017,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.2268",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -1050,7 +1050,7 @@
             "servingUnit": "mL",
             "servingKilo": "0.001",
             "category": [
-                "All",
+                "All Items",
                 "Alcohol"
             ]
         }
@@ -1083,7 +1083,7 @@
             "servingUnit": "Hand",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -1116,7 +1116,7 @@
             "servingUnit": "lb bag",
             "servingKilo": "1.3608",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -1149,7 +1149,7 @@
             "servingUnit": "lb bag",
             "servingKilo": "2.268",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -1182,7 +1182,7 @@
             "servingUnit": "lb bag",
             "servingKilo": "1.3608",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -1215,7 +1215,7 @@
             "servingUnit": "lb bag",
             "servingKilo": "1.3608",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -1248,7 +1248,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Dry Goods"
             ]
         }
@@ -1281,7 +1281,7 @@
             "servingUnit": "lb bag",
             "servingKilo": "2.268",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -1311,10 +1311,10 @@
         },
         "other": {
             "servingNum": "1",
-            "servingUnit": "gallon",
+            "servingUnit": "gAll Itemson",
             "servingKilo": "3.7875",
             "category": [
-                "All",
+                "All Items",
                 "Dairy & Eggs"
             ]
         }
@@ -1347,7 +1347,7 @@
             "servingUnit": "oz bag",
             "servingKilo": "0.4536",
             "category": [
-                "All",
+                "All Items",
                 "Produce"
             ]
         }
@@ -1380,7 +1380,7 @@
             "servingUnit": "oz",
             "servingKilo": "0.3992",
             "category": [
-                "All",
+                "All Items",
                 "Pantry"
             ]
         }

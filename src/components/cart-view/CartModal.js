@@ -20,7 +20,7 @@ const CartModal = ({ open, toggleModal, cartState }) => {
   const generateItems = Object.keys(cartState).map((itemKey) => {
     if (cartState[itemKey] > 0) {
       return (
-        <CartItem name={itemKey} amount={cartState[itemKey]} />
+        <CartItem key={itemKey} name={itemKey} amount={cartState[itemKey]} />
       );
     }
     return null;
