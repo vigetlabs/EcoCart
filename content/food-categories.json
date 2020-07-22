@@ -1,3 +1,16 @@
 {
-  "categories": ["All", "Meat", "Veggies", "Fruits"]
+    "categories": [
+        "Deli",
+        "Breakfast",
+        "Meat & Seafood",
+        "Dry Goods",
+        "Beverages",
+        "Alcohol",
+        "Snacks",
+        "Pantry",
+        "Produce",
+        "Dairy & Eggs",
+        "Bakery",
+        "Canned Goods"
+    ]
 }
