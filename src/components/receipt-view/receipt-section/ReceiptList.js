@@ -12,37 +12,28 @@ import styles from '../styles/receipt-list.module.css';
 import foodData from '../../../../content/food-data.json';
 
 const ReceiptList = ({ cartState }) => {
-  const generateList = Object.keys(cartState).map((item, index) => {
+  const generateList = Object.keys(cartState).map((item) => {
     if (cartState[item] > 0) {
       return (
-        <>
-          <ReceiptListItem name={item} cost={foodData[item].ecoScore.points} key={item} />
-          {index !== cartState.length - 1
-            ? <Divider variant='inset'/>
-            : null
-          }
-        </>
+        <ReceiptListItem
+          name={item}
+          cost={foodData[item].ecoScore.points}
+          key={item}
+        />
       );
     }
     return null;
   });
 
   return (
-  <Grid
-    className={styles.listBox}
-    item
-  >
-      <List>
-        {generateList}
-      </List>
-  </Grid>
+    <Grid className={styles.listBox} item>
+      <List>{generateList}</List>
+    </Grid>
   );
 };
 
-ReceiptList.propTypes = {
-};
+ReceiptList.propTypes = {};
 
-ReceiptList.defaultProps = {
-};
+ReceiptList.defaultProps = {};
 
 export default ReceiptList;
