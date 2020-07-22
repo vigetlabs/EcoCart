@@ -26,15 +26,6 @@ const GHG = 'Carbon';
 const ImpactDonut = ({ item }) => {
   const itemData = foodData[item];
 
-  console.log(`
-  Impact Score: ${itemData.ecoScore.points}
-  Impact Grade: ${itemData.ecoScore.grade}
-  Land: ${itemData.rescaled.land}
-  Carbon: ${itemData.rescaled.ghg}
-  Water: ${itemData.rescaled.water}
-  Eutrophication: ${itemData.rescaled.eutro}
-  `);
-
   return (
   <div className={styles.donut}>
       <div>
