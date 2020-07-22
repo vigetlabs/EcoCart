@@ -10,8 +10,8 @@ const round = (number) => {
 
 const GRADING_SCALE_MAXIMA = {
   F: 0,
-  D: 41,
-  C: 78,
+  D: 51,
+  C: 80,
   B: 94,
   A: 99,
 };

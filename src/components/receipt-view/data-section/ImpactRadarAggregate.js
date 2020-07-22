@@ -15,15 +15,7 @@ import {
 import styles from '../styles/impact-radar-aggregate.module.css';
 
 // Utils
-import {
-  getUsageImpact,
-  getStandardizedImpactValue,
-  getTotalImpactGrade,
-  getSpecializedImpactValue,
-  getMaximum,
-  getGrade,
-  getCartItems,
-} from './utils/calculations';
+import { getUsageImpact, getMaximum, getCartItems } from './utils/calculations';
 
 const LAND = 'land';
 const WATER = 'water';
@@ -34,19 +26,6 @@ const ImpactRadarAggregate = ({ cartState }) => (
   <div className={styles.donut}>
     {getCartItems(cartState).length ? (
       <div>
-        <p>
-          Standardized Impact Value: {getStandardizedImpactValue(cartState)}
-        </p>
-        <p>Total Impact Score: {getTotalImpactGrade(cartState)}</p>
-        <p>Total Impact Grade: {getGrade(cartState)}</p>
-        <p>Land:{JSON.stringify(getUsageImpact(cartState, LAND))}</p>
-        <p>Carbon: {JSON.stringify(getUsageImpact(cartState, GHG))}</p>
-        <p>Water: {JSON.stringify(getUsageImpact(cartState, WATER))}</p>
-        <p>
-          Eutrophication: {JSON.stringify(getUsageImpact(cartState, EUTRO))}
-        </p>
-        <p>Specialized Impact Value: {getSpecializedImpactValue(cartState)}</p>
-        <p>Maxima: {getMaximum(cartState)}</p>
         <VictoryChart
           polar
           theme={VictoryTheme.material}

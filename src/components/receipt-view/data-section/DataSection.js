@@ -4,7 +4,7 @@ import React from 'react';
 // Components
 import { Grid, Typography } from '@material-ui/core';
 import DataBreakdownAggregate from './DataBreakdownAggregate';
-import ImpactRadarAggregate from './ImpactRadarAggregate';
+import ImpactDonutAggregate from './ImpactDonutAggregate';
 
 // Styles
 import styles from '../styles/data-section.module.css';
@@ -18,7 +18,7 @@ const DataSection = ({ cartState }) => (
     </Grid>
 
     <Grid item sm={6} className={styles.donutBox}>
-      <ImpactRadarAggregate cartState={cartState} />
+      <ImpactDonutAggregate cartState={cartState} />
     </Grid>
 
     <Grid item sm={6} className={styles.dataBreakdownBox}>
