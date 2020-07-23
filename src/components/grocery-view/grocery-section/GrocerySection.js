@@ -22,7 +22,12 @@ const GROCERY_INFO = `Click through product categories, view item grades,
 const GrocerySection = ({ cartState, setCartState }) => {
   const rows = categories.map((section) => (
     <Grid item>
-      <CategoryRow cartState={cartState} setCartState={setCartState} category={section} />
+       <CategoryRow
+        key={section}
+        cartState={cartState}
+        setCartState={setCartState}
+        category={section}
+      />
     </Grid>
   ));
 
