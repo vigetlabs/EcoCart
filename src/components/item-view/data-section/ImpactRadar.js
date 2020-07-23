@@ -34,10 +34,11 @@ const ImpactDonut = ({ item }) => {
           theme={VictoryTheme.material}
           domain={{ y: [0, 1] }}
           startAngle={45}
-          endAngle={405}>
+          endAngle={405}
+        >
           <VictoryGroup
             colorScale={['green']}
-            style={{ data: { fillOpacity: 0.75, strokeWidth: 2 } }}>
+            style={{ data: { fillOpacity: 0.4, strokeWidth: 2 } }}>
             <VictoryArea
               data={[
                 {
@@ -65,17 +66,31 @@ const ImpactDonut = ({ item }) => {
                 key={i}
                 dependentAxis
                 style={{
-                  axisLabel: { padding: 15 },
+                  axisLabel: { padding: 25 },
                   axis: { stroke: 'none' },
-                  grid: { stroke: 'grey', strokeWidth: 0.1, opacity: 0.5 },
-                  tickLabels: { fill: 'none' },
+                  grid: {
+                    stroke: (tick) => {
+                      if (tick.tickValue <= 0.5) {
+                        return 'green';
+                      } if (tick.tickValue <= 0.8) {
+                        return 'orange';
+                      }
+                      return 'red';
+                    },
+                    strokeWidth: 0.2,
+                    opacity: 0.7,
+                  },
+                  tickLabels: {
+                    fill: 'black',
+                    fontSize: '8px',
+                  },
                 }}
                 tickLabelComponent={<VictoryLabel labelPlacement="vertical" />}
                 labelPlacement="perpendicular"
                 axisValue={i + 1}
                 label={key}
-                tickFormat={(t) => Math.ceil(t)}
-                tickValues={[0, 1]}
+                tickFormat={(t) => ((t * 10) % 2 === 0 && t !== 0 ? t * 100 : null)}
+                tickValues={[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]}
               />
             ),
           )}
