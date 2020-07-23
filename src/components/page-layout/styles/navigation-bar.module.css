@@ -5,8 +5,13 @@
 
 .container {
   background-color: lavender;
+  height: 10vh;
 }
 
 .icon {
   color: green;
+}
+
+.ecoLogo {
+  width: 50%;
 }

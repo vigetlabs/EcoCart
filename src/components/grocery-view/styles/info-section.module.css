@@ -2,11 +2,15 @@
   display: inline-block;
   background-color: #e5e5e5;
   width: 100vw;
-  margin-left: -25px;
+  height: 100vh;
+  margin-top: -20;
   padding: 1.45rem 1.0875rem;
+  background-image: url('https://images.unsplash.com/photo-1557445796-184d83fc49b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80');
 }
 
 .textContainer {
   max-width: 574px;
   margin: auto;
+  padding: 2em;
+  background-color: rgba(196,201,185,0.5);
 }
