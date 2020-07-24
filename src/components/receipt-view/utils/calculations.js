@@ -120,3 +120,22 @@ export const getHighImpactItems = (cart) => {
   );
   return highImpactItems;
 };
+
+/**
+ * Gets lower-impact alternatives for items
+ *
+ * @see getCartItems
+ *
+ * @param {String[]} items
+ *
+ * @return {Object<string,String[]>}
+ */
+export const getAlternatives = (items) => {
+  const reducer = (obj, item) => {
+    const alts = foodData[item].other.alternatives || [];
+
+    return { ...obj, [item]: alts };
+  };
+
+  return items.reduce(reducer, {});
+};

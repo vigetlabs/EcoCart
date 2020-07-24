@@ -7,7 +7,7 @@ import { VictoryPie } from 'victory';
 import styles from '../styles/impact-donut-aggregate.module.css';
 
 // Utils
-import { getUsageImpact, getCartItems } from './utils/calculations';
+import { getUsageImpact, getCartItems } from '../utils/calculations';
 
 const LAND = 'land';
 const WATER = 'water';

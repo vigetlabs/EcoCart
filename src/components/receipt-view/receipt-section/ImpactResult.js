@@ -12,7 +12,7 @@ import {
   getGrade,
   getTotalImpactGrade,
   getCartItems,
-} from '../data-section/utils/calculations';
+} from '../utils/calculations';
 
 const ImpactResult = ({ cartState }) => (
   <Grid item container spacing={3} sm={12} className={styles.alternativesGrid}>
