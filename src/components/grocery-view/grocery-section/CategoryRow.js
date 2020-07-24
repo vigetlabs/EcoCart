@@ -13,7 +13,9 @@ import styles from '../styles/category-row.module.css';
 // Data
 import foodData from '../../../../content/food-data.json';
 
-const CategoryRow = ({ category, cartState, setCartState }) => {
+const CategoryRow = ({
+  category, cartState, setCartState, toggleHeaderTop,
+}) => {
   const [startIndex, setStartIndex] = useState(0);
 
   const groceryItems = Object.keys(cartState).map((itemKey) => {
@@ -23,7 +25,9 @@ const CategoryRow = ({ category, cartState, setCartState }) => {
           cartState={cartState}
           setCartState={setCartState}
           key={itemKey}
-          item={itemKey} />
+          item={itemKey}
+          toggleHeaderTop={toggleHeaderTop}
+      />
       );
     }
     return null;

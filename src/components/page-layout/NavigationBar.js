@@ -1,47 +1,83 @@
 import React from 'react';
 
 // Componenets
-import { Button, Grid } from '@material-ui/core';
+import {
+  Button,
+  Grid,
+  Typography,
+} from '@material-ui/core';
 import { Link } from 'gatsby';
-import StorefrontIcon from '@material-ui/icons/Storefront';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
-import HomeIcon from '@material-ui/icons/Home';
+import ecoLogo from '../../images/EcoCart_Logo.png';
 
 // Styles
 import styles from './styles/navigation-bar.module.css';
 
-const NavigationBar = ({ toggleModal }) => (
-  <div className={styles.container}>
-    <Grid container justify="space-between">
-      <Grid item>
-        <div>
+const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
+    <Grid
+      container
+      justify="center"
+      alignItems="center"
+      className={styles.container}
+    >
+    <image src='public/EcoCart_Log.png' alt="EcoCart" width="500" height="600" />
+      <Grid
+        item
+        sm={1}
+      >
         <Link
           to='/'
         >
           <Button
             className={styles.button}
           >
-            <HomeIcon className={styles.icon} />
+            <img
+              src={ecoLogo}
+              alt='EcoCart'
+              className={styles.ecoLogo}
+            />
+          </Button>
+        </Link>
+      </Grid>
+      <Grid
+        item
+        sm={5}
+      >
+        <Link
+          to='/'
+          className={styles.link}
+        >
+          <Button
+            className={styles.button}
+            onClick={resetHeaderTop}
+          >
+           <Typography> Welcome</Typography>
           </Button>
         </Link>
         <Link
           to='/#groceries'
+          className={styles.link}
         >
           <Button
             className={styles.button}
           >
-            <StorefrontIcon className={styles.icon} />
+            <Typography> Groceries</Typography>
           </Button>
         </Link>
-        </div>
       </Grid>
-      <Grid item>
+      <Grid
+        item
+        sm={5}
+        />
+      <Grid
+        item
+        sm={1}
+      >
         <Button className={styles.button} onClick={toggleModal}>
           <ShoppingBasketIcon className={styles.icon} />
-        </Button>{' '}
+        </Button>
       </Grid>
-    </Grid>
-  </div>
+  </Grid>
 );
 
 export default NavigationBar;

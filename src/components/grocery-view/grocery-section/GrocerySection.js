@@ -19,7 +19,7 @@ const GROCERY_INFO = `Click through product categories, view item grades,
                       or click an item to view more detailed information
                       including details on its environmental impact.`;
 
-const GrocerySection = ({ cartState, setCartState }) => {
+const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
   const rows = categories.map((section) => (
     <Grid item>
        <CategoryRow
@@ -27,6 +27,7 @@ const GrocerySection = ({ cartState, setCartState }) => {
         cartState={cartState}
         setCartState={setCartState}
         category={section}
+        toggleHeaderTop={toggleHeaderTop}
       />
     </Grid>
   ));

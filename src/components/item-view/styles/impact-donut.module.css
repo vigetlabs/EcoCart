@@ -1,8 +1,3 @@
-.container {
-  width: 100%;
-  display: flex;
-}
-
-.donut {
-  margin: auto;
+.chartBox {
+  max-width: 100%;
 }

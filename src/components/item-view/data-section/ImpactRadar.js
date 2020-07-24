@@ -27,14 +27,17 @@ const ImpactDonut = ({ item }) => {
   const itemData = foodData[item];
 
   return (
-  <div className={styles.donut}>
-      <div>
+
+      <div
+        className={styles.chartBox}
+      >
         <VictoryChart
           polar
           theme={VictoryTheme.material}
           domain={{ y: [0, 1] }}
           startAngle={45}
           endAngle={405}
+          width={500}
         >
           <VictoryGroup
             colorScale={['green']}
@@ -70,9 +73,9 @@ const ImpactDonut = ({ item }) => {
                   axis: { stroke: 'none' },
                   grid: {
                     stroke: (tick) => {
-                      if (tick.tickValue <= 0.5) {
+                      if (tick.tickValue <= 0.3) {
                         return 'green';
-                      } if (tick.tickValue <= 0.8) {
+                      } if (tick.tickValue <= 0.7) {
                         return 'orange';
                       }
                       return 'red';
@@ -104,7 +107,6 @@ const ImpactDonut = ({ item }) => {
           />
         </VictoryChart>
       </div>
-  </div>
   );
 };
 

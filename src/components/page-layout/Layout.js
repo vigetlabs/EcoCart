@@ -7,13 +7,11 @@
 
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
 
 // Components
 import { Grid, ThemeProvider } from '@material-ui/core';
 import theme from '../../../theme';
 import CartModal from '../cart-view/CartModal';
-import Header from './Header';
 import NavigationBar from './NavigationBar';
 
 // Styles
@@ -32,49 +30,61 @@ const createInitFoodList = () => {
 };
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   const [cartState, setCartState] = useState(createInitFoodList());
   const [modalOpen, setModalOpen] = useState(false);
+  const [headerTop, setHeaderTop] = useState('-150px');
 
   const toggleModal = () => {
     setModalOpen(!modalOpen);
   };
 
+  const toggleHeaderTop = () => {
+    if (headerTop === '0' || headerTop === 0) {
+      setHeaderTop('-150px');
+    } else {
+      setHeaderTop('0');
+    }
+  };
+
+  window.addEventListener('scroll', () => {
+    const st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > 400 && headerTop !== '0') {
+      setHeaderTop('0');
+    }
+  });
+
   return (
     <ThemeProvider theme={theme}>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <NavigationBar toggleModal={toggleModal} />
-      <CartModal cartState={cartState} open={modalOpen} toggleModal={toggleModal} />
-      <div className={styles.body}>
-      <Grid
-        container
-        justify="center"
-        alignItems="center"
-        sm={12}
-        className={styles.layoutBody}
-      >
-          {React.cloneElement(children, { cartState, setCartState })}
-      </Grid>
-        <footer
-          className={styles.layoutFooter}
+      <div className={styles.fullPage}>
+        <div
+          className={styles.layoutHeaderOn}
+          style={{ top: headerTop }}
         >
-          <p>
-            ©2020, A <a href="https://www.viget.com/">Viget</a> Project
-          </p>
-          <p>
-            Liam Becker, Jennifer Montoya, William Dinneen, Jackson Doyle, Mika
-            Byar
-          </p>
-        </footer>
+          <NavigationBar resetHeaderTop={toggleHeaderTop} toggleModal={toggleModal} />
+          <CartModal cartState={cartState} open={modalOpen} toggleModal={toggleModal} />
+        </div>
+        <div className={styles.body}>
+        <Grid
+          container
+          justify="center"
+          alignItems="center"
+          sm={12}
+          className={styles.layoutBody}
+        >
+            {React.cloneElement(children, { cartState, setCartState, toggleHeaderTop })}
+        </Grid>
+          <footer
+            className={styles.layoutFooter}
+          >
+            <p>
+              ©${new Date().getFullYear()}, A <a href="https://www.viget.com/">Viget</a> Project
+            </p>
+            <p>
+              Liam Becker, Jennifer Montoya, William Dinneen, Jackson Doyle, Mika
+              Byar
+            </p>
+          </footer>
+        </div>
       </div>
     </ThemeProvider>
   );

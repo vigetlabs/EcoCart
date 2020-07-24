@@ -14,6 +14,7 @@ const ReceiptPage = ({ cartState }) => (
       container
       item
       sm={9}
+      style={{ marginTop: '15vh' }}
     >
       <ReceiptSection cartState={cartState} />
       <ImpactAlternatives cartState={cartState} />

@@ -8,10 +8,18 @@ import { Grid, Typography } from '@material-ui/core';
 import styles from '../styles/data-breakdown.module.css';
 
 const DataBreakdown = () => (
-  <div>
-    <Grid container direction="column" spacing={0} className={styles.container}>
+    <Grid
+      container
+      direction="row"
+      spacing={4}
+      className={styles.container}
+    >
       <Grid item>
-        <Grid container direction="row" className={styles.container}>
+        <Grid
+          container
+          direction="row"
+          className={styles.container}
+        >
           <Grid item xs={1}>
             <svg width="30" height="50">
               <rect width="30" height="50" className={styles.overall} />
@@ -19,7 +27,7 @@ const DataBreakdown = () => (
           </Grid>
           <Grid item xs={11}>
             <div>
-              <Typography variant="h6">Overall Impact</Typography>
+              <Typography variant="h6">Land Use:</Typography>
               <Typography variant="body2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </Typography>
@@ -28,7 +36,11 @@ const DataBreakdown = () => (
         </Grid>
       </Grid>
       <Grid item>
-        <Grid container direction="row" className={styles.container}>
+        <Grid
+          container
+          direction="row"
+          className={styles.container}
+        >
           <Grid item xs={1}>
             <svg width="30" height="50">
               <rect width="30" height="50" className={styles.overall} />
@@ -36,7 +48,7 @@ const DataBreakdown = () => (
           </Grid>
           <Grid item xs={11}>
             <div>
-              <Typography variant="h6">Overall Impact</Typography>
+              <Typography variant="h6">Water Use:</Typography>
               <Typography variant="body2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </Typography>
@@ -45,7 +57,11 @@ const DataBreakdown = () => (
         </Grid>
       </Grid>
       <Grid item>
-        <Grid container direction="row" className={styles.container}>
+        <Grid
+          container
+          direction="row"
+          className={styles.container}
+        >
           <Grid item xs={1}>
             <svg width="30" height="50">
               <rect width="30" height="50" className={styles.overall} />
@@ -53,7 +69,7 @@ const DataBreakdown = () => (
           </Grid>
           <Grid item xs={11}>
             <div>
-              <Typography variant="h6">Overall Impact</Typography>
+              <Typography variant="h6">Carbon Emissions:</Typography>
               <Typography variant="body2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </Typography>
@@ -62,7 +78,11 @@ const DataBreakdown = () => (
         </Grid>
       </Grid>
       <Grid item>
-        <Grid container direction="row" className={styles.container}>
+        <Grid
+          container
+          direction="row"
+          className={styles.container}
+        >
           <Grid item xs={1}>
             <svg width="30" height="50">
               <rect width="30" height="50" className={styles.overall} />
@@ -70,7 +90,7 @@ const DataBreakdown = () => (
           </Grid>
           <Grid item xs={11}>
             <div>
-              <Typography variant="h6">Overall Impact</Typography>
+              <Typography variant="h6">Eutrophication:</Typography>
               <Typography variant="body2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </Typography>
@@ -79,7 +99,6 @@ const DataBreakdown = () => (
         </Grid>
       </Grid>
     </Grid>
-  </div>
 );
 
 DataBreakdown.propTypes = {};
