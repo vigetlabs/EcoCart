@@ -25,7 +25,9 @@ const openModal = (setModalOpen) => {
   setModalOpen(true);
 };
 
-const GroceryItem = ({ item, cartState, setCartState }) => {
+const GroceryItem = ({
+  item, cartState, setCartState, toggleHeaderTop,
+}) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const itemData = foodData[item];
@@ -55,7 +57,10 @@ const GroceryItem = ({ item, cartState, setCartState }) => {
             variant="text"
             size="small"
             endIcon={<ChevronRightIcon />}
-            onClick={() => openModal(setModalOpen)}>
+            onClick={() => {
+              toggleHeaderTop();
+              openModal(setModalOpen);
+            }}>
             View Details
           </Button>
         </CardContent>
@@ -78,6 +83,7 @@ const GroceryItem = ({ item, cartState, setCartState }) => {
       item={item}
       cartState={cartState}
       setCartState={setCartState}
+      toggleHeaderTop={toggleHeaderTop}
     />
   </>
   );

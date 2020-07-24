@@ -11,43 +11,63 @@ import styles from './styles/item-modal.module.css';
 // Data
 import foodData from '../../../content/food-data.json';
 
-const closeModal = (setModalOpen) => {
-  setModalOpen(false);
-};
-
 const ItemModal = ({
-  isModalOpen, setModalOpen, item, cartState, setCartState,
+  isModalOpen, setModalOpen, item, cartState, setCartState, toggleHeaderTop,
 }) => {
   const foodItem = foodData[item];
+
+  const closeModal = () => {
+    toggleHeaderTop();
+    setModalOpen(false);
+  };
 
   return (
   <Modal
     open={isModalOpen}
     onClose={() => closeModal(setModalOpen)}
-    aria-labelledby={`${item}-modal`}>
+    aria-labelledby={`${item}-modal`}
+  >
     <Paper className={styles.modal}>
       <Grid
         container
-        direction="column"
-        alignItems="flex-end"
-        alignContent="space-around"
         justify="center"
-        className={styles.grid}>
-        <Grid item>
-          <Grid container alignContent="space-around" justify="center">
-            <Grid item className={styles.square}>
-              <img className={styles.picture} src={foodItem.other.imageUrl} alt={item} />
-            </Grid>
-            <Grid item className={styles.square}>
-              <InfoSection
-                item={item}
-                cartState={cartState}
-                setCartState={setCartState}
-              />
-            </Grid>
+        className={styles.modalBox}
+      >
+        <Grid
+          item
+          container
+          sm={12}
+        >
+          <Grid
+            item
+            container
+            justify="center"
+            sm={6}
+            className={styles.imageBox}
+          >
+            <img
+              src={foodItem.other.imageUrl}
+              alt={item}
+              className={styles.image}
+            />
+          </Grid>
+          <Grid
+            item
+            sm={6}
+            className={styles.infoBox}
+          >
+            <InfoSection
+              item={item}
+              cartState={cartState}
+              setCartState={setCartState}
+            />
           </Grid>
         </Grid>
-        <Grid item>
+        <Grid
+          item
+          sm={12}
+          className={styles.DataSectionBox}
+        >
           <DataSection item={item} />
         </Grid>
       </Grid>

@@ -38,9 +38,12 @@ const Layout = ({ children }) => {
     setModalOpen(!modalOpen);
   };
 
-  const resetHeaderTop = () => {
-    console.log('hit');
-    setHeaderTop('-150px');
+  const toggleHeaderTop = () => {
+    if (headerTop === '0' || headerTop === 0) {
+      setHeaderTop('-150px');
+    } else {
+      setHeaderTop('0');
+    }
   };
 
   window.addEventListener('scroll', () => {
@@ -57,7 +60,7 @@ const Layout = ({ children }) => {
           className={styles.layoutHeaderOn}
           style={{ top: headerTop }}
         >
-          <NavigationBar resetHeaderTop={resetHeaderTop} toggleModal={toggleModal} />
+          <NavigationBar resetHeaderTop={toggleHeaderTop} toggleModal={toggleModal} />
           <CartModal cartState={cartState} open={modalOpen} toggleModal={toggleModal} />
         </div>
         <div className={styles.body}>
@@ -68,7 +71,7 @@ const Layout = ({ children }) => {
           sm={12}
           className={styles.layoutBody}
         >
-            {React.cloneElement(children, { cartState, setCartState })}
+            {React.cloneElement(children, { cartState, setCartState, toggleHeaderTop })}
         </Grid>
           <footer
             className={styles.layoutFooter}

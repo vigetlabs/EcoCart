@@ -1,8 +1,3 @@
-.square {
-  height: 40vh;
-  width: 30vw;
-}
-
-.envImpact {
-  padding: 1rem;
+.breakdownBox {
+  padding-top: 3em;
 }
