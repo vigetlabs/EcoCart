@@ -20,7 +20,7 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
       alignItems="center"
       className={styles.container}
     >
-    <image src='public/EcoCart_Log.png' alt="Girl in a jacket" width="500" height="600" />
+    <image src='public/EcoCart_Log.png' alt="EcoCart" width="500" height="600" />
       <Grid
         item
         sm={1}
@@ -45,7 +45,7 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
       >
         <Link
           to='/'
-          style={{ textDecoration: 'none' }}
+          className={styles.link}
         >
           <Button
             className={styles.button}
@@ -56,7 +56,7 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
         </Link>
         <Link
           to='/#groceries'
-          style={{ textDecoration: 'none' }}
+          className={styles.link}
         >
           <Button
             className={styles.button}
@@ -75,7 +75,7 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
       >
         <Button className={styles.button} onClick={toggleModal}>
           <ShoppingBasketIcon className={styles.icon} />
-        </Button>{' '}
+        </Button>
       </Grid>
   </Grid>
 );
