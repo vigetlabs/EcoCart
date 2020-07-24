@@ -4,13 +4,13 @@ const LegendSquare = ({
   legendStyle,
   impactType,
   colorsArray,
-  windowSizeValue,
+  windowDimensions,
 }) => (
   <div
     className={legendStyle}
     style={{
       backgroundColor: colorsArray[impactType],
-      width: windowSizeValue / 40,
+      width: windowDimensions.min / 40,
     }}></div>
 );
 

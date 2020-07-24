@@ -1,10 +1,9 @@
 .breakdownItem {
-  min-height: 10vh;
   text-align: left;
 }
 
 .breakdownBox {
-  padding: 3em 1em;
+  padding-left: 1em;
 }
 
 .impactText {

@@ -14,21 +14,21 @@ const WATER = 'water';
 const EUTRO = 'eutro';
 const GHG = 'ghg';
 
-const ImpactDonutAggregate = ({ cartState, windowSize }) => {
+const ImpactDonutAggregate = ({ cartState, windowDimensions }) => {
   const scale = 0.5;
 
   return (
     <div
       className={styles.container}
       style={{
-        width: windowSize * scale,
-        height: windowSize * scale,
+        width: windowDimensions.min * scale,
+        height: windowDimensions.min * scale,
       }}>
       {getCartItems(cartState).length ? (
         <div
           style={{
-            width: windowSize * scale,
-            height: windowSize * scale,
+            width: windowDimensions.min * scale,
+            height: windowDimensions.min * scale,
           }}>
           <svg className={styles.svg}>
             <VictoryPie
@@ -50,8 +50,8 @@ const ImpactDonutAggregate = ({ cartState, windowSize }) => {
                   y: getUsageImpact(cartState, GHG, true),
                 },
               ]}
-              width={windowSize * scale}
-              height={windowSize * scale}
+              width={windowDimensions.min * scale}
+              height={windowDimensions.min * scale}
               colorScale={['blue', 'gold', 'salmon', 'green']}
               standalone={false}
               padding={25}
