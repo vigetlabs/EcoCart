@@ -1,5 +1,5 @@
 // Data
-import foodData from '../../../../../content/food-data.json';
+import foodData from '../../../../content/food-data.json';
 
 const IMPACT_TYPES = ['land', 'water', 'eutro', 'ghg'];
 
@@ -16,25 +16,40 @@ const GRADING_SCALE_MAXIMA = {
   A: 99,
 };
 
+/**
+ * Gets all items in cart with quantity > 0
+
+ * @param {Object<string, number>} cart
+ *
+ * @return {String[]} All cart items
+ */
 export const getCartItems = (cart) => {
   const keys = Object.keys(cart);
   return keys.filter((item) => cart[item]);
 };
 
+/**
+ * Calculates number of kilos in a cart item
+ *
+ * @param {string} item
+ * @param {number} qty Item quantity in cart
+ *
+ * @return {number} total kilos
+ */
 export const getItemKilos = (item, qty) => {
   const kilosPerQty = foodData[item].other.servingKilo;
   return kilosPerQty * qty;
 };
 
-export const getStandardizedImpactValue = (cart) => {
-  const cartItems = getCartItems(cart);
-  const impactValues = cartItems.map(
-    // TODO: decouple?
-    (item) => foodData[item].ecoScore.points * getItemKilos(item, cart[item]),
-  );
-  return round(impactValues.reduce((acc, curr) => acc + curr));
-};
-
+/**
+ * Calculates total 0-100 grade for cart
+ *
+ * @see getCartItems
+ *
+ * @param {Object<string, number>} cart
+ *
+ * @return {number} 0-100 grade
+ */
 export const getTotalImpactGrade = (cart) => {
   const cartItems = getCartItems(cart);
   const totalKilos = cartItems.reduce(
@@ -69,15 +84,15 @@ export const getSpecializedImpactValue = (cart) => {
   return round(unroundedValue);
 };
 
-export const getMaximum = (cart) => {
-  const max = IMPACT_TYPES.reduce((acc, curr) => {
-    const impact = getUsageImpact(cart, curr, true);
-    return impact > acc ? impact : acc;
-  }, 0);
-
-  return max;
-};
-
+/**
+ * Calculates letter grade for cart
+ *
+ * @see getTotalImpactGrade
+ *
+ * @param {Object<string, number>} cart
+ *
+ * @return {string} Letter grade
+ */
 export const getGrade = (cart) => {
   const totalImpact = getTotalImpactGrade(cart);
 
@@ -87,4 +102,21 @@ export const getGrade = (cart) => {
   };
 
   return Object.keys(GRADING_SCALE_MAXIMA).reduce(reducer);
+};
+
+/**
+ * Returns all high impact items in cart
+ *
+ * @see getCartItems
+ *
+ * @param {Object<string, number>} cart
+ *
+ * @return {String[]} Array of high impact items
+ */
+export const getHighImpactItems = (cart) => {
+  const items = getCartItems(cart);
+  const highImpactItems = items.filter(
+    (item) => foodData[item].ecoScore.grade === 'F',
+  );
+  return highImpactItems;
 };
