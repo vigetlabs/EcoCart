@@ -21,7 +21,9 @@ const InfoSection = () => (
     <Grid
       item
       sm={6}
-      className={styles.textContainer}>
+      className={styles.textContainer}
+    >
+      <Typography variant="h2" align='center'>Eco Cart</Typography>
       <Typography variant="h5">{TEXT}</Typography>
     </Grid>
   </Grid>
