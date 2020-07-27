@@ -16,14 +16,13 @@ import styles from './styles/navigation-bar.module.css';
 const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
     <Grid
       container
-      justify="center"
+      justify="left"
       alignItems="center"
       className={styles.container}
     >
-    <image src='public/EcoCart_Log.png' alt="EcoCart" width="500" height="600" />
       <Grid
         item
-        sm={1}
+        xs={1}
       >
         <Link
           to='/'
@@ -41,7 +40,8 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
       </Grid>
       <Grid
         item
-        sm={5}
+        md={5}
+        sm={4}
       >
         <Link
           to='/'
@@ -67,14 +67,16 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
       </Grid>
       <Grid
         item
-        sm={5}
-        />
+        md={5}
+      />
       <Grid
         item
         sm={1}
       >
         <Button className={styles.button} onClick={toggleModal}>
-          <ShoppingBasketIcon className={styles.icon} />
+          <ShoppingBasketIcon
+            className={styles.icon}
+          />
         </Button>
       </Grid>
   </Grid>

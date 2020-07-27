@@ -20,8 +20,11 @@ const GROCERY_INFO = `Click through product categories, view item grades,
                       including details on its environmental impact.`;
 
 const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
-  const rows = categories.map((section) => (
-    <Grid item>
+  const rows = categories.map((section, index) => (
+    <Grid
+      item
+      className={`${styles.rowBox} ${index % 2 === 0 ? null : styles.rowBoxGrey}`}
+    >
        <CategoryRow
         key={section}
         cartState={cartState}
@@ -39,23 +42,26 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
         <div
           className={styles.container}
         >
-          <Typography
-            variant="h3"
-            component="h1"
-            id='groceries'
+          <div
+            className={styles.instructions}
           >
-            Groceries
-          </Typography>
-          <Typography variant="body1" component="p">
-            {GROCERY_INFO}
-          </Typography>
+            <Typography
+              variant="h5"
+              component="p"
+              id='groceries'
+              className={styles.instructionsText}
+            >
+              {GROCERY_INFO}
+            </Typography>
+          </div>
         </div>
         <div>
           <Grid
             container
             direction="column"
             alignContents="flex-end"
-            alignItems="stretch">
+            alignItems="stretch"
+          >
             {rows}
           </Grid>
         </div>

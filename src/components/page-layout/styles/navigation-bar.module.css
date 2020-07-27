@@ -6,6 +6,7 @@
 .container {
   background-color: lavender;
   height: 10vh;
+  min-width: 1000px;
 }
 
 .icon {

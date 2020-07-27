@@ -1,3 +1,31 @@
 .container {
   padding: 1.0875rem;
+  padding-top: 0;
+  min-width: 1000px;
+}
+
+.rowBoxGrey {
+  background-color: rgba(0,0,0,.1);
+}
+
+.rowBox {
+  padding: 5vh 5vw;
+  border-top: 1px solid black ;
+}
+
+
+.instructions {
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(255,0,0,0));
+  width: 100vw;
+  height: 10vh;
+  padding-top: 2vh;
+  text-align: center;
+}
+
+.instructionsText {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
 }

@@ -5,7 +5,10 @@
   height: 85vh;
   margin-top: -20;
   padding: 1.45rem 1.0875rem;
-  background-image: url('https://images.unsplash.com/photo-1557445796-184d83fc49b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80');
+  background-image: url('https://images.unsplash.com/photo-1555498386-50deae36950a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .textContainer {
