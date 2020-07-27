@@ -46,12 +46,14 @@ const Layout = ({ children }) => {
     }
   };
 
-  window.addEventListener('scroll', () => {
-    const st = window.pageYOffset || document.documentElement.scrollTop;
-    if (st > 400 && headerTop !== '0') {
-      setHeaderTop('0');
-    }
-  });
+  if (window !== undefined) {
+    window.addEventListener('scroll', () => {
+      const st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > 400 && headerTop !== '0') {
+        setHeaderTop('0');
+      }
+    });
+  }
 
   return (
     <ThemeProvider theme={theme}>
