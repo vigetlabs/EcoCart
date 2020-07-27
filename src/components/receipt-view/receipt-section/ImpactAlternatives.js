@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 
 // Components
@@ -48,7 +48,9 @@ const ImpactAlternatives = ({ cartState }) => {
   );
 };
 
-ImpactAlternatives.propTypes = {};
+ImpactAlternatives.propTypes = {
+  cartState: PropTypes.objectOf(PropTypes.number),
+};
 
 ImpactAlternatives.defaultProps = {};
 

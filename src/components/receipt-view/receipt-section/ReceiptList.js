@@ -1,8 +1,8 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
-import { List, Grid, Divider } from '@material-ui/core';
+import { List, Grid } from '@material-ui/core';
 import ReceiptListItem from './ReceiptListItem';
 
 // Styles
@@ -32,7 +32,9 @@ const ReceiptList = ({ cartState }) => {
   );
 };
 
-ReceiptList.propTypes = {};
+ReceiptList.propTypes = {
+  cartState: PropTypes.objectOf(PropTypes.number),
+};
 
 ReceiptList.defaultProps = {};
 

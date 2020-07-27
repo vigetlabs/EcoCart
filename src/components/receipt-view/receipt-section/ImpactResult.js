@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
@@ -62,7 +62,9 @@ const ImpactResult = ({ cartState }) => (
   </Grid>
 );
 
-ImpactResult.propTypes = {};
+ImpactResult.propTypes = {
+  cartState: PropTypes.objectOf(PropTypes.number),
+};
 
 ImpactResult.defaultProps = {};
 

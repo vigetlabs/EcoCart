@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
@@ -9,7 +9,6 @@ import LegendSquare from './LegendSquare';
 import styles from '../styles/data-breakdown-aggregate.module.css';
 
 const DataBreakdownAggregate = ({
-  cartState,
   colors,
   land,
   water,
@@ -48,7 +47,7 @@ const DataBreakdownAggregate = ({
       <LegendSquare
         legendStyle={styles.legend}
         impactType={type}
-        colorsArray={colors}
+        colors={colors}
         windowDimensions={windowDimensions}
       />
       <div className={styles.impactText}>
@@ -67,7 +66,15 @@ const DataBreakdownAggregate = ({
   );
 };
 
-DataBreakdownAggregate.propTypes = {};
+DataBreakdownAggregate.propTypes = {
+  colors: PropTypes.arrayOf(PropTypes.string).isRequired,
+  land: PropTypes.string.isRequired,
+  water: PropTypes.string.isRequired,
+  eutro: PropTypes.string.isRequired,
+  ghg: PropTypes.string.isRequired,
+  windowDimensions: PropTypes.objectOf(PropTypes.number).isRequired,
+  minRatio: PropTypes.number.isRequired,
+};
 
 DataBreakdownAggregate.defaultProps = {};
 

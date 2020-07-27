@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
 // Components
@@ -100,6 +101,12 @@ const AlternativeOptions = ({ item, alternatives, cartState }) => {
       </Grid>
     </Box>
   );
+};
+
+AlternativeOptions.propTypes = {
+  item: PropTypes.string,
+  alternatives: PropTypes.arrayOf(PropTypes.string),
+  cartState: PropTypes.objectOf(PropTypes.number),
 };
 
 export default AlternativeOptions;

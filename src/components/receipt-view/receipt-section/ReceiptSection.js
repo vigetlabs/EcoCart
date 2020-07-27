@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
@@ -74,7 +74,9 @@ const ReceiptSection = ({ cartState }) => {
   );
 };
 
-ReceiptSection.propTypes = {};
+ReceiptSection.propTypes = {
+  cartState: PropTypes.objectOf(PropTypes.number),
+};
 
 ReceiptSection.defaultProps = {};
 

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
@@ -61,6 +62,11 @@ const ImpactDonutAggregate = ({ cartState, windowDimensions }) => {
       ) : null}
     </div>
   );
+};
+
+ImpactDonutAggregate.propTypes = {
+  cartState: PropTypes.objectOf(PropTypes.number),
+  windowDimensions: PropTypes.objectOf(PropTypes.number),
 };
 
 export default ImpactDonutAggregate;
