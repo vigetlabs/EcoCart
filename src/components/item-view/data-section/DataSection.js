@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Components
 import { Grid } from '@material-ui/core';
@@ -10,7 +10,43 @@ import ItemGrade from './ItemGrade';
 // Styles
 import styles from '../styles/data-section.module.css';
 
-const DataSection = ({ item }) => (
+// Vars
+const LAND = 'land';
+const WATER = 'water';
+const EUTRO = 'eutro';
+const GHG = 'ghg';
+
+const minRatio = { title: 0.2, body: 0.3 };
+
+const DataSection = ({ item }) => {
+  const [windowDimensions, setWindowDimensions] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+        min: Math.min(window.innerWidth, window.innerHeight),
+      });
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const { width, min } = windowDimensions;
+
+  const ratio = width - min / width;
+
+  return (
   <Grid
     container
     justify="center"
@@ -32,7 +68,10 @@ const DataSection = ({ item }) => (
           container
           sm={12}
         >
-          <ImpactRadar item={item} />
+          <ImpactRadar
+            item={item}
+            ratio={ratio}
+          />
         </Grid>
         <Grid
           item
@@ -46,11 +85,20 @@ const DataSection = ({ item }) => (
         className={styles.breakdownBox}
         sm={6}
       >
-        <DataBreakdown item={item} />
+        <DataBreakdown
+          item={item}
+          land={LAND}
+          water={WATER}
+          eutro={EUTRO}
+          ghg={GHG}
+          windowDimensions={windowDimensions}
+          minRatio={minRatio}
+        />
       </Grid>
     </Grid>
   </Grid>
-);
+  );
+};
 
 DataSection.propTypes = {};
 

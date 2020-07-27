@@ -16,11 +16,19 @@ import styles from './styles/cart-modal.module.css';
 
 // Vars
 
-const CartModal = ({ open, toggleModal, cartState }) => {
+const CartModal = ({
+  open, toggleModal, cartState, setCartState, toggleHeaderTop,
+}) => {
   const generateItems = Object.keys(cartState).map((itemKey) => {
     if (cartState[itemKey] > 0) {
       return (
-        <CartItem key={itemKey} name={itemKey} amount={cartState[itemKey]} />
+        <CartItem
+          key={itemKey}
+          name={itemKey}
+          setCartState={setCartState}
+          cartState={cartState}
+          toggleHeaderTop={toggleHeaderTop}
+        />
       );
     }
     return null;
@@ -67,7 +75,7 @@ const CartModal = ({ open, toggleModal, cartState }) => {
               <Button
                 onClick={toggleModal}
                 variant="contained"
-                color="secondary"
+                color="primary"
                 className={styles.cartButton}
               >
                 <Typography

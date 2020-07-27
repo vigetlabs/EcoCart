@@ -32,17 +32,18 @@ const ItemModal = ({
         container
         justify="center"
         className={styles.modalBox}
+        xl={12}
       >
         <Grid
           item
           container
-          sm={12}
+          xl={12}
         >
           <Grid
             item
             container
             justify="center"
-            sm={6}
+            lg={6}
             className={styles.imageBox}
           >
             <img
@@ -53,7 +54,10 @@ const ItemModal = ({
           </Grid>
           <Grid
             item
-            sm={6}
+            lg={6}
+            md={12}
+            sm={12}
+            xs={12}
             className={styles.infoBox}
           >
             <InfoSection
@@ -65,7 +69,7 @@ const ItemModal = ({
         </Grid>
         <Grid
           item
-          sm={12}
+          lg={12}
           className={styles.DataSectionBox}
         >
           <DataSection item={item} />

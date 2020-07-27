@@ -22,9 +22,7 @@ const getMenuItems = (exclusiveLimit) => {
 };
 
 // REFACTOR: Actually get ingredients info
-const getIngredientsInfo = (item) => `Here are the ingredients for ${item}: Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
+// const getIngredientsInfo = (item) => `Here are the ingredients for ${item}:.`;
 
 // REFACTOR: Actually get serving info here
 const getServingInfo = (item) => `${item} Serving Size`;
@@ -66,10 +64,10 @@ const InfoSection = ({ item, cartState, setCartState }) => {
           Add To Cart
         </Button>
       </div>
-      <Box className={styles.ingredients}>
+      {/* <Box className={styles.ingredients}>
         <Typography variant="h5">Ingredients</Typography>
         <Typography variant="body1">{getIngredientsInfo(item)}</Typography>
-      </Box>
+      </Box> */}
     </>
   );
 };

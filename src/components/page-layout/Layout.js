@@ -46,14 +46,12 @@ const Layout = ({ children }) => {
     }
   };
 
-  if (typeof window !== 'undefined') {
-    window.addEventListener('scroll', () => {
-      const st = window.pageYOffset || document.documentElement.scrollTop;
-      if (st > 400 && headerTop !== '0') {
-        setHeaderTop('0');
-      }
-    });
-  }
+  window.addEventListener('scroll', () => {
+    const st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > 400 && headerTop !== '0') {
+      setHeaderTop('0');
+    }
+  });
 
   return (
     <ThemeProvider theme={theme}>
@@ -63,7 +61,13 @@ const Layout = ({ children }) => {
           style={{ top: headerTop }}
         >
           <NavigationBar resetHeaderTop={toggleHeaderTop} toggleModal={toggleModal} />
-          <CartModal cartState={cartState} open={modalOpen} toggleModal={toggleModal} />
+          <CartModal
+            setCartState={setCartState}
+            cartState={cartState}
+            open={modalOpen}
+            toggleModal={toggleModal}
+            toggleHeaderTop={toggleHeaderTop}
+          />
         </div>
         <div className={styles.body}>
         <Grid

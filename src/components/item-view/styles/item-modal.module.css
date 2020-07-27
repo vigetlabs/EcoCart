@@ -1,11 +1,13 @@
 .modal {
   outline: 0;
   position: absolute;
+  min-width: 800px;
   width: 60vw;
   height: 90vh;
   top: 5%;
   left: 20%;
   margin: auto;
+  overflow: hidden;
 }
 
 .modalBox {
@@ -18,9 +20,17 @@
 }
 
 .image {
+<<<<<<< HEAD
   max-width: 50%;
+=======
+  height: 350px;
+>>>>>>> GEN_STYLES
 }
 
 .infoBox {
   padding: 2em;
+<<<<<<< HEAD
+=======
+  text-align: center;
+>>>>>>> GEN_STYLES
 }

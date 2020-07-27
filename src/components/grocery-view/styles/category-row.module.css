@@ -1,7 +1,4 @@
-.row {
-  width: 95vw;
-  display: inline-flex;
-}
+
 
 .container {
   padding: 1.0875rem;
@@ -11,4 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.categoryHeader {
+  padding: 60px;
 }

@@ -7,11 +7,12 @@ import {
   CardContent,
   CardMedia,
   CardActions,
+  CardActionArea,
   Button,
   Typography,
 } from '@material-ui/core';
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 
 import ItemModal from '../../item-view/ItemModal';
 
@@ -38,43 +39,65 @@ const GroceryItem = ({
     setCartState(newData);
   };
 
+  const handleRemove = () => {
+    if (cartState[item] > 0) {
+      const newData = { ...cartState };
+      newData[item] -= 1;
+      setCartState(newData);
+    }
+  };
+
   return (
   <>
     <div className={styles.item}>
-      <Card className={styles.itemCard} container elevated enabled>
-        <CardMedia
-          component="img"
-          alt={item}
-          height="240"
-          image={itemData.other.imageUrl}
-          title={item}
-        />
-        <CardContent>
-          <Typography variant="h5" component="h2">
-            {item}
-          </Typography>
-          <Button
-            variant="text"
-            size="small"
-            endIcon={<ChevronRightIcon />}
-            onClick={() => {
-              toggleHeaderTop();
-              openModal(setModalOpen);
-            }}>
-            View Details
-          </Button>
-        </CardContent>
-        <CardActions disableSpacing={true}>
-          <Button
-            startIcon={<AddShoppingCartIcon />}
-            variant="contained"
-            color="primary"
-            size="small"
-            className={styles.cartButton}
-            onClick={handleAdd}>
-            {cartState[item]}
-          </Button>
-        </CardActions>
+      <Card
+        className={styles.itemCard}
+        container
+        enabled
+        elevated
+      >
+        <CardActionArea
+           onClick={() => {
+             toggleHeaderTop();
+             openModal(setModalOpen);
+           }}
+        >
+          <CardMedia
+            component="img"
+            alt={item}
+            height="240"
+            image={itemData.other.imageUrl}
+            title={item}
+          />
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              {item}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+          <CardActions
+            disableSpacing={false}
+          >
+            <Button
+              startIcon={<AddCircleOutlineIcon />}
+              variant="contained"
+              color="primary"
+              size="small"
+              className={styles.cartButton}
+              onClick={handleAdd} />
+            <Button
+              startIcon={<RemoveCircleOutlineIcon />}
+              variant="contained"
+              color="secondary"
+              size="small"
+              className={styles.cartButton}
+              onClick={handleRemove} />
+              <Typography
+                variant='h6'
+              >
+              {cartState[item]} Servings
+              </Typography>
+          </CardActions>
       </Card>
     </div>
     <ItemModal
