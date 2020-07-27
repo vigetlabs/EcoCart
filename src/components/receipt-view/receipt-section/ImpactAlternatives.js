@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Components
 import { Grid, Typography } from '@material-ui/core';
@@ -9,14 +9,26 @@ import styles from '../styles/impact-alternatives.module.css';
 
 // Utils
 import { getHighImpactItems, getAlternatives } from '../utils/calculations';
+import AlternativeOptions from './AlternativeOptions';
 
 const ImpactAlternatives = ({ cartState }) => {
-  const items = getHighImpactItems(cartState);
-  const alternatives = getAlternatives(items);
-  const altComponents = Object.keys(alternatives).map((item) => (
-    <Typography variant="body1">{`${item} -> ${
-      alternatives[item].length ? alternatives[item] : 'No alternatives yet!'
-    }`}</Typography>
+  const [highImpactItems, setHighImpactItems] = useState([]);
+  const [alternatives, setAlternatives] = useState({});
+
+  useEffect(() => {
+    setHighImpactItems(getHighImpactItems(cartState));
+  }, [cartState]);
+
+  useEffect(() => {
+    setAlternatives(getAlternatives(highImpactItems));
+  }, [highImpactItems]);
+
+  const altComponents = highImpactItems.map((item) => (
+    <AlternativeOptions
+      item={item}
+      alternatives={alternatives[item]}
+      cartState={cartState}
+    />
   ));
 
   return (
