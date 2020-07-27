@@ -11,7 +11,7 @@ export default createMuiTheme({
       fontSize: 50,
     },
     h2: {
-      fontFamily: 'Rubik Mono One',
+      fontFamily: 'Karla',
       fontSize: 50,
     },
     h3: {

@@ -32,6 +32,11 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
         category={section}
         toggleHeaderTop={toggleHeaderTop}
       />
+
+      <div
+        className={styles.rowDivider}
+      ></div>
+
     </Grid>
   ));
 

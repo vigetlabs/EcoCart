@@ -1,3 +1,14 @@
 .listItemCard {
   margin: 10px;
 }
+
+.image {
+  max-width: 80%;
+}
+.deleteBtn {
+  color: red;
+}
+
+.cartSelect {
+  width: 10vh;
+}

@@ -61,7 +61,13 @@ const Layout = ({ children }) => {
           style={{ top: headerTop }}
         >
           <NavigationBar resetHeaderTop={toggleHeaderTop} toggleModal={toggleModal} />
-          <CartModal cartState={cartState} open={modalOpen} toggleModal={toggleModal} />
+          <CartModal
+            setCartState={setCartState}
+            cartState={cartState}
+            open={modalOpen}
+            toggleModal={toggleModal}
+            toggleHeaderTop={toggleHeaderTop}
+          />
         </div>
         <div className={styles.body}>
         <Grid
