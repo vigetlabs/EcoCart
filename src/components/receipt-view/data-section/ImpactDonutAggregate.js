@@ -33,24 +33,10 @@ const ImpactDonutAggregate = ({ cartState, windowDimensions }) => {
           }}>
           <svg className={styles.svg}>
             <VictoryPie
-              data={[
-                {
-                  x: ' ',
-                  y: getUsageImpact(cartState, LAND, true),
-                },
-                {
-                  x: ' ',
-                  y: getUsageImpact(cartState, WATER, true),
-                },
-                {
-                  x: ' ',
-                  y: getUsageImpact(cartState, EUTRO, true),
-                },
-                {
-                  x: ' ',
-                  y: getUsageImpact(cartState, GHG, true),
-                },
-              ]}
+              data={[LAND, WATER, EUTRO, GHG].map((type) => ({
+                x: ' ',
+                y: getUsageImpact(cartState, type, true),
+              }))}
               width={windowDimensions.min * scale}
               height={windowDimensions.min * scale}
               colorScale={['blue', 'gold', 'salmon', 'green']}
