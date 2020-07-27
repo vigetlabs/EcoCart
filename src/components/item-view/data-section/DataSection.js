@@ -26,7 +26,7 @@ const DataSection = ({ item }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window !== undefined) {
+      if (typeof window !== 'undefined') {
         setWindowDimensions({
           height: window.innerHeight,
           width: window.innerWidth,
@@ -37,15 +37,15 @@ const DataSection = ({ item }) => {
 
     handleResize();
 
-    if (window !== undefined) {
+    if (typeof window !== 'undefined') {
       window.addEventListener('resize', handleResize);
     }
 
-    if (window !== undefined) {
-      return () => {
+    return () => {
+      if (typeof window !== 'undefined') {
         window.removeEventListener('resize', handleResize);
-      };
-    }
+      }
+    };
   }, []);
 
   const { width, min } = windowDimensions;
