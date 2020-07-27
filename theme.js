@@ -1,8 +1,55 @@
+import './fonts.css';
 import { createMuiTheme } from '@material-ui/core/styles';
 
 // See https://material-ui.com/customization/globals/
 
 export default createMuiTheme({
+
+  typography: {
+    h1: {
+      fontFamily: 'Rubik Mono One',
+      fontSize: 50,
+    },
+    h2: {
+      fontFamily: 'Rubik Mono One',
+      fontSize: 50,
+    },
+    h3: {
+      fontFamily: 'Bungee Shade',
+      fontSize: 40,
+    },
+    h4: {
+      fontFamily: 'Bungee Shade',
+    },
+    h5: {
+      fontFamily: 'Rubik',
+    },
+    h6: {
+      fontFamily: 'Rubik',
+    },
+    subtitle1: {
+      fontFamily: 'Rubik',
+      fontSize: 25,
+    },
+    subtitle2: {
+      fontFamily: 'Rubik',
+    },
+    body1: {
+      fontFamily: 'Rubik',
+      fontSize: 20,
+    },
+    body2: {
+      fontFamily: 'Rubik',
+    },
+    button: {
+      fontFamily: 'Rubik',
+    },
+    fontFamily: '"Rubik", "Arial", sans-serif',
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+  },
+
   palette: {
     background: {
       default: '#F6F9FC',
