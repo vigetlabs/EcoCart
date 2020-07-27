@@ -7,7 +7,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import { Link } from 'gatsby';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import ListAltIcon from '@material-ui/icons/ListAlt';
 import ecoLogo from '../../images/EcoCart_Logo.png';
 
 // Styles
@@ -74,8 +74,9 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
         sm={1}
       >
         <Button className={styles.button} onClick={toggleModal}>
-          <ShoppingBasketIcon
+          <ListAltIcon
             className={styles.icon}
+            style={{ fontSize: 60 }}
           />
         </Button>
       </Grid>

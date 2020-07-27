@@ -15,11 +15,11 @@ export default createMuiTheme({
       fontSize: 50,
     },
     h3: {
-      fontFamily: 'Bungee Shade',
+      fontFamily: 'Karla',
       fontSize: 40,
     },
     h4: {
-      fontFamily: 'Bungee Shade',
+      fontFamily: 'Karla',
     },
     h5: {
       fontFamily: 'Rubik',
@@ -33,6 +33,7 @@ export default createMuiTheme({
     },
     subtitle2: {
       fontFamily: 'Rubik',
+      fontSize: 25,
     },
     body1: {
       fontFamily: 'Rubik',

@@ -1,6 +1,7 @@
 .hero {
   display: inline-block;
   background-color: #e5e5e5;
+  min-width: 800px;
   width: 100vw;
   height: 85vh;
   margin-top: -20;
@@ -12,8 +13,17 @@
 }
 
 .textContainer {
-  max-width: 574px;
+  width: 574px;
   margin: auto;
-  padding: 2em;
-  background-color: rgba(196,201,185,0.5);
+  padding: 3em;
+  background-color: rgba(196,201,185,0.7);
+}
+
+
+.introText {
+
+}
+
+.intoTitle {
+  padding: 2vh;
 }

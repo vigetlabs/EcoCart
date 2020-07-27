@@ -20,11 +20,26 @@ const InfoSection = () => (
     />
     <Grid
       item
-      sm={6}
+      xs={8}
+      sm={8}
+      md={8}
+      lg={6}
+      xl={6}
       className={styles.textContainer}
     >
-      <Typography variant="h2" align='center'>Eco Cart</Typography>
-      <Typography variant="h5">{TEXT}</Typography>
+      <Typography
+        variant="h1"
+        align='center'
+        className={styles.intoTitle}
+      >
+          Eco Cart
+      </Typography>
+      <Typography
+        variant="subtitle2"
+        className={styles.introText}
+      >
+        {TEXT}
+      </Typography>
     </Grid>
   </Grid>
 );
