@@ -10,45 +10,51 @@ import styles from '../styles/impact-donut-aggregate.module.css';
 // Utils
 import { getUsageImpact, getCartItems } from '../utils/calculations';
 
-const LAND = 'land';
-const WATER = 'water';
-const EUTRO = 'eutro';
-const GHG = 'ghg';
+const scale = 0.5;
 
-const ImpactDonutAggregate = ({ cartState, windowDimensions }) => {
-  const scale = 0.5;
-
-  return (
-    <div
-      className={styles.container}
-      style={{
-        width: windowDimensions.min * scale,
-        height: windowDimensions.min * scale,
-      }}>
-      {getCartItems(cartState).length ? (
-        <div
-          style={{
-            width: windowDimensions.min * scale,
-            height: windowDimensions.min * scale,
-          }}>
-          <svg className={styles.svg}>
-            <VictoryPie
-              data={[LAND, WATER, EUTRO, GHG].map((type) => ({
-                x: ' ',
-                y: getUsageImpact(cartState, type, true),
-              }))}
-              width={windowDimensions.min * scale}
-              height={windowDimensions.min * scale}
-              colorScale={['blue', 'gold', 'salmon', 'green']}
-              standalone={false}
-              padding={25}
-            />
-          </svg>
-        </div>
-      ) : null}
-    </div>
-  );
-};
+const ImpactDonutAggregate = ({
+  cartState,
+  windowDimensions,
+  colors,
+  land,
+  water,
+  eutro,
+  ghg,
+}) => (
+  <div
+    className={styles.container}
+    style={{
+      width: windowDimensions.min * scale,
+      height: windowDimensions.min * scale,
+    }}>
+    {getCartItems(cartState).length ? (
+      <div
+        style={{
+          width: windowDimensions.min * scale,
+          height: windowDimensions.min * scale,
+        }}>
+        <svg className={styles.svg}>
+          <VictoryPie
+            data={[land, water, eutro, ghg].map((type) => ({
+              x: ' ',
+              y: getUsageImpact(cartState, type, true),
+            }))}
+            width={windowDimensions.min * scale}
+            height={windowDimensions.min * scale}
+            colorScale={[
+              colors[land],
+              colors[water],
+              colors[eutro],
+              colors[ghg],
+            ]}
+            standalone={false}
+            padding={25}
+          />
+        </svg>
+      </div>
+    ) : null}
+  </div>
+);
 
 ImpactDonutAggregate.propTypes = {
   cartState: PropTypes.objectOf(PropTypes.number),
