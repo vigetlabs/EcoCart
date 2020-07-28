@@ -55,7 +55,7 @@
       "ghg": "2"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/4eyNMJln3rPOP1GvQlplcvJXpFJoyZsFF1s5RQGjhmyo8E1Re3hQeUpNYtKM7AHTh_NXomLB1VBx0od7Bey2TVQjWnRJ3eV7i9RDyYQCv9YF3Aqob-Bv99MZODIt8IW85FazpUkZ",
       "servingNum": "1",
       "servingUnit": "lb",
       "servingKilo": "0.4536",
@@ -662,7 +662,7 @@
       "servingNum": "1",
       "servingUnit": "Loaf",
       "servingKilo": "0.567",
-      "category": ["Bakery"]
+      "category": ["Dry Goods"]
     }
   },
   "Canola Oil": {
@@ -724,7 +724,7 @@
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
-      "category": ["Breakfast"]
+      "category": ["Dry Goods"]
     }
   },
   "Peas": {
@@ -879,7 +879,7 @@
       "servingNum": "14",
       "servingUnit": "oz",
       "servingKilo": "0.3992",
-      "category": ["Deli"]
+      "category": ["Meat & Seafood"]
     }
   },
   "Beet Sugar": {
@@ -1003,7 +1003,7 @@
       "servingNum": "750",
       "servingUnit": "mL",
       "servingKilo": "0.001",
-      "category": ["Alcohol"]
+      "category": ["Beverages"]
     }
   },
   "Bananas": {
