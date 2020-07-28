@@ -53,7 +53,9 @@ const DataBreakdownAggregate = ({
       <div className={styles.impactText}>
         <Typography variant="subtitle1">{text[type].title}</Typography>
         <Typography variant="body2" className={styles.body}>
-          {(width - min) / width >= minRatio.body ? text[type].body : null}
+          {width && (width - min) / width >= minRatio.body
+            ? text[type].body
+            : null}
         </Typography>
       </div>
     </Grid>
