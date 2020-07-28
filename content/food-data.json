@@ -1,5 +1,5 @@
 {
-  "Beef (beef herd)": {
+  "Beef": {
     "rescaled": {
       "land": "88",
       "water": "26",
@@ -31,7 +31,7 @@
       "alternatives": ["Tofu", "Poultry Meat", "Beans"]
     }
   },
-  "Beef (dairy herd)": {
+  "Veal": {
     "rescaled": {
       "land": "12",
       "water": "48",
@@ -347,7 +347,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/becfArgRIBEvn39-CwiWN-L6XGYGn4zpXS7LNVYVTVvDSziSO0fjipHxMhZJ8Pxu21siEPTOZIwPJwTHFN-zjXKcPX3vhENXfKscR5WpVWD4yo20qo4padKhcp4wrBXheBqGFxC8",
       "servingNum": "1",
       "servingUnit": "lb",
       "servingKilo": "0.4536",
@@ -379,7 +379,7 @@
       "ghg": "2"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/HaWZcjEr1KmRwq3FGkH315MJeABPJMZDe9_Y0pmUH3yxtxEVNVqfp_dcfmDTungy5jwITaOp_gEuEVrsLNRICDkSs8Gr5nwUNboLSnmdttz1rPbuKcN9FR4s4RelUuv9T8gFSVTn",
       "servingNum": "12",
       "servingUnit": "oz",
       "servingKilo": "0.3402",
@@ -410,7 +410,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/xltcqxl-rJ_peSIxEg7n-v72no_SKnOF7jBqiOnAdehDOb9NR7I9cfrAE2q7ShMEz0a57EV-nBMLRUMl-BYxjYnKvIkdKhelUP9KiNEjZP8nb8omH6xrhIwKTaKaLkEiotWbqui9",
       "servingNum": "24",
       "servingUnit": "fl oz",
       "servingKilo": "0.6804",
@@ -441,7 +441,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/iolzZ79cTN0YSKTyBHNFPv4x3A1dlT2JCLeeb69yqk80EH_2bB67tLU11SjWl5qYqRU9FX6KuoPVKy9epsxCADiZfC1RWt0n1gvPwrsylIu_hURz4nRye2DySOU9t_freQA5NjVT",
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
@@ -472,7 +472,7 @@
       "ghg": "1"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/zY_eBrobUFpnKKLUFl5uFwyrL0ONZCYqFtK91bMNExI6cvJgJHgt3ia4sUcDuLnDWV_1__Rv8O1e6q9cfiROyJPDKimRrVft0mrZr7I9X6iz91FJcBclAQF840vAbi94206N1OUh",
       "servingNum": "1",
       "servingUnit": "lb",
       "servingKilo": "0.4536",
@@ -503,7 +503,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/Z2ni9VeUbra66k4DcyMQURALEoC2ulEDrhYXSjbeGCrMiPzbvYf8-8_bq4MEzfq6PqDTEMmWVxI3HV0gnrb1SvROUTjKosmg95XXqYbkI6PkOTkkdDiYEReEIfoJ_xTAyT5Pt2vY",
       "servingNum": "12",
       "servingUnit": "count",
       "servingKilo": "0.6804",
@@ -534,7 +534,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/snGiubZTPNIFCamX3_yrhn3CE4Ewh7A6lDJJcWwSiqZos9uTtEc3F9_csilz2jpDID2BDpDgCBLqFqQeM0RPUtYFpB3gbIXFXvXZtIZfZmVrXKb-W2Hg3h05Lg6sZemp-Y_yB4Wz",
       "servingNum": "4",
       "servingUnit": "lbs",
       "servingKilo": "1.8144",
@@ -565,7 +565,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/OH-uREaK3YxO9Mg3rUOVQLb8u1NwJj_X-th2HI4kDrgvAF1b4O7zso1yLYhpuGUI4jpuQ7Rbb87LdET6FiB5EbQvfNmbybcNK8vLEt-HfYjGVMfdR08ZitrUAG2BPa6DWBtUxj44",
       "servingNum": "1",
       "servingUnit": "gAll Itemson",
       "servingKilo": "3.7875",
@@ -596,7 +596,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/J5Ny9wG1JwdKmNs09iD59rBoG9mHc8PmeIYlnvfh6hXpNfFSWDD-kggfAbJMjIaJg6Pretxrm550vAD_xeazGv7RSIokmF3q-ez45lP-XGfOfGFDBJ_NHzjtGUt4HRh2Ki4dVHzH",
       "servingNum": "15.5",
       "servingUnit": "oz",
       "servingKilo": "0.44",
@@ -627,7 +627,7 @@
       "ghg": "1"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/jTKTn8ljTVr7YXh2XTwSY29i1k-wAuYrElpxdABaBZYDQgxRFJhFsu0touvJQMUxGqSz-eZfWMjdeIO8DL0WXHkxR30b9rHU_CmkqYzdLUxokNM5r7LpGN14uAJqwlfx6S9t7mM3",
       "servingNum": "24",
       "servingUnit": "fl oz",
       "servingKilo": "0.6804",
@@ -658,7 +658,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/gIVyC3CX__CuH9siDdvbry9pYKnnH-oCXXFXWVmFuojcxggHJvfgiVRv4KdC7PCnedbeclVWRUVFtuagiZP5gftHkGjfIRrxZ955__fNzqFNcSW-_3UA99BRiNqfl-kZXI6CoRFG",
       "servingNum": "1",
       "servingUnit": "Loaf",
       "servingKilo": "0.567",
@@ -689,7 +689,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/_rVbuqgPlloc8I8mknB2vIP3Dx5h16V6Hgj8_ApsLJWkMjxWBIATEfNKxBy4JemeoO_V2tKKk2h73AkONsnGEL3kWZ49K3kwmBohkRgFEpNvKTJ84ScH2wxcLbjg-ibbYZ--uY0P",
       "servingNum": "24",
       "servingUnit": "fl oz",
       "servingKilo": "0.6804",
@@ -720,7 +720,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/nFrYXZzwG0ge_Mb3djztpSj3lVIJbl1mGvUbaw0w1H-azU36EnIONoH6wpxQluyLXNMzs5S1hWpKWf41nEbrwnSASf-jasPtsxdBTDvPix_PYHl0vst_BEsqMz3Jm_TsRQTNLZlf",
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
@@ -751,7 +751,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/zK78gZGJ8y_-p6WnWvxJ-Byz0f72nnr_CkbRUFNstMGdCJTToTqIQD3izs6RnaGzN3t_GqqkNF4xOW1lb8x0KFuOp_y_qCcZd-oF7451JaoVDkahGwpFsdd5eqozDI7__JN15dqO",
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
@@ -782,7 +782,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/TG0anUItwZi0TvL74IE33iMpMmOwMUqR0R0T9w9LRPi2RFHbBHnYanX5-CyjUnLgQwo0mYQjr_CXSZN5ymDLh-ajBrrarfeGb7va5yRv7qidGqCaGphQo0WxkbqGqdFyffdv996H",
       "servingNum": "1",
       "servingUnit": "lb",
       "servingKilo": "0.4536",
@@ -813,7 +813,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/Tw5ggQS8p1Iq3tKA6hXdrs7cGTWXINIOXhafS8cgzH21e2aQR9zn6D5nhto8JcxvS--xBFjEFFT5yBda3MTR-1ZZ4Vs3qLClZzNHhhvLmXxZ4uweIMIZnadQUyq5WHyzQ3vrjZxx",
       "servingNum": "1",
       "servingUnit": "lb bag",
       "servingKilo": "0.4536",
@@ -844,7 +844,7 @@
       "ghg": "1"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/CLGKbKcuAJ1_NcDbuvlzRA917EnMqsa0wdrq618XyvS0vYA3dLxt9aqSCv2Si1ibGmEG7ACr9-JEg_qEoLfyiVwG8rUL8XgpBak62fphptUesJGVQOwYRoEEHPOv3IdiKIdwYVYm",
       "servingNum": "24",
       "servingUnit": "fl oz",
       "servingKilo": "0.6804",
@@ -875,7 +875,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/16pwtQVLMOFpS87ZY5IUaI6jq7rWBCQC16Ws_tg8sMdoISsLdEd8ZKYDGnVA8ijOxj5UdLzrgBg77NPG-hGSmJOf0vOnaqalRm_utjKYN0n78FH8xhRhHqKhfj9I44frt4KqBt1p",
       "servingNum": "14",
       "servingUnit": "oz",
       "servingKilo": "0.3992",
@@ -906,7 +906,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/ANLl0T4UtBwuEJf-8b59j0mbgSlRALcEVqCd-MheIl0asFq_27aWAsREU5zDZUZ7hGQ2y9Bi1H-ZlgvH9D3MtvgcX4sLfxLaJmZk0RtAwc1UaH5sC_KUcAJSi5ruSpPEorAXa6DO",
       "servingNum": "4",
       "servingUnit": "lbs",
       "servingKilo": "1.8144",
@@ -937,7 +937,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/nxtKt2-a4Yk70mFg3WJri_9Ddk63G8uIniSereJQ-DFwm5pRPmGViUs7rNB580W82-jC0B8_U3B5ZRt86QeSwpA94wf6CGD6lbV8ydjpg9wJZLuKR4JLOG4e8U6wyUzucUbdZOTv",
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
@@ -968,7 +968,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/NWp2RLLWeiI6AUlYpkwE4kO9QQ_5AtpGHSUM1gt1Jq75jzAl9wuWBfiGH8MyZEYMPcOwZXm05Qn6QCxsWeQ35PZTAqGKDOyyH62Gp4J6AdIKMZv7gQyPjVuue5aSmIJA1eOVxmFJ",
       "servingNum": "8",
       "servingUnit": "oz",
       "servingKilo": "0.2268",
@@ -999,7 +999,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/Opbut_oGfdpGWZprnE7P45y4Je5SBHuynWZMxihYK_7y5oKa0uSuhMQxiUorflhNn-I125yEjYSl64J0qOx_kLSsyO3NCDGp9cCQDAZJavZ9BK93LVuAMLFJjjA1LEHF1h8NjkQK",
       "servingNum": "750",
       "servingUnit": "mL",
       "servingKilo": "0.001",
@@ -1030,7 +1030,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/jfRfzNbN87uehWsP10RgaJgAv6RExdq-GxhM8BwHDumv_oKAwmZ6ITnfny6cy9VLI1L601iJiuTTQHKc8GQ4ig5id2OP56wjNrcAo4GdewgwYtlKoNOv2JXCzuOs3QAfcBnouRxL",
       "servingNum": "1",
       "servingUnit": "Hand",
       "servingKilo": "0.4536",
@@ -1061,7 +1061,7 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "",
+      "imageUrl": "https://lh3.googleusercontent.com/NyvE0YUfXQ8joXAIf_uiUQSX1jLy7VktdkugjF6lR28Qauw2jUqD6X-BLWuocQwRuB1wFAPqy95JKNgttx9zOYZV6l9r-psczWUAh32QUXeQ9UgvTXMdi8rhqUs_uS9HyXXP18wf",
       "servingNum": "3",
       "servingUnit": "lb bag",
       "servingKilo": "1.3608",
