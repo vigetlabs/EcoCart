@@ -31,19 +31,24 @@ const DataSection = ({ cartState }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-        min: Math.min(window.innerWidth, window.innerHeight),
-      });
+      if (window) {
+        setWindowDimensions({
+          height: window.innerHeight,
+          width: window.innerWidth,
+          min: Math.min(window.innerWidth, window.innerHeight),
+        });
+      }
     };
 
     handleResize();
-
-    window.addEventListener('resize', handleResize);
+    if (window) {
+      window.addEventListener('resize', handleResize);
+    }
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      if (window) {
+        window.removeEventListener('resize', handleResize);
+      }
     };
   }, []);
 
