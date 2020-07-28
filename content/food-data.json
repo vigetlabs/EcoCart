@@ -567,7 +567,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/OH-uREaK3YxO9Mg3rUOVQLb8u1NwJj_X-th2HI4kDrgvAF1b4O7zso1yLYhpuGUI4jpuQ7Rbb87LdET6FiB5EbQvfNmbybcNK8vLEt-HfYjGVMfdR08ZitrUAG2BPa6DWBtUxj44",
       "servingNum": "1",
-      "servingUnit": "gAll Itemson",
+      "servingUnit": "gallons",
       "servingKilo": "3.7875",
       "category": ["Dairy & Eggs"]
     }
@@ -600,7 +600,7 @@
       "servingNum": "15.5",
       "servingUnit": "oz",
       "servingKilo": "0.44",
-      "category": ["Canned Goods"]
+      "category": ["Vegetables"]
     }
   },
   "Vegetable Oil": {
@@ -755,7 +755,7 @@
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
-      "category": ["Canned Goods"]
+      "category": ["Vegetables"]
     }
   },
   "Berries": {
@@ -786,7 +786,7 @@
       "servingNum": "1",
       "servingUnit": "lb",
       "servingKilo": "0.4536",
-      "category": ["Produce"]
+      "category": ["Fruits"]
     }
   },
   "Tomatoes": {
@@ -817,7 +817,7 @@
       "servingNum": "1",
       "servingUnit": "lb bag",
       "servingKilo": "0.4536",
-      "category": ["Produce"]
+      "category": ["Fruits", "Vegetables"]
     }
   },
   "Palm Oil": {
@@ -941,7 +941,7 @@
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
-      "category": ["Produce"]
+      "category": ["Vegetables"]
     }
   },
   "Cabbage": {
@@ -972,7 +972,7 @@
       "servingNum": "8",
       "servingUnit": "oz",
       "servingKilo": "0.2268",
-      "category": ["Produce"]
+      "category": ["Vegetables"]
     }
   },
   "Wine": {
@@ -1034,7 +1034,7 @@
       "servingNum": "1",
       "servingUnit": "Hand",
       "servingKilo": "0.4536",
-      "category": ["Produce"]
+      "category": ["Fruits"]
     }
   },
   "Apples": {
@@ -1065,7 +1065,7 @@
       "servingNum": "3",
       "servingUnit": "lb bag",
       "servingKilo": "1.3608",
-      "category": ["Produce"]
+      "category": ["Fruits"]
     }
   },
   "Potatoes": {
@@ -1096,7 +1096,7 @@
       "servingNum": "5",
       "servingUnit": "lb bag",
       "servingKilo": "2.268",
-      "category": ["Produce"]
+      "category": ["Vegetables"]
     }
   },
   "Oranges": {
@@ -1127,7 +1127,7 @@
       "servingNum": "3",
       "servingUnit": "lb bag",
       "servingKilo": "1.3608",
-      "category": ["Produce"]
+      "category": ["Fruits"]
     }
   },
   "Lemons": {
@@ -1158,7 +1158,7 @@
       "servingNum": "3",
       "servingUnit": "lb bag",
       "servingKilo": "1.3608",
-      "category": ["Produce"]
+      "category": ["Fruits"]
     }
   },
   "Barley": {
@@ -1220,7 +1220,7 @@
       "servingNum": "5",
       "servingUnit": "lb bag",
       "servingKilo": "2.268",
-      "category": ["Produce"]
+      "category": ["Vegetables"]
     }
   },
   "Soymilk": {
@@ -1249,7 +1249,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/X5RkkntGtxuAmmFqzKSwIsWIGclC1nMQBqVSvhg7QY_gxPUIoFj4QuG4Xr3_he-7Es0zyuPN5Yq0sXR_h_E4_CyYDsrghAi3oAadiS4eQJd1SeKjhxK2iWaMoDygw_f1MY6IwWjH",
       "servingNum": "1",
-      "servingUnit": "gAll Itemson",
+      "servingUnit": "gallons",
       "servingKilo": "3.7875",
       "category": ["Dairy & Eggs"]
     }
@@ -1282,7 +1282,7 @@
       "servingNum": "16",
       "servingUnit": "oz bag",
       "servingKilo": "0.4536",
-      "category": ["Produce"]
+      "category": ["Vegetables"]
     }
   },
   "Cassava Flour": {
