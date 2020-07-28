@@ -1,0 +1,16 @@
+.altOptionsBox {
+  padding: 1em;
+}
+
+.scoresBox {
+  display: inline-block;
+}
+
+.score {
+  display: inline-block;
+  padding: 0 1em 0 1em;
+}
+
+.arrow {
+  color: green;
+}

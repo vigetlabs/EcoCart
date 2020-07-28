@@ -1,8 +1,25 @@
 .breakdownItem {
-  min-height: 10vh;
-  text-align: center;
+  text-align: left;
 }
 
 .breakdownBox {
-  padding: 3em 1em;
+  padding-left: 1em;
+}
+
+.impactText {
+  display: inline-block;
+  height: 100%;
+  max-width: 80%;
+  vertical-align: text-bottom;
+  padding-left: 0.5rem;
+}
+
+.legend {
+  display: inline-block;
+  height: 100%;
+}
+
+.body {
+  width: 100%;
+  overflow-wrap: normal;
 }

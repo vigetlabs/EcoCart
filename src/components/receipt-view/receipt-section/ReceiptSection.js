@@ -1,8 +1,8 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
-import { Grid, Typography, Divider } from '@material-ui/core';
+import { Grid, Typography, Divider, Box } from '@material-ui/core';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import ReceiptList from './ReceiptList';
 import ImpactResult from './ImpactResult';
@@ -11,7 +11,20 @@ import ImpactResult from './ImpactResult';
 import styles from '../styles/receipt-section.module.css';
 
 // Variables
-const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const MONTHS = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
 
 const ReceiptSection = ({ cartState }) => {
   const getDate = () => {
@@ -20,80 +33,51 @@ const ReceiptSection = ({ cartState }) => {
   };
 
   return (
-      <Grid
-        item
-        container
-        justify='space-around'
-        className={styles.receiptSectionBox}
-      >
+    <div className={styles.receiptSectionBox}>
+      <Box className={styles.box}>
+        <Grid container justify="space-around" className={styles.receiptBox}>
+          <Grid item container sm={12} className={styles.receiptDownloadBox}>
+            <Grid item sm={11} />
 
-        <Grid
-          item
-          container
-          sm={12}
-          className={styles.receiptDownloadBox}
-        >
-
-          <Grid item sm={11}/>
-
-          <Grid item sm={1}>
-            <GetAppIcon/>
+            <Grid item sm={1}>
+              <GetAppIcon />
+            </Grid>
           </Grid>
 
-        </Grid>
+          <Grid item sm={12} spacing={2} className={styles.receiptHeaderBox}>
+            <Typography align="center" variant="h3" gutterBottom>
+              Impact Receipt
+            </Typography>
+            <Typography align="center" variant="h5" gutterBottom>
+              EcoCart - {getDate()}
+            </Typography>
+          </Grid>
 
-        <Grid
-          item
-          sm={12}
-          spacing={2}
-          className={styles.receiptHeaderBox}
-        >
-          <Typography
-            align='center'
-            variant="h3"
-            gutterBottom>
-            Impact Receipt
-          </Typography>
-          <Typography
-            align='center'
-            variant="h5"
-            gutterBottom>
-            EcoCart - {getDate()}
-          </Typography>
-        </Grid>
+          <Grid sm={12} item>
+            <Divider variant="middle" />
+          </Grid>
 
-        <Grid sm={12} item>
-          <Divider variant='middle' />
-        </Grid>
+          <Grid item sm={12} className={styles.receiptListBox}>
+            <ReceiptList cartState={cartState} />
+          </Grid>
 
-        <Grid
-          item
-          sm={12}
-          className={styles.receiptListBox}
-        >
-          <ReceiptList cartState={cartState} />
-        </Grid>
+          <Grid sm={12} item>
+            <Divider variant="middle" />
+          </Grid>
 
-        <Grid sm={12} item>
-          <Divider variant='middle' />
+          <Grid item sm={12} className={styles.impactResultBox}>
+            <ImpactResult cartState={cartState} />
+          </Grid>
         </Grid>
-
-        <Grid
-          item
-          sm={12}
-          className={styles.impactResultBox}
-        >
-          <ImpactResult cartState={cartState} />
-        </Grid>
-
-      </Grid>
+      </Box>
+    </div>
   );
 };
 
 ReceiptSection.propTypes = {
+  cartState: PropTypes.objectOf(PropTypes.number),
 };
 
-ReceiptSection.defaultProps = {
-};
+ReceiptSection.defaultProps = {};
 
 export default ReceiptSection;
