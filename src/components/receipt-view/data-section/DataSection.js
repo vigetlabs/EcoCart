@@ -31,7 +31,7 @@ const DataSection = ({ cartState }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window) {
+      if (typeof window) {
         setWindowDimensions({
           height: window.innerHeight,
           width: window.innerWidth,
@@ -41,12 +41,12 @@ const DataSection = ({ cartState }) => {
     };
 
     handleResize();
-    if (window) {
+    if (typeof window) {
       window.addEventListener('resize', handleResize);
     }
 
     return () => {
-      if (window) {
+      if (typeof window) {
         window.removeEventListener('resize', handleResize);
       }
     };
