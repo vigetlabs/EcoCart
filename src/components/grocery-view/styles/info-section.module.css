@@ -1,7 +1,6 @@
 .hero {
   display: inline-block;
   background-color: #e5e5e5;
-  min-width: 800px;
   width: 100vw;
   height: 85vh;
   margin-top: -20;
@@ -13,10 +12,11 @@
 }
 
 .textContainer {
-  width: 574px;
+  height: 80%;
   margin: auto;
   padding: 3em;
   background-color: rgba(196,201,185,0.7);
+  overflow: scroll;
 }
 
 

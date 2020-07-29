@@ -39,27 +39,34 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
 
   return (
     <>
-      <InfoSection />
       <Grid
         container
         justify='center'
       >
         <Grid
           item
-          sm={12}
-          className={styles.instructions}
+          container
+          xs={12}
         >
-          <Typography
-            variant="h5"
-            component="p"
-            id='groceries'
-            className={styles.instructionsText}
+          <InfoSection />
+          <Grid
+            item
+            xs={12}
+            className={styles.instructions}
           >
-            {GROCERY_INFO}
-          </Typography>
+            <Typography
+              variant="h5"
+              component="p"
+              id='groceries'
+              className={styles.instructionsText}
+            >
+              {GROCERY_INFO}
+            </Typography>
+          </Grid>
         </Grid>
         <Grid
           item
+          xs={12}
           container
           justify='center'
         >
