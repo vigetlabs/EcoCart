@@ -66,17 +66,20 @@ const DataBreakdown = ({
           >
             <Grid
               item
-              xs={7}
+              xs={12}
+              sm={7}
             >
               <Typography
                 variant="h4"
+                className={styles.impactTitle}
               >
                 {text[type].title}
               </Typography>
             </Grid>
             <Grid
               item
-              xs={5}
+              xs={12}
+              sm={5}
             >
               <Typography
                 variant="h5"
