@@ -18,6 +18,7 @@ const ReceiptList = ({ cartState }) => {
         <ReceiptListItem
           name={item}
           cost={foodData[item].ecoScore.points}
+          grade={foodData[item].ecoScore.grade}
           key={item}
         />
       );

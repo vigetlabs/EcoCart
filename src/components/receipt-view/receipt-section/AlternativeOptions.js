@@ -11,12 +11,13 @@ import {
   Box,
 } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import LetterGrade from '../../LetterGrade';
 
 // Style
 import styles from '../styles/alternative-options.module.css';
 
 // Utils
-import { getTotalImpactGrade } from '../utils/calculations';
+import { getTotalImpactGrade, getGrade } from '../utils/calculations';
 
 // Vars
 const ALT = 'Alternatives';
@@ -86,13 +87,23 @@ const AlternativeOptions = ({ item, alternatives, cartState }) => {
         <Grid item sm={4}>
           <Box className={styles.scoresBox}>
             <Typography className={styles.score} variant="body1">
-              {getTotalImpactGrade(cartState)}
+              {
+                <LetterGrade
+                  cost={getTotalImpactGrade(cartState)}
+                  grade={getGrade(cartState)}
+                />
+              }
             </Typography>
             {selected === item ? null : (
               <>
                 <ArrowForwardIcon fontSize="small" className={styles.arrow} />
                 <Typography className={styles.score} variant="body1">
-                  {getAltScore(cartState, item, selected)}
+                  {
+                    <LetterGrade
+                      cost={getAltScore(cartState, item, selected)}
+                      grade={getGrade(replaceItem(cartState, item, selected))}
+                    />
+                  }
                 </Typography>
               </>
             )}
