@@ -10,6 +10,7 @@ import {
   CardActionArea,
   Button,
   Typography,
+  Grid,
 } from '@material-ui/core';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
@@ -49,7 +50,11 @@ const GroceryItem = ({
 
   return (
   <>
-    <div className={styles.item}>
+    <Grid
+      className={styles.item}
+      item
+      xs={12}
+    >
       <Card
         className={styles.itemCard}
         container
@@ -65,41 +70,96 @@ const GroceryItem = ({
           <CardMedia
             component="img"
             alt={item}
-            height="240"
+            className={styles.cardMedia}
             image={itemData.other.imageUrl}
             title={item}
           />
           <CardContent>
-            <Typography variant="h5" component="h2">
-              {item}
-            </Typography>
+            <Grid
+              container
+              justify='space-evenly'
+            >
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={10}
+              >
+                <Typography
+                  variant="h4"
+                  component="h2"
+                  className={styles.itemTitle}
+                >
+                  {item}
+                </Typography>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={2}
+              >
+                  <Typography
+                    variant='h5'
+                    className={styles.itemAmount}
+                  >
+                  {cartState[item]}
+                  </Typography>
+              </Grid>
+            </Grid>
           </CardContent>
         </CardActionArea>
           <CardActions
             disableSpacing={false}
           >
-            <Button
-              startIcon={<AddCircleOutlineIcon />}
-              variant="contained"
-              color="primary"
-              size="small"
-              className={styles.cartButton}
-              onClick={handleAdd} />
-            <Button
-              startIcon={<RemoveCircleOutlineIcon />}
-              variant="contained"
-              color="secondary"
-              size="small"
-              className={styles.cartButton}
-              onClick={handleRemove} />
-              <Typography
-                variant='h6'
+            <Grid
+              container
+              justify='center'
+            >
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={12}
+                lg={6}
+                className={styles.cartButtonBox}
               >
-              {cartState[item]} Servings
-              </Typography>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="small"
+                  className={styles.cartButton}
+                  onClick={handleAdd}
+                >
+                  <AddCircleOutlineIcon
+                    fontSize='large'
+                  />
+                </Button>
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={12}
+                lg={6}
+                className={styles.cartButtonBox}
+              >
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  size="small"
+                  className={styles.cartButton}
+                  onClick={handleRemove}
+                >
+                  <RemoveCircleOutlineIcon
+                    fontSize='large'
+                  />
+                </Button>
+              </Grid>
+            </Grid>
           </CardActions>
       </Card>
-    </div>
+    </Grid>
     <ItemModal
       isModalOpen={isModalOpen}
       setModalOpen={setModalOpen}

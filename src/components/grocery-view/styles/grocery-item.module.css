@@ -1,10 +1,42 @@
 .item {
-  width: 300px;
+  width: 400px;
   padding: 10px;
   height: 100%;
 }
 
 .itemCard {
   min-width: 275;
-  height: 382px;
+}
+
+.cartButtonBox {
+  text-align: center;
+  padding: 0 5%;
+}
+
+.cartButton {
+  text-align: center;
+  width: 90%;
+}
+
+.buttonIcon {
+  font-size: 100px;
+}
+
+.cardMedia {
+  height: 15vw;
+  min-height: 150px;
+}
+
+.itemTitle {
+  overflow: hidden;
+  text-align: center;
+  display: inline;
+}
+
+.itemAmount {
+  text-align: center;
+  border-radius: 100px;
+  background-color: lavender;
+  padding-top: 10px;
+  height: 100%;
 }

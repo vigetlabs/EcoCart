@@ -19,7 +19,13 @@ const CategoryRow = ({
       return (
         <Grid
           item
+          container
+          justify='center'
           xl={2}
+          lg={3}
+          md={4}
+          sm={6}
+          xs={12}
         >
           <GroceryItem
             cartState={cartState}
@@ -36,9 +42,11 @@ const CategoryRow = ({
 
   return (
     <Grid
+      item
+      xs={12}
       container
       className={styles.container}
-      justify='left'
+      justify='center'
     >
       <Grid
         item

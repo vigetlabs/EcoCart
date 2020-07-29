@@ -22,7 +22,9 @@ const GROCERY_INFO = `Click through product categories, view item grades,
 const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
   const rows = categories.map((section, index) => (
     <Grid
+      container
       item
+      justify='center'
       className={`${styles.rowBox} ${index % 2 === 0 ? null : styles.rowBoxGrey}`}
     >
        <CategoryRow
@@ -32,45 +34,38 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
         category={section}
         toggleHeaderTop={toggleHeaderTop}
       />
-
-      <div
-        className={styles.rowDivider}
-      ></div>
-
     </Grid>
   ));
 
   return (
     <>
       <InfoSection />
-      <div>
-        <div
-          className={styles.container}
+      <Grid
+        container
+        justify='center'
+      >
+        <Grid
+          item
+          sm={12}
+          className={styles.instructions}
         >
-          <div
-            className={styles.instructions}
+          <Typography
+            variant="h5"
+            component="p"
+            id='groceries'
+            className={styles.instructionsText}
           >
-            <Typography
-              variant="h5"
-              component="p"
-              id='groceries'
-              className={styles.instructionsText}
-            >
-              {GROCERY_INFO}
-            </Typography>
-          </div>
-        </div>
-        <div>
-          <Grid
-            container
-            direction="column"
-            alignContents="flex-end"
-            alignItems="stretch"
-          >
-            {rows}
-          </Grid>
-        </div>
-      </div>
+            {GROCERY_INFO}
+          </Typography>
+        </Grid>
+        <Grid
+          item
+          container
+          justify='center'
+        >
+          {rows}
+        </Grid>
+      </Grid>
     </>
   );
 };

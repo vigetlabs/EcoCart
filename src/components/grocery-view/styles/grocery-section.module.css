@@ -9,13 +9,13 @@
 }
 
 .rowBox {
-  padding: 2vh 5vw;
+  padding: 2vh 0;
 }
 
 
 .instructions {
-  background-image: linear-gradient(rgba(0,0,0,.3), rgba(255,0,0,0));
-  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(255,255,255,0));
+  width: 100%;
   min-width: 800px;
   height: 12vh;
   padding-top: 2vh;

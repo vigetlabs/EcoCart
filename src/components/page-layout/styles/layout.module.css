@@ -1,6 +1,6 @@
 .fullPage {
     width: 100vw;
-    min-width: 1000px;
+    /* min-width: 1000px; */
     min-height: 100vh;
     position: absolute;
     top: 0;
@@ -15,7 +15,7 @@
     z-index: 10000;
     width: 100%;
     transition: top 0.5s;
-    min-width: 1000px;
+    /* min-width: 1000px; */
 }
 
 .layoutFooter {

@@ -45,7 +45,7 @@ const CartModal = ({
 
           <Grid
             item
-            sm={12}
+            xs={12}
           >
             <Typography
               variant='h2'
@@ -57,7 +57,7 @@ const CartModal = ({
 
           <Grid
             item
-            sm={12}
+            xs={12}
             className={styles.cartList}
           >
             {generateItems}
@@ -65,7 +65,7 @@ const CartModal = ({
 
           <Grid
             item
-            sm={12}
+            xs={12}
             className={styles.cartButtonBox}
           >
             <Link
