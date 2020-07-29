@@ -28,7 +28,10 @@ const ReceiptList = ({ cartState }) => {
 
   return (
     <Grid className={styles.listBox} item>
-      <List>{generateList}</List>
+      <List>
+        <ReceiptListItem head={true} />
+        {generateList}
+      </List>
     </Grid>
   );
 };
