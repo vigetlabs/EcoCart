@@ -63,7 +63,7 @@ export const getTotalImpactGrade = (cart) => {
     return (kilos / totalKilos) * grade;
   });
 
-  const value = itemVals.reduce((acc, curr) => acc + curr);
+  const value = itemVals.reduce((acc, curr) => acc + curr, 0);
 
   return Math.floor(value);
 };
