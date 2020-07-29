@@ -13,33 +13,44 @@ const InfoSection = () => (
     container
     className={styles.hero}
     alignItems='center'
+    justify='center'
   >
     <Grid
       item
-      sm={3}
-    />
-    <Grid
-      item
-      xs={8}
-      sm={8}
+      container
+      justify='center'
+      xs={12}
+      sm={12}
       md={8}
       lg={6}
       xl={6}
       className={styles.textContainer}
     >
-      <Typography
-        variant="h1"
-        align='center'
-        className={styles.intoTitle}
+      <Grid
+        item
+        xs={12}
+        sm={12}
       >
-          Eco Cart
-      </Typography>
-      <Typography
-        variant="subtitle2"
-        className={styles.introText}
+        <Typography
+          variant="h1"
+          align='center'
+          className={styles.intoTitle}
+        >
+            Eco Cart
+        </Typography>
+      </Grid>
+      <Grid
+        item
+        xs={12}
+        sm={12}
       >
-        {TEXT}
-      </Typography>
+        <Typography
+          variant="subtitle2"
+          className={styles.introText}
+        >
+          {TEXT}
+        </Typography>
+      </Grid>
     </Grid>
   </Grid>
 );

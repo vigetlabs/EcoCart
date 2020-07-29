@@ -17,17 +17,15 @@ const ItemGrade = ({ item }) => {
   return (
         <Grid
           container
-          justify='left'
+          justify='center'
         >
           <Grid
-            sm={12}
+            xs={12}
           >
-            <Typography variant='h5'>Eco Score</Typography>
-          </Grid>
-          <Grid
-            sm={12}
-          >
-            {itemData.ecoScore.points} -- {itemData.ecoScore.grade}
+            <Typography variant='h3'>
+              Eco Score: {itemData.ecoScore.points}
+            </Typography>
+            <Typography variant='h3'>{itemData.ecoScore.grade}</Typography>
           </Grid>
         </Grid>
   );

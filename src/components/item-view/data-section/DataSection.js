@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 // Components
 import { Grid } from '@material-ui/core';
@@ -18,41 +18,7 @@ const GHG = 'ghg';
 
 const minRatio = { title: 0.2, body: 0.3 };
 
-const DataSection = ({ item }) => {
-  const [windowDimensions, setWindowDimensions] = useState({
-    width: 0,
-    height: 0,
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (typeof window !== 'undefined') {
-        setWindowDimensions({
-          height: window.innerHeight,
-          width: window.innerWidth,
-          min: Math.min(window.innerWidth, window.innerHeight),
-        });
-      }
-    };
-
-    handleResize();
-
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', handleResize);
-    }
-
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('resize', handleResize);
-      }
-    };
-  }, []);
-
-  const { width, min } = windowDimensions;
-
-  const ratio = width - min / width;
-
-  return (
+const DataSection = ({ item }) => (
   <Grid
     container
     justify="center"
@@ -61,27 +27,32 @@ const DataSection = ({ item }) => {
       item
       container
       className={styles.square}
-      sm={12}
+      xs={12}
+      spacing={2}
     >
       <Grid
         item
         container
+        spacing={4}
         className={styles.square}
-        sm={6}
+        xs={12}
+        sm={12}
+        md={12}
+        lg={6}
       >
         <Grid
           item
           container
-          sm={12}
+          justify='center'
+          xs={12}
         >
           <ImpactRadar
             item={item}
-            ratio={ratio}
           />
         </Grid>
         <Grid
           item
-          sm={12}
+          xs={12}
         >
           <ItemGrade item={item} />
         </Grid>
@@ -89,7 +60,10 @@ const DataSection = ({ item }) => {
       <Grid
         item
         className={styles.breakdownBox}
-        sm={6}
+        xs={12}
+        sm={12}
+        md={12}
+        lg={6}
       >
         <DataBreakdown
           item={item}
@@ -97,14 +71,12 @@ const DataSection = ({ item }) => {
           water={WATER}
           eutro={EUTRO}
           ghg={GHG}
-          windowDimensions={windowDimensions}
           minRatio={minRatio}
         />
       </Grid>
     </Grid>
   </Grid>
-  );
-};
+);
 
 DataSection.propTypes = {};
 
