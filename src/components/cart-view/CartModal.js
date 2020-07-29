@@ -32,7 +32,7 @@ const CartModal = ({
       );
     }
     return null;
-  });
+  }).filter((item) => item);
 
   return (
     <div>
@@ -45,7 +45,7 @@ const CartModal = ({
 
           <Grid
             item
-            sm={12}
+            xs={12}
           >
             <Typography
               variant='h2'
@@ -57,7 +57,7 @@ const CartModal = ({
 
           <Grid
             item
-            sm={12}
+            xs={12}
             className={styles.cartList}
           >
             {generateItems}
@@ -65,10 +65,11 @@ const CartModal = ({
 
           <Grid
             item
-            sm={12}
+            xs={12}
             className={styles.cartButtonBox}
           >
-            <Link
+          {generateItems.length > 0 ? (
+             <Link
               to={'/receipt'}
               style={{ textDecoration: 'none' }}
             >
@@ -86,6 +87,25 @@ const CartModal = ({
                 </Typography>
               </Button>
             </Link>
+
+          ) : (
+
+            <Button
+                onClick={toggleModal}
+                variant="contained"
+                color="secondary"
+                className={styles.cartButton}
+              >
+                <Typography
+                  variant='h5'
+                  align='center'
+                >
+                  Add Items
+                </Typography>
+              </Button>
+
+          )}
+
           </Grid>
 
         </Grid>

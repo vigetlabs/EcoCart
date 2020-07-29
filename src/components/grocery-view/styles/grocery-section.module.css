@@ -9,15 +9,13 @@
 }
 
 .rowBox {
-  padding: 2vh 5vw;
+  padding: 2vh 0;
 }
 
 
 .instructions {
-  background-image: linear-gradient(rgba(0,0,0,.3), rgba(255,0,0,0));
-  width: 100vw;
-  min-width: 800px;
-  height: 12vh;
+  background-image: linear-gradient(rgba(0,0,0,.3), rgba(255,255,255,0));
+  width: 100%;
   padding-top: 2vh;
   text-align: center;
 }
@@ -25,8 +23,7 @@
 .instructionsText {
   display: inline-block;
   text-align: center;
-  width: 50%;
-  min-width: 800px;
+  width: 80%;
   height: 100%;
   margin-left: 25%;
 }

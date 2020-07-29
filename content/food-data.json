@@ -25,7 +25,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/wsxuqEFns640F8fLei1j2nQZPfmZaLBtU3kUi6Ir7M9XQJs7JenWejWHHxlS90l0csGB2Ks9N0MqSL8FWqV-v9wOR1URDW_4ruJ2IF1HWLEiHrxFydn3ApGpYK1TStfcfCwCfm_q",
       "servingNum": "1",
-      "servingUnit": "lb",
+      "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
       "alternatives": ["Tofu", "Poultry Meat", "Beans"]
@@ -57,7 +57,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/4eyNMJln3rPOP1GvQlplcvJXpFJoyZsFF1s5RQGjhmyo8E1Re3hQeUpNYtKM7AHTh_NXomLB1VBx0od7Bey2TVQjWnRJ3eV7i9RDyYQCv9YF3Aqob-Bv99MZODIt8IW85FazpUkZ",
       "servingNum": "1",
-      "servingUnit": "lb",
+      "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
       "alternatives": ["Tofu", "Poultry Meat", "Beans"]
@@ -121,7 +121,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/QH7UQIUD6fPTfqMIM4gDp4L1lm8dmnonTb1H4Lgstqmc3CPVJb-AkZyNP5DIwCzBnqQ-_E9gibn965v7ev9TKBL7tEozbERUP5xMMDUlIQojtVjRBhU1o9hd8iV8Blef3XOR9WKM",
       "servingNum": "1",
-      "servingUnit": "lb",
+      "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
       "alternatives": ["Tofu", "Poultry Meat", "Beans"]
@@ -153,7 +153,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/gFssChyZLx1K834vM356VqXNFTQkcFTgt0kmz4kIBsBCPM0O8LqPUlDko_-QHuC5BfpWxP8fuMdv-5NHQtIq9EFw_MxQMrGThR6u5etOJslFxh68zmlTVoQCrqWotgxSPdilwAWo",
       "servingNum": "1",
-      "servingUnit": "lb",
+      "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
       "alternatives": ["Tofu", "Poultry Meat", "Beans"]
@@ -185,7 +185,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/z8fb3dze2MDw0OJdZmmtOBWwEMuUKdSlAKbXkxHGE3RlAH8cVQJcl5yNIqMHQC29_beauMXIjIZ8OgMQIWAO2PsrfOGQj9ksjOXKHBssyB2gaZ1Ru1ucqXepILSliNsLAFZUI89P",
       "servingNum": "1",
-      "servingUnit": "lb",
+      "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
       "alternatives": ["Tofu", "Poultry Meat", "Beans"]
@@ -249,7 +249,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/gzLmks41CpSRYyEmL8CZcwg7NStNlF4zwxiJs9OaK4qwBpGNupKNecYBBZeZP2Gr6lpwBAtPYz6x2BHz0u88RKNNHBgDCDAh2U3ahuJDpLxxUnuol-xm-oXwT9ROWUd4RB40iYVO",
       "servingNum": "1",
-      "servingUnit": "lb",
+      "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
       "alternatives": ["Tofu", "Poultry Meat", "Beans"]
@@ -349,7 +349,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/becfArgRIBEvn39-CwiWN-L6XGYGn4zpXS7LNVYVTVvDSziSO0fjipHxMhZJ8Pxu21siEPTOZIwPJwTHFN-zjXKcPX3vhENXfKscR5WpVWD4yo20qo4padKhcp4wrBXheBqGFxC8",
       "servingNum": "1",
-      "servingUnit": "lb",
+      "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Dry Goods"],
       "alternatives": ["Barley"]
@@ -474,7 +474,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/zY_eBrobUFpnKKLUFl5uFwyrL0ONZCYqFtK91bMNExI6cvJgJHgt3ia4sUcDuLnDWV_1__Rv8O1e6q9cfiROyJPDKimRrVft0mrZr7I9X6iz91FJcBclAQF840vAbi94206N1OUh",
       "servingNum": "1",
-      "servingUnit": "lb",
+      "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"]
     }
@@ -784,7 +784,7 @@
     "other": {
       "imageUrl": "https://lh3.googleusercontent.com/TG0anUItwZi0TvL74IE33iMpMmOwMUqR0R0T9w9LRPi2RFHbBHnYanX5-CyjUnLgQwo0mYQjr_CXSZN5ymDLh-ajBrrarfeGb7va5yRv7qidGqCaGphQo0WxkbqGqdFyffdv996H",
       "servingNum": "1",
-      "servingUnit": "lb",
+      "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Fruits"]
     }

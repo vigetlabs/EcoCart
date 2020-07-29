@@ -7,3 +7,22 @@
   padding-top: 1rem;
   padding-right: 1rem;
 }
+
+.cartButtonBox {
+  text-align: center;
+  padding: 2px 5%;
+}
+
+.cartButton {
+  text-align: center;
+  width: 90%;
+}
+
+
+.itemAmount {
+  text-align: center;
+  border-radius: 100px;
+  background-color: lavender;
+  padding-top: 10px;
+  height: 100%;
+}

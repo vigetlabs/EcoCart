@@ -1,13 +1,12 @@
 .modal {
   outline: 0;
   position: absolute;
-  min-width: 800px;
   width: 60vw;
-  height: 90vh;
-  top: 5%;
+  max-height: 90vh;
+  top: 5vh;
   left: 20%;
   margin: auto;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .modalBox {
@@ -26,4 +25,16 @@
 .infoBox {
   padding: 2em;
   text-align: center;
+}
+
+
+
+@media screen and (max-width: 1280px) {
+  .modal {
+    width: 90vw;
+    height: 80vh;
+    top: 2%;
+    left: 5%;
+    overflow: scroll;
+  }
 }

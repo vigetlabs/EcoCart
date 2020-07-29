@@ -10,6 +10,7 @@ import {
   VictoryArea,
   VictoryTheme,
 } from 'victory';
+import { Grid } from '@material-ui/core';
 
 // Styles
 import styles from '../styles/impact-donut.module.css';
@@ -28,7 +29,8 @@ const ImpactDonut = ({ item }) => {
 
   return (
 
-      <div
+      <Grid
+        item
         className={styles.chartBox}
       >
         <VictoryChart
@@ -37,7 +39,9 @@ const ImpactDonut = ({ item }) => {
           domain={{ y: [0, 1] }}
           startAngle={45}
           endAngle={405}
-          width={500}
+          width={400}
+          height={400}
+          padding={25}
         >
           <VictoryGroup
             colorScale={['green']}
@@ -69,7 +73,9 @@ const ImpactDonut = ({ item }) => {
                 key={i}
                 dependentAxis
                 style={{
-                  axisLabel: { padding: 25 },
+                  axisLabel: {
+                    padding: 25, fontSize: '17px',
+                  },
                   axis: { stroke: 'none' },
                   grid: {
                     stroke: (tick) => {
@@ -80,12 +86,12 @@ const ImpactDonut = ({ item }) => {
                       }
                       return 'red';
                     },
-                    strokeWidth: 0.2,
+                    strokeWidth: 1,
                     opacity: 0.7,
                   },
                   tickLabels: {
                     fill: 'black',
-                    fontSize: '8px',
+                    fontSize: '13px',
                   },
                 }}
                 tickLabelComponent={<VictoryLabel labelPlacement="vertical" />}
@@ -106,7 +112,7 @@ const ImpactDonut = ({ item }) => {
             }}
           />
         </VictoryChart>
-      </div>
+      </Grid>
   );
 };
 

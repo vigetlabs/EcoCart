@@ -1,73 +1,119 @@
 // import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React from 'react';
 
 // Components
 import {
   Typography,
-  Box,
-  InputLabel,
-  Select,
-  MenuItem,
   Button,
+  Grid,
 } from '@material-ui/core';
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 
 // Styles
 import styles from '../styles/info-section.module.css';
 
-const getMenuItems = (exclusiveLimit) => {
-  // Get all nonzero numbers in range
-  const nums = [...Array(exclusiveLimit).keys()].filter((num) => num !== 0);
-  return nums.map((num) => <MenuItem value={num}>{num}</MenuItem>);
-};
-
-// REFACTOR: Actually get ingredients info
-// const getIngredientsInfo = (item) => `Here are the ingredients for ${item}:.`;
-
-// REFACTOR: Actually get serving info here
-const getServingInfo = (item) => `${item} Serving Size`;
+// Data
+import foodData from '../../../../content/food-data.json';
 
 const InfoSection = ({ item, cartState, setCartState }) => {
-  const [quantity, setQuantity] = useState(1);
-
-  const handleChange = (event) => {
-    setQuantity(event.target.value);
-  };
-
   const handleAdd = () => {
     const newUpdate = { ...cartState };
-    newUpdate[item] += quantity;
+    newUpdate[item] += 1;
     setCartState(newUpdate);
   };
 
+  const handleRemove = () => {
+    if (cartState[item] > 0) {
+      const newUpdate = { ...cartState };
+      newUpdate[item] -= 1;
+      setCartState(newUpdate);
+    }
+  };
+
+  const thisItem = foodData[item];
+
   return (
     <>
-      <Typography variant="h3">{item}</Typography>
-      <Typography variant="body1">{getServingInfo(item)}</Typography>
-      <div>
-        <Box className={styles.dropdown}>
-          <InputLabel id="label">Quantity</InputLabel>
-          <Select
-            labelId="label"
-            id="select"
-            value={quantity}
-            onChange={(event) => handleChange(event)}>
-            {getMenuItems(6)}
-          </Select>
-        </Box>
-        <Button
-          startIcon={<AddShoppingCartIcon />}
-          variant="contained"
-          color="primary"
-          size="small"
-          onClick={handleAdd}>
-          Add To Cart
-        </Button>
-      </div>
-      {/* <Box className={styles.ingredients}>
-        <Typography variant="h5">Ingredients</Typography>
-        <Typography variant="body1">{getIngredientsInfo(item)}</Typography>
-      </Box> */}
+      <Typography
+        variant="h3"
+        gutterBottom
+      >
+        {item}
+      </Typography>
+      <Grid
+        container
+        justify='center'
+        spacing={3}
+      >
+        <Grid
+          item
+          xs={6}
+        >
+          <Typography
+            variant='h5'
+            className={styles.itemAmount}
+          >
+          {cartState[item]}
+          </Typography>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+        >
+          <Typography
+            variant="h5"
+            gutterBottom
+          >
+          Serving Size: {thisItem.other.servingNum} {thisItem.other.servingUnit}
+          </Typography>
+        </Grid>
+      </Grid>
+        <Grid
+          container
+          justify='center'
+        >
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            className={styles.cartButtonBox}
+          >
+            <Button
+              variant="contained"
+              color="primary"
+              size="small"
+              className={styles.cartButton}
+              onClick={handleAdd}
+            >
+              <AddCircleOutlineIcon
+                fontSize='large'
+              />
+            </Button>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            className={styles.cartButtonBox}
+          >
+            <Button
+              variant="contained"
+              color="secondary"
+              size="small"
+              className={styles.cartButton}
+              onClick={handleRemove}
+            >
+              <RemoveCircleOutlineIcon
+                fontSize='large'
+              />
+            </Button>
+          </Grid>
+        </Grid>
     </>
   );
 };

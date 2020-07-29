@@ -1,10 +1,7 @@
 .hero {
-  display: inline-block;
   background-color: #e5e5e5;
-  min-width: 800px;
   width: 100vw;
   height: 85vh;
-  margin-top: -20;
   padding: 1.45rem 1.0875rem;
   background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3d8gb71kpLGM2eNkaNxANZGPIuy_Q0sIbnVhHzhOoWO-oJHVx3jzTWfUHLA7p3sa4D-LXVfinY2UAjyDzhWevUq5wTBvNhFJyQH2J9qmG7Lq1udEEPDO6s6LvdyUnOeB417jOAuaWT-osnnfvoAT42f=w3054-h1508-no?authuser=0');
   background-size: cover;
@@ -13,13 +10,19 @@
 }
 
 .textContainer {
-  width: 574px;
-  margin: auto;
+  height: 80%;
   padding: 3em;
   background-color: rgba(196,201,185,0.7);
+  overflow: scroll;
 }
 
 
 .intoTitle {
   padding: 2vh;
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 100vh;
+  }
 }
