@@ -2,9 +2,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
+import { Grid, Typography, Divider } from '@material-ui/core';
+import LetterGrade from '../../LetterGrade';
 
 // Styles
-import { Grid, Typography, Divider } from '@material-ui/core';
 import styles from '../styles/impact-result.module.css';
 
 // Utils
@@ -36,7 +37,9 @@ const ImpactResult = ({ cartState }) => (
 
     <Grid item sm={6}>
       <Typography variant="h5" align="right">
-        {getCartItems(cartState).length ? getGrade(cartState) : null}
+        {getCartItems(cartState).length ? (
+          <LetterGrade grade={getGrade(cartState)} />
+        ) : null}
       </Typography>
     </Grid>
 

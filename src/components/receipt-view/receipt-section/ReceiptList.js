@@ -18,6 +18,7 @@ const ReceiptList = ({ cartState }) => {
         <ReceiptListItem
           name={item}
           cost={foodData[item].ecoScore.points}
+          grade={foodData[item].ecoScore.grade}
           key={item}
         />
       );
@@ -27,7 +28,10 @@ const ReceiptList = ({ cartState }) => {
 
   return (
     <Grid className={styles.listBox} item>
-      <List>{generateList}</List>
+      <List>
+        <ReceiptListItem head={true} />
+        {generateList}
+      </List>
     </Grid>
   );
 };

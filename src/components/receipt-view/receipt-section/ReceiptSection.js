@@ -3,7 +3,6 @@ import React from 'react';
 
 // Components
 import { Grid, Typography, Divider, Box } from '@material-ui/core';
-import GetAppIcon from '@material-ui/icons/GetApp';
 import ReceiptList from './ReceiptList';
 import ImpactResult from './ImpactResult';
 
@@ -29,21 +28,13 @@ const MONTHS = [
 const ReceiptSection = ({ cartState }) => {
   const getDate = () => {
     const d = new Date();
-    return `${MONTHS[d.getMonth()]} ${d.getDay()}, ${d.getFullYear()}`;
+    return `${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
   };
 
   return (
     <div className={styles.receiptSectionBox}>
       <Box className={styles.box}>
         <Grid container justify="space-around" className={styles.receiptBox}>
-          <Grid item container sm={12} className={styles.receiptDownloadBox}>
-            <Grid item sm={11} />
-
-            <Grid item sm={1}>
-              <GetAppIcon />
-            </Grid>
-          </Grid>
-
           <Grid item sm={12} spacing={2} className={styles.receiptHeaderBox}>
             <Typography align="center" variant="h3" gutterBottom>
               Impact Receipt
