@@ -43,7 +43,7 @@ const getAltScore = (cart, item, alternative) => {
   return newScore;
 };
 
-const AlternativeOptions = ({ item, alternatives, cartState }) => {
+const AlternativeOptions = ({ item, alternatives, cartState, head }) => {
   const [selected, setSelected] = useState(item);
 
   const handleChange = (event) => {
@@ -61,6 +61,30 @@ const AlternativeOptions = ({ item, alternatives, cartState }) => {
     };
     return alternatives.map(getMenuItem);
   };
+
+  if (head) {
+    return (
+      <Box className={styles.altOptionsBox}>
+        <Grid container sm={12}>
+          <Grid item sm={4}>
+            <Typography variant="h5" className={styles.header}>
+              High Impact Foods
+            </Typography>
+          </Grid>
+          <Grid item sm={4}>
+            <Typography variant="h5" className={styles.header}>
+              Alternatives
+            </Typography>
+          </Grid>
+          <Grid item sm={4}>
+            <Typography variant="h5" className={styles.header}>
+              Old Score -- Alt Score
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+    );
+  }
 
   return (
     <Box className={styles.altOptionsBox}>

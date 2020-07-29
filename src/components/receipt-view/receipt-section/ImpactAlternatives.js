@@ -42,6 +42,7 @@ const ImpactAlternatives = ({ cartState }) => {
         <Typography variant="h4" gutterBottom>
           Alternatives to High Impact Foods
         </Typography>
+        <AlternativeOptions head={true} />
         {altComponents}
       </Grid>
     </Grid>
