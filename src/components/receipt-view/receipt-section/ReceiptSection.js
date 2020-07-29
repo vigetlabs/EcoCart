@@ -28,7 +28,7 @@ const MONTHS = [
 const ReceiptSection = ({ cartState }) => {
   const getDate = () => {
     const d = new Date();
-    return `${MONTHS[d.getMonth()]} ${d.getDay()}, ${d.getFullYear()}`;
+    return `${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
   };
 
   return (
