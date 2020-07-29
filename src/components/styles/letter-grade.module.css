@@ -1,0 +1,31 @@
+.grade {
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
+.A {
+  background-color: #1ce64e;
+}
+
+.B {
+  background-color: #9ee622;
+}
+
+.C {
+  background-color: #e6c320;
+}
+
+.D {
+  background-color: #e68527;
+}
+
+.F {
+  background-color: #e63725;
+}
+
+.cost {
+  padding-right: 1.5em;
+}
