@@ -2,9 +2,8 @@
 import React from 'react';
 
 // Components
-import {
-  Grid, Typography,
-} from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import CategoryRow from './CategoryRow';
 import InfoSection from '../info-section/InfoSection';
 
@@ -24,10 +23,11 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
     <Grid
       container
       item
-      justify='center'
-      className={`${styles.rowBox} ${index % 2 === 0 ? null : styles.rowBoxGrey}`}
-    >
-       <CategoryRow
+      justify="center"
+      className={`${styles.rowBox} ${
+        index % 2 === 0 ? null : styles.rowBoxGrey
+      }`}>
+      <CategoryRow
         key={section}
         cartState={cartState}
         setCartState={setCartState}
@@ -39,37 +39,20 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
 
   return (
     <>
-      <Grid
-        container
-        justify='center'
-      >
-        <Grid
-          item
-          container
-          xs={12}
-        >
+      <Grid container justify="center">
+        <Grid item container xs={12}>
           <InfoSection />
-          <Grid
-            item
-            xs={12}
-            className={styles.instructions}
-          >
+          <Grid item xs={12} className={styles.instructions}>
             <Typography
               variant="h5"
               component="p"
-              id='groceries'
-              className={styles.instructionsText}
-            >
+              id="groceries"
+              className={styles.instructionsText}>
               {GROCERY_INFO}
             </Typography>
           </Grid>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          container
-          justify='center'
-        >
+        <Grid item xs={12} container justify="center">
           {rows}
         </Grid>
       </Grid>
