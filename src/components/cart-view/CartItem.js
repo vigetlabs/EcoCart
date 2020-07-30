@@ -102,7 +102,7 @@ const CartItem = ({
                       value={amount}
                       className={styles.cartSelect}
                       onChange={(event) => handleSelect(event)}>
-                      {getMenuItems((amount * 2))}
+                      {getMenuItems((amount * 3))}
                     </Select>
                   </Grid>
                   <Grid

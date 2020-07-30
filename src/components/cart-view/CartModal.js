@@ -83,7 +83,7 @@ const CartModal = ({
                   variant='h5'
                   align='center'
                 >
-                  Checkout
+                  View Impact
                 </Typography>
               </Button>
             </Link>

@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
       if (st > 400 && headerTop !== '0') {
         setHeaderTop('0');
       }
-      if (st === 0 && headerTop !== '0') {
+      if (st === 0 && headerTop !== '0' && window.location.pathname !== '/receipt') {
         setHeaderTop('-150px');
       }
     });
