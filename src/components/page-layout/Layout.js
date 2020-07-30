@@ -85,7 +85,7 @@ const Layout = ({ children }) => {
             className={styles.layoutFooter}
           >
             <p>
-              ©${new Date().getFullYear()}, A <a href="https://www.viget.com/">Viget</a> Project
+              ©{new Date().getFullYear()}, A <a href="https://www.viget.com/">Viget</a> Project
             </p>
             <p>
               Liam Becker, Jennifer Montoya, William Dinneen, Jackson Doyle, Mika

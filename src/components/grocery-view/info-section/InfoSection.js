@@ -36,7 +36,7 @@ const InfoSection = () => (
           align='center'
           className={styles.intoTitle}
         >
-            Eco Cart
+            EcoCart
         </Typography>
       </Grid>
       <Grid
