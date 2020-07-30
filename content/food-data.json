@@ -28,7 +28,7 @@
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu", "Poultry Meat", "Beans"]
+      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
     }
   },
   "Veal": {
@@ -60,7 +60,7 @@
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu", "Poultry Meat", "Beans"]
+      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
     }
   },
   "Cheese": {
@@ -124,7 +124,7 @@
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu", "Poultry Meat", "Beans"]
+      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
     }
   },
   "Lamb & Mutton": {
@@ -156,7 +156,7 @@
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu", "Poultry Meat", "Beans"]
+      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
     }
   },
   "Prawns (farmed)": {
@@ -188,7 +188,7 @@
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu", "Poultry Meat", "Beans"]
+      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
     }
   },
   "Nuts": {
@@ -252,7 +252,7 @@
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
       "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu", "Poultry Meat", "Beans"]
+      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
     }
   },
   "Dark Chocolate": {
