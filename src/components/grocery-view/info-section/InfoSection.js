@@ -43,12 +43,14 @@ const InfoSection = () => (
         <div
           className={styles.introText}
         >
-          EcoCart uses data from Our World In Data
-          to measure and grade your environmental impact based on your grocery list,
-          and provides you with actionable steps to improve your environmental footprint.
-          Select your favorite grocery items and see how much land and water they require
-          and how much pollution and greenhouse gasses their production creates.
-          You can look at individual items, or you can see the impact of your entire grocery list.
+          Next time you order a hamburger, take a moment to consider its cost.
+          Not the $6 you paid for it, but the 6 Kilograms of greenhouse gas it
+          created, the 68 square meters of agricultural land it required, the
+          423 liters of water it guzzled, and the 118 grams of chemical runoff
+          that are now running through the waterways. Ecocart uses data from Our
+          World in Data to measure and grade the environmental impact of beef and
+          other common grocery items. Use it to take actionable steps to improve
+          your environmental FOODprint.
         </div>
       </Grid>
     </Grid>

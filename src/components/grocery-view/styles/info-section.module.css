@@ -31,7 +31,7 @@
 .introText {
   padding-left: 2vh;
   padding-right: 2vh;
-  font-size: 26px;
+  font-size: 23px;
   font-family: 'Rubik';
   line-height: 1.6;
 }
@@ -39,10 +39,11 @@
 
 @media screen and (max-width: 960px) {
   .introText {
-    font-size: 22px;
+    font-size: 19px;
   }
   .introTitle {
-    margin-bottom: -35px;
+    font-size: 66px;
+    margin-bottom: -25px;
   }
 }
 
@@ -51,7 +52,7 @@
     height: 100vh;
   }
   .introText {
-    font-size: 22px;
+    font-size: 20px;
   }
   .introTitle {
     font-size: 66px;
