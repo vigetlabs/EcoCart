@@ -1,10 +1,9 @@
 // import PropTypes from 'prop-types';
-import React from 'react';
+import React, { Suspense } from 'react';
 
 // Components
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import CategoryRow from './CategoryRow';
 import InfoSection from '../info-section/InfoSection';
 
 // Styles
@@ -12,6 +11,9 @@ import styles from '../styles/grocery-section.module.css';
 
 // Data
 import { categories } from '../../../../content/food-categories.json';
+
+// Lazy Loaded Components
+const CategoryRow = React.lazy(() => import('./CategoryRow'));
 
 const GROCERY_INFO = `Click through product categories, view item grades,
                       and add items to your cart straight from this page,
@@ -27,13 +29,15 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
       className={`${styles.rowBox} ${
         index % 2 === 0 ? null : styles.rowBoxGrey
       }`}>
-      <CategoryRow
-        key={section}
-        cartState={cartState}
-        setCartState={setCartState}
-        category={section}
-        toggleHeaderTop={toggleHeaderTop}
-      />
+      <Suspense fallback={<div>Loading...</div>}>
+        <CategoryRow
+          key={section}
+          cartState={cartState}
+          setCartState={setCartState}
+          category={section}
+          toggleHeaderTop={toggleHeaderTop}
+        />
+      </Suspense>
     </Grid>
   ));
 
