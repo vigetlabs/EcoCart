@@ -29,6 +29,7 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
         >
           <Button
             className={styles.button}
+            onClick={resetHeaderTop}
           >
             <img
               src={ecoLogo}
