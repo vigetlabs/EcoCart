@@ -5,7 +5,7 @@
 }
 
 .container {
-  background-color: lavender;
+  background-color: white;
   height: 10vh;
   min-width: 1000px;
 }
@@ -40,5 +40,4 @@
   .welcome {
     display: none;
   }
-  
 }
