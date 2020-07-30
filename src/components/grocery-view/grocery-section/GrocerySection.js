@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import React, { Suspense } from 'react';
+import React from 'react';
 
 // Components
 import Grid from '@material-ui/core/Grid';
@@ -29,15 +29,13 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
       className={`${styles.rowBox} ${
         index % 2 === 0 ? null : styles.rowBoxGrey
       }`}>
-      <Suspense fallback={<div>Loading...</div>}>
-        <CategoryRow
-          key={section}
-          cartState={cartState}
-          setCartState={setCartState}
-          category={section}
-          toggleHeaderTop={toggleHeaderTop}
-        />
-      </Suspense>
+      <CategoryRow
+        key={section}
+        cartState={cartState}
+        setCartState={setCartState}
+        category={section}
+        toggleHeaderTop={toggleHeaderTop}
+      />
     </Grid>
   ));
 
