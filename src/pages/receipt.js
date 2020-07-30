@@ -5,7 +5,6 @@ import { Grid } from '@material-ui/core';
 import ReceiptSection from '../components/receipt-view/receipt-section/ReceiptSection';
 import ImpactAlternatives from '../components/receipt-view/receipt-section/ImpactAlternatives';
 import DataSection from '../components/receipt-view/data-section/DataSection';
-import SEO from '../components/seo';
 
 const ReceiptPage = ({ cartState }) => {
   const checkItems = Object.keys(cartState).map((itemKey) => {
@@ -21,7 +20,6 @@ const ReceiptPage = ({ cartState }) => {
 
   return (
   <>
-    <SEO title="Receipt" />
     <Grid
       container
       item
