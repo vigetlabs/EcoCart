@@ -3,12 +3,13 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 // See https://material-ui.com/customization/globals/
 
-export default createMuiTheme({
+const theme = createMuiTheme({
 
   typography: {
     h1: {
-      fontFamily: 'Rubik Mono One',
-      fontSize: 50,
+      fontFamily: 'Karla',
+      fontSize: 80,
+      fontWeight: 700,
     },
     h2: {
       fontFamily: 'Karla',
@@ -61,10 +62,12 @@ export default createMuiTheme({
     },
     divider: 'rgb(0,0,0)',
     primary: {
-      main: '#0076D2',
+      // main: '#0076D2',
+      main: '#16B545',
     },
     secondary: {
-      main: '#D68A1A',
+      // main: '#D68A1A',
+      main: '#B00020',
     },
     text: {
       disabled: '#848495',
@@ -84,3 +87,5 @@ export default createMuiTheme({
     },
   },
 });
+
+export default theme;

@@ -21,3 +21,18 @@
 .link {
   text-decoration: none;
 }
+
+
+
+@media screen and (max-width: 1280px) {
+  .ecoLogo {
+    width: 70%;
+  }
+  
+}
+
+@media screen and (max-width: 960px) {
+  .ecoLogo {
+    width: 80%;
+  }  
+}

@@ -26,27 +26,24 @@ const DataBreakdown = ({
   const text = {
     [ghg]: {
       title: 'Carbon',
-      rawValue:
-        `${foodData[item].raw.ghg} kgCO2`,
-      description: 'Write some stuff about how carbon emissions are created during food production',
+      description: `1 serving of ${item} creates ${foodData[item].raw.ghg} kgCO2 based on emissions from livestock & fisheries, crop production, land use, and supply chain. Carbon emissions are measured in CO2 equivalents per kilogram`,
     },
     [land]: {
       title: 'Land',
-      rawValue:
-        `${foodData[item].raw.land} m2`,
-      description: 'Food uses lots of land. Land land land land, things about land.',
+      description: `1 serving of ${item} requires ${foodData[item].raw.land} square meters of of agricultural land to be produced. Land use is measured in meters squared per kilogram`,
     },
     [water]: {
       title: 'Water',
       rawValue:
         `${foodData[item].raw.water} l/kg`,
-      description: 'Plants get thirsty, and so do animals. To fix this problem we use water. Lots of it.',
+      description: `1 serving of ${item} requires ${foodData[item].raw.water} liters of freshwater to be produced. Water use is measured in liters per kilogram. `,
     },
     [eutro]: {
       title: 'Eutrophication',
       rawValue:
         `${foodData[item].raw.eutro} gPO₄eq`,
-      description: 'Oooooo Big Word. It refers to the amount of waste the food emitts that ends up as water pollution.',
+      description: `1 serving of ${item} creates ${foodData[item].raw.eutro} gPO₄eq of chemical runoff that ends up in nearby environments and waterways . Eutrophication is measured in grams of phosphate equivalents per kilogram.
+      `,
     },
   };
 
@@ -67,25 +64,13 @@ const DataBreakdown = ({
             <Grid
               item
               xs={12}
-              sm={7}
+              sm={12}
             >
               <Typography
                 variant="h4"
                 className={styles.impactTitle}
               >
                 {text[type].title}
-              </Typography>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              sm={5}
-            >
-              <Typography
-                variant="h5"
-                className={styles.rawValue}
-              >
-                {text[type].rawValue}
               </Typography>
             </Grid>
             <Grid
@@ -111,6 +96,15 @@ const DataBreakdown = ({
       className={styles.breakdownBox}
     >
       {body}
+      <Grid
+        item
+      >
+        <Typography
+          variant="body2"
+        >
+          Data From <a href='https://ourworldindata.org/environmental-impacts-of-food#citation' >Our World in Data </a>
+        </Typography>
+      </Grid>
     </Grid>
   );
 };
