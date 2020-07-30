@@ -2,11 +2,9 @@
 import React from 'react';
 
 // // Components
-import { Typography, Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 // // Styles
 import styles from '../styles/info-section.module.css';
-
-const TEXT = 'EcoCart measures and grades your environmental impact based on your grocery shopping habits and provides you with actionable steps to improvement. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a volutpat orci. Sed sit amet faucibus libero, at interdum justo. In luctus nunc a ante aliquam, non accumsan dolor rhoncus. Etiam dictum interdum dolor, in sagittis sapien finibus vel. Integer pharetra, eros nec auctor iaculis, nisi turpis ultricies turpis, eu facilisis justo urna eu sapien.';
 
 const InfoSection = () => (
   <Grid
@@ -20,8 +18,8 @@ const InfoSection = () => (
       container
       justify='center'
       xs={12}
-      sm={12}
-      md={8}
+      sm={10}
+      md={10}
       lg={6}
       xl={6}
       className={styles.textContainer}
@@ -31,25 +29,27 @@ const InfoSection = () => (
         xs={12}
         sm={12}
       >
-        <Typography
-          variant="h1"
-          align='center'
-          className={styles.intoTitle}
+        <div
+          className={styles.introTitle}
         >
-            EcoCart
-        </Typography>
+            ECOCART
+        </div>
       </Grid>
       <Grid
         item
         xs={12}
         sm={12}
       >
-        <Typography
-          variant="subtitle2"
+        <div
           className={styles.introText}
         >
-          {TEXT}
-        </Typography>
+          EcoCart uses data from Our World In Data
+          to measure and grade your environmental impact based on your grocery list,
+          and provides you with actionable steps to improve your environmental footprint.
+          Select your favorite grocery items and see how much land and water they require
+          and how much pollution and greenhouse gasses their production creates.
+          You can look at individual items, or you can see the impact of your entire grocery list.
+        </div>
       </Grid>
     </Grid>
   </Grid>

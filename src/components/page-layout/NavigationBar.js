@@ -67,11 +67,13 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
       </Grid>
       <Grid
         item
-        md={5}
+        xs={1}
+        sm={1}
+        md={4}
+        lg={5}
       />
       <Grid
         item
-        sm={1}
       >
         <Button className={styles.button} onClick={toggleModal}>
           <ListAltIcon

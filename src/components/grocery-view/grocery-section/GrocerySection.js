@@ -14,10 +14,11 @@ import styles from '../styles/grocery-section.module.css';
 // Data
 import { categories } from '../../../../content/food-categories.json';
 
-const GROCERY_INFO = `Click through product categories, view item grades,
-                      and add items to your cart straight from this page,
-                      or click an item to view more detailed information
-                      including details on its environmental impact.`;
+const GROCERY_INFO = `Click through product categories, view item grades, 
+                      and add items to your list straight from this page, 
+                      or click an item to view more information including 
+                      details on its environmental impact.
+`;
 
 const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
   const rows = categories.map((section, index) => (

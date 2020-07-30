@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap');
+
 .hero {
   background-color: #e5e5e5;
   width: 100vw;
@@ -13,16 +16,45 @@
   height: 80%;
   padding: 3em;
   background-color: rgba(196,201,185,0.7);
-  overflow: scroll;
 }
 
 
-.intoTitle {
-  padding: 2vh;
+.introTitle {
+  padding: 3vh;
+  font-size: 80px;
+  font-weight: 800;
+  font-family: 'Karla';
+  text-align: center;
+  margin-bottom: -45px;
+}
+
+.introText {
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-size: 26px;
+  font-family: 'Rubik';
+  line-height: 1.6;
+}
+
+
+@media screen and (max-width: 960px) {
+  .introText {
+    font-size: 22px;
+  }
+  .introTitle {
+    margin-bottom: -35px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .hero {
     height: 100vh;
+  }
+  .introText {
+    font-size: 22px;
+  }
+  .introTitle {
+    font-size: 66px;
+    margin-bottom: -35px;
   }
 }
