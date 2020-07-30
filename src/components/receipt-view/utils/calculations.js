@@ -115,9 +115,11 @@ export const getGrade = (cart) => {
  */
 export const getHighImpactItems = (cart) => {
   const items = getCartItems(cart);
-  const highImpactItems = items.filter(
-    (item) => foodData[item].ecoScore.grade === 'F',
-  );
+  const highImpactGrades = ['D', 'F'];
+  const highImpactItems = items.filter((item) => {
+    const { grade } = foodData[item].ecoScore;
+    return highImpactGrades.includes(grade);
+  });
   return highImpactItems;
 };
 
