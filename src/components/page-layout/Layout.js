@@ -58,11 +58,13 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <div className={styles.fullPage}>
-        <div
-          className={styles.layoutHeaderOn}
-          style={{ top: headerTop }}
-        >
-          <NavigationBar resetHeaderTop={toggleHeaderTop} toggleModal={toggleModal} />
+        <div className={styles.layoutHeaderOn} style={{ top: headerTop }}>
+          {headerTop !== '-150px' && (
+            <NavigationBar
+              resetHeaderTop={toggleHeaderTop}
+              toggleModal={toggleModal}
+            />
+          )}
           <CartModal
             setCartState={setCartState}
             cartState={cartState}
@@ -72,24 +74,26 @@ const Layout = ({ children }) => {
           />
         </div>
         <div className={styles.body}>
-        <Grid
-          container
-          justify="center"
-          alignItems="center"
-          sm={12}
-          className={styles.layoutBody}
-        >
-            {React.cloneElement(children, { cartState, setCartState, toggleHeaderTop })}
-        </Grid>
-          <footer
-            className={styles.layoutFooter}
-          >
+          <Grid
+            container
+            justify="center"
+            alignItems="center"
+            sm={12}
+            className={styles.layoutBody}>
+            {React.cloneElement(children, {
+              cartState,
+              setCartState,
+              toggleHeaderTop,
+            })}
+          </Grid>
+          <footer className={styles.layoutFooter}>
             <p>
-              ©${new Date().getFullYear()}, A <a href="https://www.viget.com/">Viget</a> Project
+              ©${new Date().getFullYear()}, A{' '}
+              <a href="https://www.viget.com/">Viget</a> Project
             </p>
             <p>
-              Liam Becker, Jennifer Montoya, William Dinneen, Jackson Doyle, Mika
-              Byar
+              Liam Becker, Jennifer Montoya, William Dinneen, Jackson Doyle,
+              Mika Byar
             </p>
           </footer>
         </div>
