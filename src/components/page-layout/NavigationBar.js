@@ -40,18 +40,19 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
       </Grid>
       <Grid
         item
+        xs={2}
         md={5}
         sm={4}
       >
         <Link
           to='/'
-          className={styles.link}
+          className={`${styles.link} ${styles.welcome}`}
         >
           <Button
             className={styles.button}
             onClick={resetHeaderTop}
           >
-           <Typography> Welcome</Typography>
+            <Typography>Welcome</Typography>
           </Button>
         </Link>
         <Link
@@ -61,13 +62,13 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
           <Button
             className={styles.button}
           >
-            <Typography> Groceries</Typography>
+            <Typography>Groceries</Typography>
           </Button>
         </Link>
       </Grid>
       <Grid
         item
-        xs={1}
+        xs={0}
         sm={1}
         md={4}
         lg={5}

@@ -1,6 +1,7 @@
 .button {
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 40px;
 }
 
 .container {
@@ -22,8 +23,6 @@
   text-decoration: none;
 }
 
-
-
 @media screen and (max-width: 1280px) {
   .ecoLogo {
     width: 70%;
@@ -35,4 +34,11 @@
   .ecoLogo {
     width: 80%;
   }  
+}
+
+@media screen and (max-width: 600px) {
+  .welcome {
+    display: none;
+  }
+  
 }

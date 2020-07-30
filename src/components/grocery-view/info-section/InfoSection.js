@@ -17,7 +17,7 @@ const InfoSection = () => (
       item
       container
       justify='center'
-      xs={12}
+      xs={10}
       sm={10}
       md={10}
       lg={6}
