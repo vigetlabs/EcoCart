@@ -2,15 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
 // Components
-import {
-  Grid,
-  Typography,
-  Select,
-  MenuItem,
-  InputLabel,
-  Box,
-} from '@material-ui/core';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import { Grid, Typography, Select, MenuItem, Box } from '@material-ui/core';
 import LetterGrade from '../../LetterGrade';
 
 // Style
@@ -18,9 +10,6 @@ import styles from '../styles/alternative-options.module.css';
 
 // Utils
 import { getTotalImpactGrade, getGrade } from '../utils/calculations';
-
-// Vars
-const ALT = 'Alternatives';
 
 const replaceItem = (cart, item, alternative) => {
   const tempCart = Object.keys(cart).reduce((obj, key) => {
@@ -65,23 +54,44 @@ const AlternativeOptions = ({ item, alternatives, cartState, head }) => {
   if (head) {
     return (
       <Box className={styles.altOptionsBox}>
-        <Grid container sm={12}>
-          <Grid item sm={4}>
-            <Typography variant="h5" className={styles.header}>
-              High Impact Foods
-            </Typography>
+        <Box display={{ xs: 'none', md: 'flex' }}>
+          <Grid container sm={12}>
+            <Grid item sm={4}>
+              <Typography variant="h5" className={styles.header}>
+                High Impact Item
+              </Typography>
+            </Grid>
+            <Grid item sm={4}>
+              <Typography variant="h5" className={styles.header}>
+                Alternatives
+              </Typography>
+            </Grid>
+            <Grid item sm={4}>
+              <Typography variant="h5" className={styles.header}>
+                Alternative Score
+              </Typography>
+            </Grid>
           </Grid>
-          <Grid item sm={4}>
-            <Typography variant="h5" className={styles.header}>
-              Alternatives
-            </Typography>
+        </Box>
+        <Box display={{ xs: 'none', sm: 'flex', md: 'none' }}>
+          <Grid container sm={12}>
+            <Grid item sm={4}>
+              <Typography variant="h5" className={styles.header}>
+                Item
+              </Typography>
+            </Grid>
+            <Grid item sm={4}>
+              <Typography variant="h5" className={styles.header}>
+                Alt Options
+              </Typography>
+            </Grid>
+            <Grid item sm={4}>
+              <Typography variant="h5" className={styles.header}>
+                Alt Score
+              </Typography>
+            </Grid>
           </Grid>
-          <Grid item sm={4}>
-            <Typography variant="h5" className={styles.header}>
-              Old Score -- Alt Score
-            </Typography>
-          </Grid>
-        </Grid>
+        </Box>
       </Box>
     );
   }
@@ -89,18 +99,18 @@ const AlternativeOptions = ({ item, alternatives, cartState, head }) => {
   return (
     <Box className={styles.altOptionsBox}>
       <Grid container sm={12}>
-        <Grid item sm={4}>
+        <Grid item sm={4} xs={12}>
           <Typography variant="body1">{item}</Typography>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item sm={4} xs={6}>
           {!alternatives || !alternatives.length ? (
             'No alternatives yet!'
           ) : (
-            <Box>
-              <InputLabel id="label">{ALT}</InputLabel>
+            <Box className={styles.dropdownContainer}>
               <Select
                 labelId="label"
                 id="select"
+                className={styles.dropdown}
                 value={selected}
                 onChange={handleChange}>
                 {getMenuItems(cartState)}
@@ -108,28 +118,15 @@ const AlternativeOptions = ({ item, alternatives, cartState, head }) => {
             </Box>
           )}
         </Grid>
-        <Grid item sm={4}>
+        <Grid item sm={4} xs={6}>
           <Box className={styles.scoresBox}>
-            <Typography className={styles.score} variant="body1">
-              {
-                <LetterGrade
-                  cost={getTotalImpactGrade(cartState)}
-                  grade={getGrade(cartState)}
-                />
-              }
-            </Typography>
             {selected === item ? null : (
-              <>
-                <ArrowForwardIcon fontSize="small" className={styles.arrow} />
-                <Typography className={styles.score} variant="body1">
-                  {
-                    <LetterGrade
-                      cost={getAltScore(cartState, item, selected)}
-                      grade={getGrade(replaceItem(cartState, item, selected))}
-                    />
-                  }
-                </Typography>
-              </>
+              <Typography className={styles.score} variant="body1">
+                <LetterGrade
+                  cost={getAltScore(cartState, item, selected)}
+                  grade={getGrade(replaceItem(cartState, item, selected))}
+                />
+              </Typography>
             )}
           </Box>
         </Grid>

@@ -17,25 +17,25 @@ import {
 
 const ImpactResult = ({ cartState }) => (
   <Grid item container spacing={3} sm={12} className={styles.alternativesGrid}>
-    <Grid item sm={6}>
+    <Grid item xs={6}>
       <Typography variant="h5" align="left">
         Total Impact
       </Typography>
     </Grid>
 
-    <Grid item sm={6}>
+    <Grid item xs={6}>
       <Typography variant="h5" align="right">
         {getCartItems(cartState).length ? getTotalImpactGrade(cartState) : null}
       </Typography>
     </Grid>
 
-    <Grid item sm={6}>
+    <Grid item xs={6}>
       <Typography variant="h5" align="left">
         Grade
       </Typography>
     </Grid>
 
-    <Grid item sm={6}>
+    <Grid item xs={6}>
       <Typography variant="h5" align="right">
         {getCartItems(cartState).length ? (
           <LetterGrade grade={getGrade(cartState)} />
@@ -43,11 +43,11 @@ const ImpactResult = ({ cartState }) => (
       </Typography>
     </Grid>
 
-    <Grid item sm={12}>
+    <Grid item xs={12}>
       <Divider />
     </Grid>
 
-    <Grid item sm={12}>
+    <Grid item xs={12}>
       <Typography variant="p">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab

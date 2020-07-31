@@ -66,7 +66,6 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
             className={styles.chevron}
           >
             <Link
-              data-scroll
               to='/#groceries'
               className={styles.link}
             >

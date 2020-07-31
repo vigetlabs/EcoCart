@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, Box } from '@material-ui/core';
 import LegendSquare from './LegendSquare';
 
 // Styles
@@ -51,12 +51,17 @@ const DataBreakdownAggregate = ({
         windowDimensions={windowDimensions}
       />
       <div className={styles.impactText}>
-        <Typography variant="subtitle1">{text[type].title}</Typography>
-        <Typography variant="body2" className={styles.body}>
-          {width && (width - min) / width >= minRatio.body
-            ? text[type].body
-            : null}
-        </Typography>
+        <Box display={{ xs: 'none', md: 'inline-block' }}>
+          <Typography variant="subtitle1">{text[type].title}</Typography>
+          <Typography variant="body2" className={styles.body}>
+            {width && (width - min) / width >= minRatio.body
+              ? text[type].body
+              : null}
+          </Typography>
+        </Box>
+        <Box display={{ xs: 'flex', md: 'none' }}>
+          <Typography variant="body1">{text[type].title}</Typography>
+        </Box>
       </div>
     </Grid>
   ));
