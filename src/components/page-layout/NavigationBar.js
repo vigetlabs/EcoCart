@@ -5,6 +5,10 @@ import {
   Button,
   Grid,
   Typography,
+  MenuItem,
+  Select,
+  InputLabel,
+  FormControl,
 } from '@material-ui/core';
 import { Link } from 'gatsby';
 import ListAltIcon from '@material-ui/icons/ListAlt';
@@ -13,7 +17,25 @@ import ecoLogo from '../../images/EcoCart_Logo.png';
 // Styles
 import styles from './styles/navigation-bar.module.css';
 
-const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
+// Data
+import catList from '../../../content/food-categories.json';
+
+const NavigationBar = ({ toggleModal, resetHeaderTop }) => {
+  const getMenuItems = () => catList.categories.map((cat) => (
+    <MenuItem
+    >
+      <Link
+        className={styles.catLink}
+        to={`/#${cat.replace(/\s/g, '')}`}
+      >
+        <Typography>{cat}</Typography>
+      </Link>
+    </MenuItem>
+  ));
+
+  const getInitCat = () => (<MenuItem><Typography>{'Categories'}</Typography></MenuItem>);
+
+  return (
     <Grid
       container
       justify="left"
@@ -41,11 +63,16 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
       </Grid>
       <Grid
         item
+        container
+        spacing={3}
         xs={2}
         md={5}
         sm={4}
       >
-        <Link
+        <Grid
+          item
+        >
+          <Link
           to='/'
           className={`${styles.link} ${styles.welcome}`}
         >
@@ -56,16 +83,28 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
             <Typography>Welcome</Typography>
           </Button>
         </Link>
-        <Link
-          to='/#groceries'
-          className={styles.link}
+        </Grid>
+        <Grid
+          item
         >
-          <Button
-            className={styles.button}
-          >
-            <Typography>Groceries</Typography>
-          </Button>
-        </Link>
+          <FormControl>
+            <InputLabel
+              id="catSelector"
+              className={styles.catLabel}
+            >
+              Select Category
+            </InputLabel>
+            <Select
+              labelId="catSelector"
+              id="catSelect"
+              size='large'
+              value={getInitCat}
+              className={styles.catSelect}
+            >
+              {getMenuItems()}
+            </Select>
+          </FormControl>
+        </Grid>
       </Grid>
       <Grid
         item
@@ -85,6 +124,7 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => (
         </Button>
       </Grid>
   </Grid>
-);
+  );
+};
 
 export default NavigationBar;

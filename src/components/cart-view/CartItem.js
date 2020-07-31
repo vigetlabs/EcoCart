@@ -112,7 +112,6 @@ const CartItem = ({
                     <Button
                       variant='h5'
                       onClick={() => {
-                        toggleHeaderTop();
                         openModal(setIsModalOpen);
                       }}
                     >

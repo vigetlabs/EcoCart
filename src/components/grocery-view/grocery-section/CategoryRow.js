@@ -42,6 +42,7 @@ const CategoryRow = ({
 
   return (
     <Grid
+      id={category.replace(/\s/g, '')}
       item
       xs={12}
       container
