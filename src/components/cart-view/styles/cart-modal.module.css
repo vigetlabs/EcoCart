@@ -21,3 +21,8 @@
   text-align: center;
   display: inline-block;
 }
+
+.cartHeader {
+  padding-top: 3em;
+  border-bottom: 1px ridge black;
+}

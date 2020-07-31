@@ -34,10 +34,6 @@ const Layout = ({ children }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [headerTop, setHeaderTop] = useState('-150px');
 
-  const toggleModal = () => {
-    setModalOpen(!modalOpen);
-  };
-
   const toggleHeaderTop = () => {
     if (headerTop === '0' || headerTop === 0) {
       setHeaderTop('-150px');
@@ -58,6 +54,11 @@ const Layout = ({ children }) => {
     });
   }
 
+  const toggleModal = () => {
+    toggleHeaderTop();
+    setModalOpen(!modalOpen);
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <div className={styles.fullPage}>
@@ -72,6 +73,7 @@ const Layout = ({ children }) => {
             open={modalOpen}
             toggleModal={toggleModal}
             toggleHeaderTop={toggleHeaderTop}
+            initCart={createInitFoodList}
           />
         </div>
         <div className={styles.body}>
