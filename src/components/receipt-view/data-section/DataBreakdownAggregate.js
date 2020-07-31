@@ -8,7 +8,11 @@ import LegendSquare from './LegendSquare';
 // Styles
 import styles from '../styles/data-breakdown-aggregate.module.css';
 
+// Utils
+import { getUsageImpact } from '../utils/calculations';
+
 const DataBreakdownAggregate = ({
+  cartState,
   colors,
   land,
   water,
@@ -21,25 +25,35 @@ const DataBreakdownAggregate = ({
 
   const text = {
     [ghg]: {
-      title: 'Carbon Emissions',
+      title: 'Carbon Emission',
       body:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        'of your total Environmental Impact based on the amount of Green House Gas(GHG) emissions emitted from the supply chain of food production.',
     },
     [land]: {
-      title: 'Land Usage',
+      title: 'Land Use',
       body:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        'of your total Environmental Impact based on the amount of land used in food production.',
     },
     [water]: {
-      title: 'Water Usage',
+      title: 'Water Use',
       body:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        'of your total Environmental Impact based on the number of freshwater withdrawals used in food production.',
     },
     [eutro]: {
       title: 'Eutrophication',
       body:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        'of your total Environmental Impact based on the amount of water pollution and chemical runoff that contribute to food production.',
     },
+  };
+
+  const getDescription = (type) => {
+    const individualImpact = getUsageImpact(cartState, type, true);
+    const totalImpact = [ghg, land, water, eutro]
+      .map((x) => getUsageImpact(cartState, x, true))
+      .reduce((acc, curr) => acc + curr);
+    const percentage = Math.floor((individualImpact / totalImpact) * 100);
+    const description = `${text[type].title} accounts for ${percentage}% ${text[type].body}`;
+    return description;
   };
 
   const body = [ghg, land, water, eutro].map((type) => (
@@ -55,7 +69,7 @@ const DataBreakdownAggregate = ({
           <Typography variant="subtitle1">{text[type].title}</Typography>
           <Typography variant="body2" className={styles.body}>
             {width && (width - min) / width >= minRatio.body
-              ? text[type].body
+              ? getDescription(type)
               : null}
           </Typography>
         </Box>
