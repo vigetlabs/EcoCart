@@ -31,7 +31,7 @@ const ImpactAlternatives = ({ cartState }) => {
     />
   ));
 
-  return (
+  return !highImpactItems.length ? null : (
     <Grid
       item
       container
