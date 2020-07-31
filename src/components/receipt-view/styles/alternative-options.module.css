@@ -17,4 +17,13 @@
 
 .header {
   text-decoration: underline;
+  display: inline-block;
+}
+
+.dropdownContainer {
+  width: 100%;
+}
+
+.dropdown {
+  width: 70%;
 }
