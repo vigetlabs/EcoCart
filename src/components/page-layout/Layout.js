@@ -20,6 +20,15 @@ import styles from './styles/layout.module.css';
 // Data
 import foodList from '../../../content/food-list.json';
 
+// Vars
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]', {
+    speed: 100,
+    easing: 'easeInQuad',
+  });
+}
+
 // Functions
 const createInitFoodList = () => {
   const initCart = [];
@@ -33,10 +42,6 @@ const Layout = ({ children }) => {
   const [cartState, setCartState] = useState(createInitFoodList());
   const [modalOpen, setModalOpen] = useState(false);
   const [headerTop, setHeaderTop] = useState('-150px');
-
-  const toggleModal = () => {
-    setModalOpen(!modalOpen);
-  };
 
   const toggleHeaderTop = () => {
     if (headerTop === '0' || headerTop === 0) {
@@ -52,8 +57,16 @@ const Layout = ({ children }) => {
       if (st > 400 && headerTop !== '0') {
         setHeaderTop('0');
       }
+      if (st === 0 && headerTop !== '0' && window.location.pathname !== '/receipt') {
+        setHeaderTop('-150px');
+      }
     });
   }
+
+  const toggleModal = () => {
+    toggleHeaderTop();
+    setModalOpen(!modalOpen);
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -69,6 +82,7 @@ const Layout = ({ children }) => {
             open={modalOpen}
             toggleModal={toggleModal}
             toggleHeaderTop={toggleHeaderTop}
+            initCart={createInitFoodList}
           />
         </div>
         <div className={styles.body}>

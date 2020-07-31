@@ -5,8 +5,9 @@
 }
 
 .container {
-  background-color: lavender;
+  background-color: white;
   height: 10vh;
+  min-height: 100px;
   min-width: 1000px;
 }
 
@@ -20,6 +21,19 @@
 }
 
 .link {
+  text-decoration: none;
+}
+
+.catLabel {
+  width: 150px;
+}
+
+.catSelect {
+  width: 140px;
+  z-index: 10000;
+}
+
+.catLink {
   text-decoration: none;
 }
 
@@ -40,5 +54,4 @@
   .welcome {
     display: none;
   }
-  
 }

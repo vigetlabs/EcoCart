@@ -17,7 +17,7 @@ import styles from './styles/cart-modal.module.css';
 // Vars
 
 const CartModal = ({
-  open, toggleModal, cartState, setCartState, toggleHeaderTop,
+  open, toggleModal, cartState, setCartState, toggleHeaderTop, initCart,
 }) => {
   const generateItems = Object.keys(cartState).map((itemKey) => {
     if (cartState[itemKey] > 0) {
@@ -34,9 +34,16 @@ const CartModal = ({
     return null;
   }).filter((item) => item);
 
+  const clearItems = () => {
+    setCartState(initCart());
+  };
+
   return (
     <div>
-      <Drawer anchor='right' open={open} onClose={toggleModal}>
+      <Drawer anchor='right' open={open} onClose={() => {
+        toggleModal();
+        toggleHeaderTop();
+      }}>
         <Grid
           container
           className={styles.modalContentBox}
@@ -45,14 +52,34 @@ const CartModal = ({
 
           <Grid
             item
+            container
             xs={12}
+            className={styles.cartHeader}
           >
-            <Typography
-              variant='h2'
-              align='center'
+            <Grid
+              item
+              xs={8}
             >
-              Cart
-            </Typography>
+              <Typography
+                variant='h2'
+                align='center'
+              >
+                Grocery List
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={4}
+            >
+              <Button
+                color='secondary'
+                variant="contained"
+                onClick={clearItems}
+                className={styles.cartButton}
+              >
+                Clear Items
+              </Button>
+            </Grid>
           </Grid>
 
           <Grid
@@ -83,7 +110,7 @@ const CartModal = ({
                   variant='h5'
                   align='center'
                 >
-                  Checkout
+                  View Impact
                 </Typography>
               </Button>
             </Link>

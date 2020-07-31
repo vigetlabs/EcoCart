@@ -20,7 +20,7 @@ const CategoryRow = ({
         <Grid
           item
           container
-          justify='center'
+          justify='left'
           xl={2}
           lg={3}
           md={4}
@@ -42,11 +42,12 @@ const CategoryRow = ({
 
   return (
     <Grid
+      id={category.replace(/\s/g, '')}
       item
       xs={12}
       container
       className={styles.container}
-      justify='center'
+      justify='left'
     >
       <Grid
         item

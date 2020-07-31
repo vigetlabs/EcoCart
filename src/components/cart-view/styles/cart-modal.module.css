@@ -1,7 +1,7 @@
 .modalContentBox {
   width: 100%;
   height: 100%;
-  background-color: lavender;
+  background-color: white;
 }
 
 
@@ -20,4 +20,9 @@
   width: 50%;
   text-align: center;
   display: inline-block;
+}
+
+.cartHeader {
+  padding-top: 3em;
+  border-bottom: 1px ridge black;
 }

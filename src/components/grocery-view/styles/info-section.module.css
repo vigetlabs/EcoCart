@@ -5,6 +5,7 @@
   background-color: #e5e5e5;
   width: 100vw;
   height: 85vh;
+  min-height: 850px;
   padding: 1.45rem 1.0875rem;
   background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3dhvOPRLHvp4rzYrVdz959iBvBkYGYC4HZqBfrRme2C9L4vYxYG8U1oWJBwL3NTsWYx5HYf8LW4fg80xXXtL71k1U-Tu4JFQihD64fvurp4wXM96v-2rMt4S4rc7VE3uXD6hd5Fr4TS3Qa7z_yD9vGH=w1716-h958-no?authuser=0');
   background-size: cover;
@@ -13,6 +14,7 @@
 }
 
 .textContainer {
+  min-height: 722.5px;
   height: 80%;
   padding: 3em;
   background-color: rgba(196,201,185,0.7);
@@ -31,9 +33,16 @@
 .introText {
   padding-left: 2vh;
   padding-right: 2vh;
-  font-size: 23px;
+  font-size: 30px;
   font-family: 'Rubik';
   line-height: 1.6;
+}
+
+
+@media screen and (max-width: 1920px) {
+  .introText {
+    font-size: 23px;
+  }
 }
 
 

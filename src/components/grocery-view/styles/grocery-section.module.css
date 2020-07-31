@@ -12,11 +12,14 @@
   padding: 2vh 0;
 }
 
-
 .instructions {
+  width: 100%;
+  text-align: center;
+}
+
+.chevron {
   background-image: linear-gradient(rgba(0,0,0,.3), rgba(255,255,255,0));
   width: 100%;
-  padding-top: 2vh;
   text-align: center;
 }
 
@@ -27,3 +30,8 @@
   height: 100%;
   margin-left: 25%;
 }
+
+.link {
+  text-decoration: none;
+}
+
