@@ -34,30 +34,38 @@ const ReceiptSection = ({ cartState }) => {
   return (
     <div className={styles.receiptSectionBox}>
       <Box className={styles.box}>
-        <Grid container justify="space-around" className={styles.receiptBox}>
-          <Grid item sm={12} spacing={2} className={styles.receiptHeaderBox}>
-            <Typography align="center" variant="h3" gutterBottom>
-              Impact Receipt
-            </Typography>
-            <Typography align="center" variant="h5" gutterBottom>
-              EcoCart - {getDate()}
-            </Typography>
-          </Grid>
+        <Grid container xs={12}>
+          <Grid item xs={1} />
+          <Grid
+            container
+            item
+            xs={10}
+            justify="space-around"
+            className={styles.receiptBox}>
+            <Grid item sm={12} spacing={2} className={styles.receiptHeaderBox}>
+              <Typography align="center" variant="h3" gutterBottom>
+                Impact Receipt
+              </Typography>
+              <Typography align="center" variant="h5" gutterBottom>
+                EcoCart - {getDate()}
+              </Typography>
+            </Grid>
 
-          <Grid sm={12} item>
-            <Divider variant="middle" />
-          </Grid>
+            <Grid xs={12} item>
+              <Divider variant="middle" />
+            </Grid>
 
-          <Grid item sm={12} className={styles.receiptListBox}>
-            <ReceiptList cartState={cartState} />
-          </Grid>
+            <Grid item xs={12} className={styles.receiptListBox}>
+              <ReceiptList cartState={cartState} />
+            </Grid>
 
-          <Grid sm={12} item>
-            <Divider variant="middle" />
-          </Grid>
+            <Grid xs={12} item>
+              <Divider variant="middle" />
+            </Grid>
 
-          <Grid item sm={12} className={styles.impactResultBox}>
-            <ImpactResult cartState={cartState} />
+            <Grid item xs={12} className={styles.impactResultBox}>
+              <ImpactResult cartState={cartState} />
+            </Grid>
           </Grid>
         </Grid>
       </Box>
