@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 // Components
-import { Grid, Typography, Divider, Box } from '@material-ui/core';
+import { Grid, Typography, Divider, Box, Tooltip } from '@material-ui/core';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import ReceiptList from './ReceiptList';
 import ImpactResult from './ImpactResult';
 
@@ -24,6 +25,9 @@ const MONTHS = [
   'November',
   'December',
 ];
+const INFO_TEXT = `Numbers on the right are rated on a scale of 0 (bad)
+                   to 100 (good) to measure a product’s impact. The adjacent
+                   grade is derived from this score.`;
 
 const ReceiptSection = ({ cartState }) => {
   const getDate = () => {
@@ -42,10 +46,18 @@ const ReceiptSection = ({ cartState }) => {
             xs={10}
             justify="space-around"
             className={styles.receiptBox}>
-            <Grid item sm={12} spacing={2} className={styles.receiptHeaderBox}>
+            <Grid item xs={1} />
+            <Grid item xs={10} spacing={2} className={styles.receiptHeaderBox}>
               <Typography align="center" variant="h3" gutterBottom>
                 Impact Receipt
               </Typography>
+            </Grid>
+            <Grid item xs={1}>
+              <Tooltip title={INFO_TEXT} arrow>
+                <InfoOutlinedIcon />
+              </Tooltip>
+            </Grid>
+            <Grid item xs={12}>
               <Typography align="center" variant="h5" gutterBottom>
                 EcoCart - {getDate()}
               </Typography>
