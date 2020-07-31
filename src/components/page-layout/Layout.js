@@ -20,6 +20,15 @@ import styles from './styles/layout.module.css';
 // Data
 import foodList from '../../../content/food-list.json';
 
+// Vars
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]', {
+    speed: 100,
+    easing: 'easeInQuad',
+  });
+}
+
 // Functions
 const createInitFoodList = () => {
   const initCart = [];
