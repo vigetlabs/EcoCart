@@ -102,7 +102,7 @@ const DataBreakdown = ({
         <Typography
           variant="body2"
         >
-          Data From <a href='https://ourworldindata.org/environmental-impacts-of-food#citation' >Our World in Data </a>
+          Data From <a target="_blank" rel='noreferrer' href='https://ourworldindata.org/environmental-impacts-of-food#citation' >Our World in Data </a>
         </Typography>
       </Grid>
     </Grid>
