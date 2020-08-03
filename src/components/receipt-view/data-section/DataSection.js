@@ -52,22 +52,18 @@ const DataSection = ({ cartState }) => {
     };
   }, []);
 
-  const { width, min } = windowDimensions;
-
-  const ratio = width - min / width;
+  const { width, height } = windowDimensions;
+  const size = Math.min(width / 2, height);
 
   return (
     <Grid
       item
       container
       alignItems="center"
-      xs={ratio >= minRatio.body ? 12 : 10}
+      xs={12}
       spacing={1}
       className={styles.dataSectionBox}>
-      <Grid
-        item
-        xs={(width - min) / width >= minRatio.body ? 12 : 10}
-        className={styles.dataHeaderBox}>
+      <Grid item xs={10} className={styles.dataHeaderBox}>
         <Typography variant="h4" gutterBottom>
           Environmental Impact Breakdown
         </Typography>
@@ -77,7 +73,7 @@ const DataSection = ({ cartState }) => {
         item
         xs={6}
         className={styles.pieBox}
-        style={{ minWidth: windowDimensions.min * 0.5 }}>
+        style={{ minWidth: size * 0.7 }}>
         <ImpactDonutAggregate
           cartState={cartState}
           colors={colors}
@@ -85,14 +81,11 @@ const DataSection = ({ cartState }) => {
           water={WATER}
           eutro={EUTRO}
           ghg={GHG}
-          windowDimensions={windowDimensions}
+          size={size}
         />
       </Grid>
 
-      <Grid
-        item
-        xs={(width - min) / width >= minRatio.body ? 6 : 4}
-        className={styles.dataBreakdownBox}>
+      <Grid item xs={4} className={styles.dataBreakdownBox}>
         <DataBreakdownAggregate
           cartState={cartState}
           colors={colors}
