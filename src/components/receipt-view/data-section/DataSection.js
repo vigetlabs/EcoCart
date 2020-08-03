@@ -63,7 +63,7 @@ const DataSection = ({ cartState }) => {
       xs={12}
       spacing={1}
       className={styles.dataSectionBox}>
-      <Grid item xs={10} className={styles.dataHeaderBox}>
+      <Grid item xs={12} className={styles.dataHeaderBox}>
         <Typography variant="h4" gutterBottom>
           Environmental Impact Breakdown
         </Typography>
@@ -71,7 +71,7 @@ const DataSection = ({ cartState }) => {
 
       <Grid
         item
-        xs={6}
+        xs={7}
         className={styles.pieBox}
         style={{ minWidth: size * 0.7 }}>
         <ImpactDonutAggregate
@@ -85,7 +85,7 @@ const DataSection = ({ cartState }) => {
         />
       </Grid>
 
-      <Grid item xs={4} className={styles.dataBreakdownBox}>
+      <Grid item xs={5} className={styles.dataBreakdownBox}>
         <DataBreakdownAggregate
           cartState={cartState}
           colors={colors}

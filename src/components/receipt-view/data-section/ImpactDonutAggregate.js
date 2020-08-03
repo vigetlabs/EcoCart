@@ -52,18 +52,6 @@ const ImpactDonutAggregate = ({
             padding={25}
           />
         </svg>
-        <Box display={{ xs: 'flex', sm: 'none' }}>
-          <Typography>Xs</Typography>
-        </Box>
-        <Box display={{ xs: 'none', sm: 'flex', md: 'none' }}>
-          <Typography>sm</Typography>
-        </Box>
-        <Box display={{ xs: 'none', md: 'flex', lg: 'none' }}>
-          <Typography>md</Typography>
-        </Box>
-        <Box display={{ xs: 'none', lg: 'flex', xl: 'none' }}>
-          <Typography>lg</Typography>
-        </Box>
       </div>
     ) : null}
   </div>
