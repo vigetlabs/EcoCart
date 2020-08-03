@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 
 // Components
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, Box } from '@material-ui/core';
 import DataBreakdownAggregate from './DataBreakdownAggregate';
 import ImpactDonutAggregate from './ImpactDonutAggregate';
 
@@ -53,13 +53,15 @@ const DataSection = ({ cartState }) => {
   }, []);
 
   const { width, height } = windowDimensions;
-  const size = Math.min(width / 2, height);
+  const sizeXs = Math.min(width, height / 2);
+  const sizeMd = Math.min(width / 2, height);
 
   return (
     <Grid
       item
       container
       alignItems="center"
+      justify="center"
       xs={12}
       spacing={1}
       className={styles.dataSectionBox}>
@@ -69,23 +71,43 @@ const DataSection = ({ cartState }) => {
         </Typography>
       </Grid>
 
-      <Grid
-        item
-        xs={7}
-        className={styles.pieBox}
-        style={{ minWidth: size * 0.7 }}>
-        <ImpactDonutAggregate
-          cartState={cartState}
-          colors={colors}
-          land={LAND}
-          water={WATER}
-          eutro={EUTRO}
-          ghg={GHG}
-          size={size}
-        />
-      </Grid>
+      <Box display={{ xs: 'none', md: 'flex' }}>
+        <Grid
+          item
+          md={6}
+          className={styles.pieBox}
+          style={{ minWidth: sizeMd * 0.7 }}>
+          <ImpactDonutAggregate
+            cartState={cartState}
+            colors={colors}
+            land={LAND}
+            water={WATER}
+            eutro={EUTRO}
+            ghg={GHG}
+            size={sizeMd}
+          />
+        </Grid>
+      </Box>
 
-      <Grid item xs={5} className={styles.dataBreakdownBox}>
+      <Box display={{ xs: 'flex', md: 'none' }}>
+        <Grid
+          item
+          xs={12}
+          className={styles.pieBox}
+          style={{ minWidth: sizeXs * 0.7 }}>
+          <ImpactDonutAggregate
+            cartState={cartState}
+            colors={colors}
+            land={LAND}
+            water={WATER}
+            eutro={EUTRO}
+            ghg={GHG}
+            size={sizeXs}
+          />
+        </Grid>
+      </Box>
+
+      <Grid item xs={12} md={6} className={styles.dataBreakdownBox}>
         <DataBreakdownAggregate
           cartState={cartState}
           colors={colors}

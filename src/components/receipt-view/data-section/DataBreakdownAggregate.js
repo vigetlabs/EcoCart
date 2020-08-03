@@ -65,14 +65,11 @@ const DataBreakdownAggregate = ({
         windowDimensions={windowDimensions}
       />
       <div className={styles.impactText}>
-        <Box display={{ xs: 'none', md: 'inline-block' }}>
+        <Box>
           <Typography variant="subtitle1">{text[type].title}</Typography>
           <Typography variant="body2" className={styles.body}>
             {getDescription(type)}
           </Typography>
-        </Box>
-        <Box display={{ xs: 'inline-block', md: 'none' }}>
-          <Typography variant="body1">{text[type].title}</Typography>
         </Box>
       </div>
     </Grid>
