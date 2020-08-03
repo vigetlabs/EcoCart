@@ -107,7 +107,7 @@ const CartModal = ({
                 className={styles.cartButton}
               >
                 <Typography
-                  variant='h5'
+                  variant='h4'
                   align='center'
                 >
                   View Impact
@@ -124,7 +124,7 @@ const CartModal = ({
                 className={styles.cartButton}
               >
                 <Typography
-                  variant='h5'
+                  variant='h4'
                   align='center'
                 >
                   Add Items

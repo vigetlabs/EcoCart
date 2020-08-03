@@ -125,6 +125,7 @@ const GroceryItem = ({
                 className={styles.cartButtonBox}
               >
                 <Button
+                  type='button'
                   variant="contained"
                   color="primary"
                   size="small"
@@ -145,6 +146,7 @@ const GroceryItem = ({
                 className={styles.cartButtonBox}
               >
                 <Button
+                  type='button'
                   variant="contained"
                   color="secondary"
                   size="small"

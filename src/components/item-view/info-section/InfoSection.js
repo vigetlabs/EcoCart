@@ -82,6 +82,7 @@ const InfoSection = ({ item, cartState, setCartState }) => {
             className={styles.cartButtonBox}
           >
             <Button
+              type='button'
               variant="contained"
               color="primary"
               size="small"
@@ -102,6 +103,7 @@ const InfoSection = ({ item, cartState, setCartState }) => {
             className={styles.cartButtonBox}
           >
             <Button
+              type='button'
               variant="contained"
               color="secondary"
               size="small"

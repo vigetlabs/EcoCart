@@ -87,7 +87,9 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => {
         <Grid
           item
         >
-          <FormControl>
+          <FormControl
+            hiddenLabel='category'
+          >
             <InputLabel
               id="catSelector"
               className={styles.catLabel}
