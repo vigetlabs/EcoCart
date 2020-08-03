@@ -10,6 +10,7 @@ import {
   CardActions,
   MenuItem,
   Select,
+  InputLabel,
   Button,
 } from '@material-ui/core';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
@@ -95,8 +96,15 @@ const CartItem = ({
                     item
                     xs={12}
                   >
+                    <InputLabel
+                      id="Quantity"
+                      className={styles.catLabel}
+                    >
+                      Quantity
+                    </InputLabel>
                     <Select
-                      labelId="label"
+                      label='Quantity'
+                      labelId="Quantity"
                       id="select"
                       size='small'
                       value={amount}

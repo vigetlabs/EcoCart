@@ -65,7 +65,7 @@ const ReceiptSection = ({ cartState }) => {
             className={styles.receiptBox}>
             <Grid item xs={1} />
             <Grid item xs={10} spacing={2} className={styles.receiptHeaderBox}>
-              <Typography align="center" variant="h3" gutterBottom>
+              <Typography align="center" variant="h1" gutterBottom>
                 Impact Receipt
               </Typography>
             </Grid>

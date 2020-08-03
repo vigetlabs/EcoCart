@@ -8,7 +8,7 @@ const theme = createMuiTheme({
   typography: {
     h1: {
       fontFamily: 'Karla',
-      fontSize: 80,
+      fontSize: 50,
       fontWeight: 700,
     },
     h2: {

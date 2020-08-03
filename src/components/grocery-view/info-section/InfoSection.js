@@ -29,11 +29,7 @@ const InfoSection = () => (
         xs={12}
         sm={12}
       >
-        <div
-          className={styles.introTitle}
-        >
-            ECOCART
-        </div>
+        <h1 className={styles.introTitle}>ECOCART</h1>
       </Grid>
       <Grid
         item
