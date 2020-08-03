@@ -3,6 +3,7 @@ import React from 'react';
 
 // Components
 import { VictoryPie } from 'victory';
+import { Typography, Box } from '@material-ui/core';
 
 // Style
 import styles from '../styles/impact-donut-aggregate.module.css';
@@ -10,11 +11,11 @@ import styles from '../styles/impact-donut-aggregate.module.css';
 // Utils
 import { getUsageImpact, getCartItems } from '../utils/calculations';
 
-const scale = 0.5;
+const scale = 0.7;
 
 const ImpactDonutAggregate = ({
   cartState,
-  windowDimensions,
+  size,
   colors,
   land,
   water,
@@ -24,14 +25,14 @@ const ImpactDonutAggregate = ({
   <div
     className={styles.container}
     style={{
-      width: windowDimensions.min * scale,
-      height: windowDimensions.min * scale,
+      width: size * scale,
+      height: size * scale,
     }}>
     {getCartItems(cartState).length ? (
       <div
         style={{
-          width: windowDimensions.min * scale,
-          height: windowDimensions.min * scale,
+          width: size * scale,
+          height: size * scale,
         }}>
         <svg className={styles.svg}>
           <VictoryPie
@@ -39,8 +40,8 @@ const ImpactDonutAggregate = ({
               x: ' ',
               y: getUsageImpact(cartState, type, true),
             }))}
-            width={windowDimensions.min * scale}
-            height={windowDimensions.min * scale}
+            width={size * scale}
+            height={size * scale}
             colorScale={[
               colors[land],
               colors[water],
@@ -58,7 +59,7 @@ const ImpactDonutAggregate = ({
 
 ImpactDonutAggregate.propTypes = {
   cartState: PropTypes.objectOf(PropTypes.number),
-  windowDimensions: PropTypes.objectOf(PropTypes.number),
+  size: PropTypes.number,
 };
 
 export default ImpactDonutAggregate;

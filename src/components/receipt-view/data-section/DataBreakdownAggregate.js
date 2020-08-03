@@ -57,7 +57,7 @@ const DataBreakdownAggregate = ({
   };
 
   const body = [ghg, land, water, eutro].map((type) => (
-    <Grid item sm={12} className={styles.breakdownItem}>
+    <Grid item xs={12} className={styles.breakdownItem}>
       <LegendSquare
         legendStyle={styles.legend}
         impactType={type}
@@ -65,16 +65,11 @@ const DataBreakdownAggregate = ({
         windowDimensions={windowDimensions}
       />
       <div className={styles.impactText}>
-        <Box display={{ xs: 'none', md: 'inline-block' }}>
+        <Box>
           <Typography variant="subtitle1">{text[type].title}</Typography>
           <Typography variant="body2" className={styles.body}>
-            {width && (width - min) / width >= minRatio.body
-              ? getDescription(type)
-              : null}
+            {getDescription(type)}
           </Typography>
-        </Box>
-        <Box display={{ xs: 'flex', md: 'none' }}>
-          <Typography variant="body1">{text[type].title}</Typography>
         </Box>
       </div>
     </Grid>

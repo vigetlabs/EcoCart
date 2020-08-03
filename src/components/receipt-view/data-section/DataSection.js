@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 
 // Components
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, Box } from '@material-ui/core';
 import DataBreakdownAggregate from './DataBreakdownAggregate';
 import ImpactDonutAggregate from './ImpactDonutAggregate';
 
@@ -52,47 +52,62 @@ const DataSection = ({ cartState }) => {
     };
   }, []);
 
-  const { width, min } = windowDimensions;
-
-  const ratio = width - min / width;
+  const { width, height } = windowDimensions;
+  const sizeXs = Math.min(width, height / 2);
+  const sizeMd = Math.min(width / 2, height);
 
   return (
     <Grid
       item
       container
       alignItems="center"
-      xs={ratio >= minRatio.body ? 12 : 10}
+      justify="center"
+      xs={12}
       spacing={1}
       className={styles.dataSectionBox}>
-      <Grid
-        item
-        xs={(width - min) / width >= minRatio.body ? 12 : 10}
-        className={styles.dataHeaderBox}>
+      <Grid item xs={12} className={styles.dataHeaderBox}>
         <Typography variant="h4" gutterBottom>
           Environmental Impact Breakdown
         </Typography>
       </Grid>
 
-      <Grid
-        item
-        xs={6}
-        className={styles.pieBox}
-        style={{ minWidth: windowDimensions.min * 0.5 }}>
-        <ImpactDonutAggregate
-          cartState={cartState}
-          colors={colors}
-          land={LAND}
-          water={WATER}
-          eutro={EUTRO}
-          ghg={GHG}
-          windowDimensions={windowDimensions}
-        />
-      </Grid>
+      <Box display={{ xs: 'none', md: 'flex' }}>
+        <Grid
+          item
+          md={6}
+          className={styles.pieBox}
+          style={{ minWidth: sizeMd * 0.7 }}>
+          <ImpactDonutAggregate
+            cartState={cartState}
+            colors={colors}
+            land={LAND}
+            water={WATER}
+            eutro={EUTRO}
+            ghg={GHG}
+            size={sizeMd}
+          />
+        </Grid>
+      </Box>
 
-      <Grid
-        item
-        xs={(width - min) / width >= minRatio.body ? 6 : 4}
-        className={styles.dataBreakdownBox}>
+      <Box display={{ xs: 'flex', md: 'none' }}>
+        <Grid
+          item
+          xs={12}
+          className={styles.pieBox}
+          style={{ minWidth: sizeXs * 0.7 }}>
+          <ImpactDonutAggregate
+            cartState={cartState}
+            colors={colors}
+            land={LAND}
+            water={WATER}
+            eutro={EUTRO}
+            ghg={GHG}
+            size={sizeXs}
+          />
+        </Grid>
+      </Box>
+
+      <Grid item xs={12} md={6} className={styles.dataBreakdownBox}>
         <DataBreakdownAggregate
           cartState={cartState}
           colors={colors}

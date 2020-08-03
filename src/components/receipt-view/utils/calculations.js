@@ -74,7 +74,7 @@ export const getUsageImpact = (cart, type, rescaled) => {
   const cartItemWeights = cartItems.map(
     (item) => foodData[item][weightedOrRescaled][type] * 1,
   );
-  const totalWeight = cartItemWeights.reduce((acc, curr) => acc + curr);
+  const totalWeight = cartItemWeights.reduce((acc, curr) => acc + curr, 0);
   return round(totalWeight);
 };
 
