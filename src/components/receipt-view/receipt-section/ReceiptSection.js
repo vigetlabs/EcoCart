@@ -1,8 +1,15 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 
 // Components
-import { Grid, Typography, Divider, Box, Tooltip } from '@material-ui/core';
+import {
+  Grid,
+  Typography,
+  Divider,
+  Box,
+  Tooltip,
+  ClickAwayListener,
+} from '@material-ui/core';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import ReceiptList from './ReceiptList';
 import ImpactResult from './ImpactResult';
@@ -30,6 +37,16 @@ const INFO_TEXT = `Numbers on the right are rated on a scale of 0 (bad)
                    grade is derived from this score.`;
 
 const ReceiptSection = ({ cartState }) => {
+  const [open, setOpen] = useState(false);
+
+  const handleTooltipClose = () => {
+    setOpen(false);
+  };
+
+  const handleTooltipOpen = () => {
+    setOpen(true);
+  };
+
   const getDate = () => {
     const d = new Date();
     return `${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
@@ -53,9 +70,21 @@ const ReceiptSection = ({ cartState }) => {
               </Typography>
             </Grid>
             <Grid item xs={1}>
-              <Tooltip title={INFO_TEXT} arrow>
-                <InfoOutlinedIcon />
-              </Tooltip>
+              <ClickAwayListener onClickAway={handleTooltipClose}>
+                <div>
+                  <Tooltip
+                    PopperProps={{
+                      disablePortal: true,
+                    }}
+                    onClose={handleTooltipClose}
+                    open={open}
+                    disableTouchListener
+                    arrow
+                    title={INFO_TEXT}>
+                    <InfoOutlinedIcon onClick={handleTooltipOpen} />
+                  </Tooltip>
+                </div>
+              </ClickAwayListener>
             </Grid>
             <Grid item xs={12}>
               <Typography align="center" variant="h5" gutterBottom>
