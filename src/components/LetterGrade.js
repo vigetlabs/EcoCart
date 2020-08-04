@@ -7,8 +7,8 @@ import { Typography } from '@material-ui/core';
 // Styles
 import styles from './styles/letter-grade.module.css';
 
-const LetterGrade = ({ grade, cost }) => (
-  <Typography>
+const LetterGrade = ({ grade, cost, variant }) => (
+  <Typography variant={variant}>
     <span className={styles.cost}>{cost}</span>
     <span className={[styles.grade, styles[grade]].join(' ')}>{grade}</span>
   </Typography>
@@ -16,6 +16,12 @@ const LetterGrade = ({ grade, cost }) => (
 
 LetterGrade.propTypes = {
   grade: PropTypes.string.isRequired,
+  cost: PropTypes.number,
+  variant: PropTypes.string,
+};
+
+LetterGrade.defaultProps = {
+  variant: 'body1',
 };
 
 export default LetterGrade;
