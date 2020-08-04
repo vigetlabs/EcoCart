@@ -75,7 +75,9 @@ const ReceiptSection = ({ cartState }) => {
             </Grid>
             <Grid item xs={1}>
               <ClickAwayListener onClickAway={handleTooltipClose}>
-                <div>
+                <div
+                  onMouseEnter={handleTooltipOpen}
+                  onMouseLeave={handleTooltipClose}>
                   <Tooltip
                     PopperProps={{
                       disablePortal: true,
@@ -85,7 +87,10 @@ const ReceiptSection = ({ cartState }) => {
                     disableTouchListener
                     arrow
                     title={INFO_TEXT}>
-                    <InfoOutlinedIcon onClick={handleTooltipOpen} />
+                    <InfoOutlinedIcon
+                      onClick={handleTooltipOpen}
+                      onHover={handleTooltipOpen}
+                    />
                   </Tooltip>
                 </div>
               </ClickAwayListener>
