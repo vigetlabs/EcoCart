@@ -44,5 +44,5 @@ Uses eslint and prettier
 > TBD
 
 ## Deployment
-> TBD
+> [![Netlify Status](https://api.netlify.com/api/v1/badges/f19d48a1-c369-42b7-8ee2-ee968b74121a/deploy-status)](https://app.netlify.com/sites/ecocart/deploys)
 
