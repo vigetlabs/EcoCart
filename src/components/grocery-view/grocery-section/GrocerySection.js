@@ -2,9 +2,7 @@
 import React from 'react';
 
 // Components
-import {
-  Grid, Typography, IconButton,
-} from '@material-ui/core';
+import { Grid, Typography, IconButton } from '@material-ui/core';
 import { Link } from 'gatsby';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import CategoryRow from './CategoryRow';
@@ -23,9 +21,9 @@ const chevronButton = {
   fontSize: 60,
 };
 
-const GROCERY_INFO = `Click through product categories, view item grades, 
-                      and add items to your list straight from this page, 
-                      or click an item to view more information including 
+const GROCERY_INFO = `Click through product categories, view item grades,
+                      and add items to your list straight from this page,
+                      or click an item to view more information including
                       details on its environmental impact.
 `;
 
@@ -34,10 +32,11 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
     <Grid
       container
       item
-      justify='center'
-      className={`${styles.rowBox} ${index % 2 === 0 ? null : styles.rowBoxGrey}`}
-    >
-       <CategoryRow
+      justify="center"
+      className={`${styles.rowBox} ${
+        index % 2 === 0 ? null : styles.rowBoxGrey
+      }`}>
+      <CategoryRow
         key={section}
         cartState={cartState}
         setCartState={setCartState}
@@ -49,55 +48,29 @@ const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
 
   return (
     <>
-      <Grid
-        container
-        justify='center'
-      >
-        <Grid
-          item
-          container
-          xs={12}
-        >
+      <Grid container justify="center">
+        <Grid item container xs={12}>
           <InfoSection />
-          <Grid
-            item
-            xs={12}
-            id='groceries'
-            className={styles.chevron}
-          >
+          <Grid item xs={12} id="groceries" className={styles.chevron}>
             <Link
-              to='/#groceries'
-              className={styles.link}
-            >
-              <IconButton
-                style={chevronButton}
-              >
-                <KeyboardArrowDownIcon
-                  style={{ fontSize: 130 }}
-                />
+              to="/#groceries"
+              aria-label="scroll down"
+              className={styles.link}>
+              <IconButton aria-label="scroll down" style={chevronButton}>
+                <KeyboardArrowDownIcon style={{ fontSize: 130 }} />
               </IconButton>
             </Link>
           </Grid>
-          <Grid
-            item
-            xs={12}
-            className={styles.instructions}
-          >
+          <Grid item xs={12} className={styles.instructions}>
             <Typography
               variant="h5"
               component="p"
-              className={styles.instructionsText}
-            >
+              className={styles.instructionsText}>
               {GROCERY_INFO}
             </Typography>
           </Grid>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          container
-          justify='center'
-        >
+        <Grid item xs={12} container justify="center">
           {rows}
         </Grid>
       </Grid>
