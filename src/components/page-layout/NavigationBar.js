@@ -22,15 +22,15 @@ import catList from '../../../content/food-categories.json';
 
 const NavigationBar = ({ toggleModal, resetHeaderTop }) => {
   const getMenuItems = () => catList.categories.map((cat) => (
-    <MenuItem
+    <Link
+    className={styles.catLink}
+    to={`/#${cat.replace(/\s/g, '')}`}
     >
-      <Link
-        className={styles.catLink}
-        to={`/#${cat.replace(/\s/g, '')}`}
+      <MenuItem
       >
-        <Typography>{cat}</Typography>
-      </Link>
-    </MenuItem>
+          <Typography>{cat}</Typography>
+      </MenuItem>
+    </Link>
   ));
 
   const getInitCat = () => (<MenuItem><Typography>{'Categories'}</Typography></MenuItem>);
