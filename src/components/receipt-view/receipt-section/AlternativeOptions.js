@@ -115,7 +115,7 @@ const AlternativeOptions = ({
                 id="alts"
                 className={styles.catLabel}
               >
-                Select Alternatives
+                <label for="alts">Select Alternatives</label>
               </InputLabel>
               <Select
                 label='alts'
