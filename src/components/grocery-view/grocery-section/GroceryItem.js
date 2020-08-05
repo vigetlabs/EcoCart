@@ -27,9 +27,7 @@ const openModal = (setModalOpen) => {
   setModalOpen(true);
 };
 
-const GroceryItem = ({
-  item, cartState, setCartState, toggleHeaderTop,
-}) => {
+const GroceryItem = ({ item, cartState, setCartState, toggleHeaderTop }) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const itemData = foodData[item];
@@ -49,92 +47,57 @@ const GroceryItem = ({
   };
 
   return (
-  <>
-    <Grid
-      className={styles.item}
-      item
-      xs={12}
-    >
-      <Card
-        className={styles.itemCard}
-        container
-        enabled
-        elevated
-      >
-        <CardActionArea
-           onClick={() => {
-             toggleHeaderTop();
-             openModal(setModalOpen);
-           }}
-        >
-          <CardMedia
-            component="img"
-            alt={item}
-            className={styles.cardMedia}
-            image={itemData.other.imageUrl}
-            title={item}
-          />
-          <CardContent>
-            <Grid
-              container
-              justify='space-evenly'
-            >
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={10}
-              >
-                <Typography
-                  variant="h4"
-                  component="h2"
-                  className={styles.itemTitle}
-                >
-                  {item}
-                </Typography>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={2}
-              >
+    <>
+      <Grid className={styles.item} item xs={12}>
+        <Card className={styles.itemCard} container enabled elevated>
+          <CardActionArea
+            onClick={() => {
+              toggleHeaderTop();
+              openModal(setModalOpen);
+            }}>
+            <CardMedia
+              component="img"
+              alt={item}
+              className={styles.cardMedia}
+              image={itemData.other.imageUrl}
+              title={item}
+            />
+            <CardContent>
+              <Grid container justify="space-evenly">
+                <Grid item xs={12} sm={12} md={10}>
                   <Typography
-                    variant='h5'
-                    className={styles.itemAmount}
-                  >
-                  {cartState[item]}
+                    variant="h4"
+                    component="h2"
+                    className={styles.itemTitle}>
+                    {item}
                   </Typography>
+                </Grid>
+                <Grid item xs={12} sm={12} md={2}>
+                  <Typography variant="h5" className={styles.itemAmount}>
+                    {cartState[item]}
+                  </Typography>
+                </Grid>
               </Grid>
-            </Grid>
-          </CardContent>
-        </CardActionArea>
-          <CardActions
-            disableSpacing={false}
-          >
-            <Grid
-              container
-              justify='center'
-            >
+            </CardContent>
+          </CardActionArea>
+          <CardActions disableSpacing={false}>
+            <Grid container justify="center">
               <Grid
                 item
                 xs={12}
                 sm={12}
                 md={12}
                 lg={6}
-                className={styles.cartButtonBox}
-              >
+                className={styles.cartButtonBox}>
                 <Button
-                  type='button'
+                  type="button"
                   variant="contained"
                   color="primary"
                   size="small"
                   className={styles.cartButton}
                   onClick={handleAdd}
-                >
-                  <AddCircleOutlineIcon
-                    fontSize='large'
-                  />
+                  aria-label="add">
+                  <AddCircleOutlineIcon fontSize="large" />
                 </Button>
               </Grid>
               <Grid
@@ -143,34 +106,31 @@ const GroceryItem = ({
                 sm={12}
                 md={12}
                 lg={6}
-                className={styles.cartButtonBox}
-              >
+                className={styles.cartButtonBox}>
                 <Button
-                  type='button'
+                  type="button"
                   variant="contained"
                   color="secondary"
                   size="small"
                   className={styles.cartButton}
-                  onClick={handleRemove}
-                >
-                  <RemoveCircleOutlineIcon
-                    fontSize='large'
-                  />
+                  aria-label="remove"
+                  onClick={handleRemove}>
+                  <RemoveCircleOutlineIcon fontSize="large" />
                 </Button>
               </Grid>
             </Grid>
           </CardActions>
-      </Card>
-    </Grid>
-    <ItemModal
-      isModalOpen={isModalOpen}
-      setModalOpen={setModalOpen}
-      item={item}
-      cartState={cartState}
-      setCartState={setCartState}
-      toggleHeaderTop={toggleHeaderTop}
-    />
-  </>
+        </Card>
+      </Grid>
+      <ItemModal
+        isModalOpen={isModalOpen}
+        setModalOpen={setModalOpen}
+        item={item}
+        cartState={cartState}
+        setCartState={setCartState}
+        toggleHeaderTop={toggleHeaderTop}
+      />
+    </>
   );
 };
 
