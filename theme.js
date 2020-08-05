@@ -63,7 +63,7 @@ const theme = createMuiTheme({
     divider: 'rgb(0,0,0)',
     primary: {
       // main: '#0076D2',
-      main: '#16B545',
+      main: '#13AA40',
       contrastText: 'white',
     },
     secondary: {

@@ -94,11 +94,11 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => {
               id="catSelector"
               className={styles.catLabel}
             >
-              Select Category
+              <label for="categorySelect">Select Category</label>
             </InputLabel>
             <Select
               labelId="catSelector"
-              id="catSelect"
+              id="categorySelect"
               size='large'
               value={getInitCat}
               className={styles.catSelect}

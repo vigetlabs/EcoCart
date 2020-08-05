@@ -100,7 +100,7 @@ const CartItem = ({
                       id="Quantity"
                       className={styles.catLabel}
                     >
-                      Quantity
+                      <label for="Quantity">Quantity</label>
                     </InputLabel>
                     <Select
                       label='Quantity'
