@@ -8,6 +8,7 @@
 .cartList {
   width: 20vw;
   height: 80%;
+  max-height: 60vh;
   overflow: scroll;
   padding: 10px;
 }
