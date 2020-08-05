@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
 // Components
-import { Grid, Typography, Select, MenuItem, Box } from '@material-ui/core';
+import {
+  Grid, Typography, Select, MenuItem, Box, InputLabel,
+} from '@material-ui/core';
 import LetterGrade from '../../LetterGrade';
 
 // Style
@@ -32,7 +34,9 @@ const getAltScore = (cart, item, alternative) => {
   return newScore;
 };
 
-const AlternativeOptions = ({ item, alternatives, cartState, head }) => {
+const AlternativeOptions = ({
+  item, alternatives, cartState, head,
+}) => {
   const [selected, setSelected] = useState(item);
 
   const handleChange = (event) => {
@@ -107,9 +111,16 @@ const AlternativeOptions = ({ item, alternatives, cartState, head }) => {
             'No alternatives yet!'
           ) : (
             <Box className={styles.dropdownContainer}>
+              <InputLabel
+                id="alts"
+                className={styles.catLabel}
+              >
+                Select Alternatives
+              </InputLabel>
               <Select
-                labelId="label"
-                id="select"
+                label='alts'
+                labelId="alts"
+                id="alts"
                 className={styles.dropdown}
                 value={selected}
                 onChange={handleChange}>
