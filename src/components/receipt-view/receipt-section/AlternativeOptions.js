@@ -48,7 +48,7 @@ const AlternativeOptions = ({
       const altScore = getAltScore(cart, item, altItem);
       return (
         <MenuItem value={altItem}>
-          {altItem} ({altScore})
+          <label id={altItem}>{altItem} ({altScore})</label>
         </MenuItem>
       );
     };
