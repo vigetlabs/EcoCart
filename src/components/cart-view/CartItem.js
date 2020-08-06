@@ -128,12 +128,6 @@ const CartItem = ({
                       More Info
                     </Button>
                   </Grid>
-                  <Grid
-                    item
-                    xs={4}
-                  >
-
-                  </Grid>
                 </Grid>
                 <Grid
                   item
