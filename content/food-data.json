@@ -27,8 +27,14 @@
       "servingNum": "1",
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
-      "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
+      "category": [
+        "Meat & Seafood"
+      ],
+      "alternatives": [
+        "Tofu (soybeans)",
+        "Poultry Meat",
+        "Beans"
+      ]
     }
   },
   "Veal": {
@@ -59,8 +65,14 @@
       "servingNum": "1",
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
-      "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
+      "category": [
+        "Meat & Seafood"
+      ],
+      "alternatives": [
+        "Tofu (soybeans)",
+        "Poultry Meat",
+        "Beans"
+      ]
     }
   },
   "Cheese": {
@@ -91,8 +103,12 @@
       "servingNum": "24",
       "servingUnit": "slices",
       "servingKilo": "0.4536",
-      "category": ["Dairy & Eggs"],
-      "alternatives": ["Soymilk"]
+      "category": [
+        "Dairy & Eggs"
+      ],
+      "alternatives": [
+        "Soymilk"
+      ]
     }
   },
   "Fish (farmed)": {
@@ -123,8 +139,14 @@
       "servingNum": "1",
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
-      "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
+      "category": [
+        "Meat & Seafood"
+      ],
+      "alternatives": [
+        "Tofu (soybeans)",
+        "Poultry Meat",
+        "Beans"
+      ]
     }
   },
   "Lamb & Mutton": {
@@ -155,8 +177,14 @@
       "servingNum": "1",
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
-      "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
+      "category": [
+        "Meat & Seafood"
+      ],
+      "alternatives": [
+        "Tofu (soybeans)",
+        "Poultry Meat",
+        "Beans"
+      ]
     }
   },
   "Prawns (farmed)": {
@@ -187,8 +215,14 @@
       "servingNum": "1",
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
-      "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
+      "category": [
+        "Meat & Seafood"
+      ],
+      "alternatives": [
+        "Tofu (soybeans)",
+        "Poultry Meat",
+        "Beans"
+      ]
     }
   },
   "Nuts": {
@@ -219,8 +253,13 @@
       "servingNum": "10.3",
       "servingUnit": "oz",
       "servingKilo": "0.2903",
-      "category": ["Snacks"],
-      "alternatives": ["Peanuts", "Carrots"]
+      "category": [
+        "Snacks"
+      ],
+      "alternatives": [
+        "Peanuts",
+        "Carrots"
+      ]
     }
   },
   "Pork": {
@@ -251,8 +290,14 @@
       "servingNum": "1",
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
-      "category": ["Meat & Seafood"],
-      "alternatives": ["Tofu (soybeans)", "Poultry Meat", "Beans"]
+      "category": [
+        "Meat & Seafood"
+      ],
+      "alternatives": [
+        "Tofu (soybeans)",
+        "Poultry Meat",
+        "Beans"
+      ]
     }
   },
   "Dark Chocolate": {
@@ -283,7 +328,9 @@
       "servingNum": "3.5",
       "servingUnit": "oz",
       "servingKilo": "0.0998",
-      "category": ["Snacks"]
+      "category": [
+        "Snacks"
+      ]
     }
   },
   "Olive Oil": {
@@ -314,7 +361,9 @@
       "servingNum": "32",
       "servingUnit": "fl oz",
       "servingKilo": "0.9072",
-      "category": ["Pantry"],
+      "category": [
+        "Pantry"
+      ],
       "alternatives": [
         "Palm Oil",
         "Vegetable Oil",
@@ -351,8 +400,12 @@
       "servingNum": "1",
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
-      "category": ["Dry Goods"],
-      "alternatives": ["Barley"]
+      "category": [
+        "Dry Goods"
+      ],
+      "alternatives": [
+        "Barley"
+      ]
     }
   },
   "Coffee": {
@@ -383,7 +436,9 @@
       "servingNum": "12",
       "servingUnit": "oz",
       "servingKilo": "0.3402",
-      "category": ["Beverages"]
+      "category": [
+        "Beverages"
+      ]
     }
   },
   "Sunflower Oil": {
@@ -414,7 +469,9 @@
       "servingNum": "24",
       "servingUnit": "fl oz",
       "servingKilo": "0.6804",
-      "category": ["Pantry"]
+      "category": [
+        "Pantry"
+      ]
     }
   },
   "Peanuts": {
@@ -445,7 +502,9 @@
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
-      "category": ["Snacks"]
+      "category": [
+        "Snacks"
+      ]
     }
   },
   "Poultry Meat": {
@@ -476,7 +535,9 @@
       "servingNum": "1",
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
-      "category": ["Meat & Seafood"]
+      "category": [
+        "Meat & Seafood"
+      ]
     }
   },
   "Eggs": {
@@ -507,7 +568,9 @@
       "servingNum": "12",
       "servingUnit": "count",
       "servingKilo": "0.6804",
-      "category": ["Dairy & Eggs"]
+      "category": [
+        "Dairy & Eggs"
+      ]
     }
   },
   "Sugar": {
@@ -538,7 +601,9 @@
       "servingNum": "4",
       "servingUnit": "lbs",
       "servingKilo": "1.8144",
-      "category": ["Pantry"]
+      "category": [
+        "Pantry"
+      ]
     }
   },
   "Milk": {
@@ -569,7 +634,9 @@
       "servingNum": "1",
       "servingUnit": "gallons",
       "servingKilo": "3.7875",
-      "category": ["Dairy & Eggs"]
+      "category": [
+        "Dairy & Eggs"
+      ]
     }
   },
   "Beans": {
@@ -600,7 +667,9 @@
       "servingNum": "15.5",
       "servingUnit": "oz",
       "servingKilo": "0.44",
-      "category": ["Vegetables"]
+      "category": [
+        "Vegetables"
+      ]
     }
   },
   "Vegetable Oil": {
@@ -631,7 +700,9 @@
       "servingNum": "24",
       "servingUnit": "fl oz",
       "servingKilo": "0.6804",
-      "category": ["Pantry"]
+      "category": [
+        "Pantry"
+      ]
     }
   },
   "Bread": {
@@ -658,11 +729,13 @@
       "ghg": "0"
     },
     "other": {
-      "imageUrl": "https://lh3.googleusercontent.com/gIVyC3CX__CuH9siDdvbry9pYKnnH-oCXXFXWVmFuojcxggHJvfgiVRv4KdC7PCnedbeclVWRUVFtuagiZP5gftHkGjfIRrxZ955__fNzqFNcSW-_3UA99BRiNqfl-kZXI6CoRFG",
+      "imageUrl": "https://lh3.googleusercontent.com/pw/ACtC-3fsNOSuI_yYGdJ3E7yFgjV2xrmyT27cyWY5s2-I7wXqeJJ9xFXzaSXzEz2FsAO8K_LzUpWNEH9xES7R3qChkxj6V_61oCv1IW-Qmt8yBjEZOjmy6ejyhTELWim4zR2OWt1z-2Na_zRZiTgXorisFkFW=w512-h341-no?authuser=0",
       "servingNum": "1",
       "servingUnit": "Loaf",
       "servingKilo": "0.567",
-      "category": ["Dry Goods"]
+      "category": [
+        "Dry Goods"
+      ]
     }
   },
   "Canola Oil": {
@@ -693,7 +766,9 @@
       "servingNum": "24",
       "servingUnit": "fl oz",
       "servingKilo": "0.6804",
-      "category": ["Pantry"]
+      "category": [
+        "Pantry"
+      ]
     }
   },
   "Oatmeal": {
@@ -724,7 +799,9 @@
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
-      "category": ["Dry Goods"]
+      "category": [
+        "Dry Goods"
+      ]
     }
   },
   "Peas": {
@@ -755,7 +832,9 @@
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
-      "category": ["Vegetables"]
+      "category": [
+        "Vegetables"
+      ]
     }
   },
   "Berries": {
@@ -786,7 +865,9 @@
       "servingNum": "1",
       "servingUnit": "lbs",
       "servingKilo": "0.4536",
-      "category": ["Fruits"]
+      "category": [
+        "Fruits"
+      ]
     }
   },
   "Tomatoes": {
@@ -817,7 +898,10 @@
       "servingNum": "1",
       "servingUnit": "lb bag",
       "servingKilo": "0.4536",
-      "category": ["Fruits", "Vegetables"]
+      "category": [
+        "Fruits",
+        "Vegetables"
+      ]
     }
   },
   "Palm Oil": {
@@ -848,7 +932,9 @@
       "servingNum": "24",
       "servingUnit": "fl oz",
       "servingKilo": "0.6804",
-      "category": ["Pantry"]
+      "category": [
+        "Pantry"
+      ]
     }
   },
   "Tofu (soybeans)": {
@@ -879,7 +965,9 @@
       "servingNum": "14",
       "servingUnit": "oz",
       "servingKilo": "0.3992",
-      "category": ["Meat & Seafood"]
+      "category": [
+        "Meat & Seafood"
+      ]
     }
   },
   "Beet Sugar": {
@@ -910,7 +998,9 @@
       "servingNum": "4",
       "servingUnit": "lbs",
       "servingKilo": "1.8144",
-      "category": ["Pantry"]
+      "category": [
+        "Pantry"
+      ]
     }
   },
   "Corn": {
@@ -941,7 +1031,9 @@
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
-      "category": ["Vegetables"]
+      "category": [
+        "Vegetables"
+      ]
     }
   },
   "Cabbage": {
@@ -972,7 +1064,9 @@
       "servingNum": "8",
       "servingUnit": "oz",
       "servingKilo": "0.2268",
-      "category": ["Vegetables"]
+      "category": [
+        "Vegetables"
+      ]
     }
   },
   "Wine": {
@@ -1003,7 +1097,9 @@
       "servingNum": "750",
       "servingUnit": "mL",
       "servingKilo": "0.001",
-      "category": ["Beverages"]
+      "category": [
+        "Beverages"
+      ]
     }
   },
   "Bananas": {
@@ -1034,7 +1130,9 @@
       "servingNum": "1",
       "servingUnit": "Hand",
       "servingKilo": "0.4536",
-      "category": ["Fruits"]
+      "category": [
+        "Fruits"
+      ]
     }
   },
   "Apples": {
@@ -1065,7 +1163,9 @@
       "servingNum": "3",
       "servingUnit": "lb bag",
       "servingKilo": "1.3608",
-      "category": ["Fruits"]
+      "category": [
+        "Fruits"
+      ]
     }
   },
   "Potatoes": {
@@ -1096,7 +1196,9 @@
       "servingNum": "5",
       "servingUnit": "lb bag",
       "servingKilo": "2.268",
-      "category": ["Vegetables"]
+      "category": [
+        "Vegetables"
+      ]
     }
   },
   "Oranges": {
@@ -1127,7 +1229,9 @@
       "servingNum": "3",
       "servingUnit": "lb bag",
       "servingKilo": "1.3608",
-      "category": ["Fruits"]
+      "category": [
+        "Fruits"
+      ]
     }
   },
   "Lemons": {
@@ -1158,7 +1262,9 @@
       "servingNum": "3",
       "servingUnit": "lb bag",
       "servingKilo": "1.3608",
-      "category": ["Fruits"]
+      "category": [
+        "Fruits"
+      ]
     }
   },
   "Barley": {
@@ -1189,7 +1295,9 @@
       "servingNum": "16",
       "servingUnit": "oz",
       "servingKilo": "0.4536",
-      "category": ["Dry Goods"]
+      "category": [
+        "Dry Goods"
+      ]
     }
   },
   "Onions": {
@@ -1220,7 +1328,9 @@
       "servingNum": "5",
       "servingUnit": "lb bag",
       "servingKilo": "2.268",
-      "category": ["Vegetables"]
+      "category": [
+        "Vegetables"
+      ]
     }
   },
   "Soymilk": {
@@ -1251,7 +1361,9 @@
       "servingNum": "1",
       "servingUnit": "gallons",
       "servingKilo": "3.7875",
-      "category": ["Dairy & Eggs"]
+      "category": [
+        "Dairy & Eggs"
+      ]
     }
   },
   "Carrots": {
@@ -1282,7 +1394,9 @@
       "servingNum": "16",
       "servingUnit": "oz bag",
       "servingKilo": "0.4536",
-      "category": ["Vegetables"]
+      "category": [
+        "Vegetables"
+      ]
     }
   },
   "Cassava Flour": {
@@ -1313,7 +1427,9 @@
       "servingNum": "14",
       "servingUnit": "oz",
       "servingKilo": "0.3992",
-      "category": ["Pantry"]
+      "category": [
+        "Pantry"
+      ]
     }
   }
 }
