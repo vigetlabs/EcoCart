@@ -10,7 +10,7 @@ import {
   InputLabel,
   FormControl,
 } from '@material-ui/core';
-import { Link } from 'gatsby';
+import { navigate } from 'gatsby';
 import ListAltIcon from '@material-ui/icons/ListAlt';
 import ecoLogo from '../../images/EcoCart_Logo.png';
 
@@ -22,15 +22,12 @@ import catList from '../../../content/food-categories.json';
 
 const NavigationBar = ({ toggleModal, resetHeaderTop }) => {
   const getMenuItems = () => catList.categories.map((cat) => (
-    <Link
-    className={styles.catLink}
-    to={`/#${cat.replace(/\s/g, '')}`}
+    <MenuItem
+      className={styles.catLink}
+      onClick={() => { navigate(`/#${cat.replace(/\s/g, '')}`); }}
     >
-      <MenuItem
-      >
-          <Typography>{cat}</Typography>
-      </MenuItem>
-    </Link>
+      <Typography>{cat}</Typography>
+    </MenuItem>
   ));
 
   const getInitCat = () => (<MenuItem><Typography>{'Categories'}</Typography></MenuItem>);
@@ -46,20 +43,19 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => {
         item
         xs={1}
       >
-        <Link
-          to='/'
+        <Button
+          className={styles.button}
+          onClick={() => {
+            resetHeaderTop();
+            navigate('/');
+          }}
         >
-          <Button
-            className={styles.button}
-            onClick={resetHeaderTop}
-          >
-            <img
-              src={ecoLogo}
-              alt='EcoCart'
-              className={styles.ecoLogo}
-            />
-          </Button>
-        </Link>
+          <img
+            src={ecoLogo}
+            alt='EcoCart'
+            className={styles.ecoLogo}
+          />
+        </Button>
       </Grid>
       <Grid
         item
@@ -72,17 +68,15 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => {
         <Grid
           item
         >
-          <Link
-          to='/'
-          className={`${styles.link} ${styles.welcome}`}
-        >
           <Button
             className={styles.button}
-            onClick={resetHeaderTop}
+            onClick={() => {
+              resetHeaderTop();
+              navigate('/');
+            }}
           >
             <Typography>Welcome</Typography>
           </Button>
-        </Link>
         </Grid>
         <Grid
           item
