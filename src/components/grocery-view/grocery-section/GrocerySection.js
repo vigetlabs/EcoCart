@@ -21,10 +21,7 @@ const chevronButton = {
   fontSize: 60,
 };
 
-const GROCERY_INFO = `Click through product categories, view item grades,
-                      and add items to your list straight from this page,
-                      or click an item to view more information including
-                      details on its environmental impact.
+const GROCERY_INFO = `Scroll down to see and add items to your list. Click an item to see its environmental impact breakdown. Review your list and click “View Impact” to see your Impact Receipt.
 `;
 
 const GrocerySection = ({ cartState, setCartState, toggleHeaderTop }) => {
