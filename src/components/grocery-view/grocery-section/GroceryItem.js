@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 // Components
 import {
   Card,
+  CardHeader,
   CardContent,
   CardMedia,
   CardActions,
@@ -14,7 +15,8 @@ import {
 } from '@material-ui/core';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
-
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import LetterGrade from '../../LetterGrade';
 import ItemModal from '../../item-view/ItemModal';
 
 // Styles
@@ -50,6 +52,14 @@ const GroceryItem = ({ item, cartState, setCartState, toggleHeaderTop }) => {
     <>
       <Grid className={styles.item} item xs={12}>
         <Card className={styles.itemCard} container enabled elevated>
+          <CardHeader
+            avatar={<LetterGrade grade={itemData.ecoScore.grade} />}
+            action={
+              cartState[item] > 0 && (
+                <CheckCircleIcon color="primary" aria-label="in list" />
+              )
+            }
+          />
           <CardActionArea
             onClick={() => {
               toggleHeaderTop();
