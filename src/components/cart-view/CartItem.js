@@ -12,9 +12,11 @@ import {
   Select,
   InputLabel,
   Button,
+  Box,
 } from '@material-ui/core';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 import ItemModal from '../item-view/ItemModal';
+import LetterGrade from '../LetterGrade';
 
 // Styles
 import styles from './styles/cart-item.module.css';
@@ -115,7 +117,7 @@ const CartItem = ({
                   </Grid>
                   <Grid
                     item
-                    xs={12}
+                    xs={8}
                   >
                     <Button
                       variant='h5'
@@ -125,6 +127,12 @@ const CartItem = ({
                     >
                       More Info
                     </Button>
+                  </Grid>
+                  <Grid
+                    item
+                    xs={4}
+                  >
+
                   </Grid>
                 </Grid>
                 <Grid
@@ -141,6 +149,9 @@ const CartItem = ({
                       />
                     </Button>
                   </CardActions>
+                  <Box style={{ marginLeft: '12.5%' }}>
+                    <LetterGrade grade={foodData[name].ecoScore.grade}/>
+                  </Box>
                 </Grid>
               </Grid>
           </Grid>
