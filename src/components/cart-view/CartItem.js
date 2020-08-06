@@ -134,6 +134,7 @@ const CartItem = ({
                   xs={4}
                 >
                   <CardActions>
+                  <LetterGrade grade={foodData[name].ecoScore.grade}/>
                     <Button
                       onClick={deleteItem}
                     >
@@ -143,9 +144,6 @@ const CartItem = ({
                       />
                     </Button>
                   </CardActions>
-                  <Box style={{ marginLeft: '12.5%' }}>
-                    <LetterGrade grade={foodData[name].ecoScore.grade}/>
-                  </Box>
                 </Grid>
               </Grid>
           </Grid>

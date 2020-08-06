@@ -9,6 +9,7 @@ import {
   Select,
   InputLabel,
   FormControl,
+  Box,
 } from '@material-ui/core';
 import { navigate } from 'gatsby';
 import ListAltIcon from '@material-ui/icons/ListAlt';
@@ -68,8 +69,9 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => {
         <Grid
           item
         >
+          <Box className={styles.welcome}>
           <Button
-            className={styles.button}
+            className={`${styles.button} ${styles.link}`}
             onClick={() => {
               resetHeaderTop();
               navigate('/');
@@ -77,6 +79,7 @@ const NavigationBar = ({ toggleModal, resetHeaderTop }) => {
           >
             <Typography>Welcome</Typography>
           </Button>
+          </Box>
         </Grid>
         <Grid
           item
